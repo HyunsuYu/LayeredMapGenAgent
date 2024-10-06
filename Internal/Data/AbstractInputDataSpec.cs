@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LayeredMapGenAgent.Internal.Data
 {
-    internal class AbstractInputDataSpec
+    internal sealed class AbstractInputDataSpec
     {
         public Vector3Int SingleChunkSize;
         public Vector3Int MapSize;

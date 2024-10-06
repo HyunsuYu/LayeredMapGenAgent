@@ -37,6 +37,7 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
 
         BIsNodeIsGateBottomEdge = 0b0100_0000,
     }
+    
 
     internal sealed class BasicMapLayerGenerator : IDisposable
     {
@@ -80,20 +81,20 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
             public PathDirection[,] AbstractPathDirectionCube;
         }
 
-        public sealed class MapGenInputData
+        public sealed class BasicMapLayerGeneratorInput
         {
-            public required Vector3Int m_mapSize { get; set; }
-            public required Vector3Int m_singleChunkSize { get; set; }
-            public required Vector2Int m_singleRoomSize { get; set; }
+            public required Vector3Int MapSize { get; set; }
+            public required Vector3Int SingleChunkSize { get; set; }
+            public required Vector2Int SingleRoomSize { get; set; }
 
-            public required float m_maxTryCountRatio { get; set; }
-            public required Tuple<int, int> m_brushSize { get; set; }
-            public required float m_mainWayFillPercent { get; set; }
-            public required float m_subWayFillPercent { get; set; }
+            public required float MaxTryCountRatio { get; set; }
+            public required Tuple<int, int> BrushSize { get; set; }
+            public required float MainWayFillPercent { get; set; }
+            public required float SubWayFillPercent { get; set; }
 
-            public required int m_layerIndex { get; set; }
+            public required int LayerIndex { get; set; }
 
-            public required ManualResetEvent m_manualResetEvent { get; set; }
+            public required ManualResetEvent ManualResetEvent { get; set; }
         }
 
         private sealed class DetailCalculateInputData
@@ -122,9 +123,37 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
         private int m_layerIndex;
 
 
-        public BasicMapLayerGenerator(in MapGenInputData mapGenInputData)
+        public BasicMapLayerGenerator(in BasicMapLayerGeneratorInput mapGenInputData)
         {
-            Init(mapGenInputData);
+            Vector3Int mapSize = mapGenInputData.MapSize;
+            Vector3Int singleChunkSize = mapGenInputData.SingleChunkSize;
+
+            m_realMapSize = new Vector3Int(mapSize.x * singleChunkSize.x, mapSize.y * singleChunkSize.y, mapSize.z * singleChunkSize.z);
+            m_singleRoomSize = mapGenInputData.SingleRoomSize;
+
+            m_abstractPlane = new PathDirection[m_realMapSize.z, m_realMapSize.x];
+            m_abstractCoordPairs = new List<CoordPair>();
+            m_detailPlane = new DetailNode[m_realMapSize.z, m_realMapSize.x];
+            for (int coord_z = 0; coord_z < m_realMapSize.z; coord_z++)
+            {
+                for (int coord_x = 0; coord_x < m_realMapSize.x; coord_x++)
+                {
+                    m_detailPlane[coord_z, coord_x] = new DetailNode(m_singleRoomSize);
+                }
+            }
+
+            m_maxTryCount = (int)((m_realMapSize.x * m_realMapSize.z) * mapGenInputData.MaxTryCountRatio);
+
+            var brushSIze = mapGenInputData.BrushSize;
+            m_brushMinSize = brushSIze.Item1;
+            m_brushMaxSize = brushSIze.Item2;
+
+            m_mainWayFillPercent = mapGenInputData.MainWayFillPercent;
+            m_subWayFillPercent = mapGenInputData.SubWayFillPercent;
+
+            m_layerIndex = mapGenInputData.LayerIndex;
+
+            m_manualResetEvent = mapGenInputData.ManualResetEvent;
         }
         ~BasicMapLayerGenerator()
         {
@@ -169,50 +198,6 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
 
             m_manualResetEvent.Set();
             Console.WriteLine("End Single Layer - " + m_layerIndex);
-        }
-
-        private void Init(in MapGenInputData mapGenInputData)
-        {
-            Vector3Int mapSize = mapGenInputData.m_mapSize;
-            Vector3Int singleChunkSize = mapGenInputData.m_singleChunkSize;
-
-            m_realMapSize = new Vector3Int(mapSize.x * singleChunkSize.x, mapSize.y * singleChunkSize.y, mapSize.z * singleChunkSize.z);
-            m_singleRoomSize = mapGenInputData.m_singleRoomSize;
-
-            m_abstractPlane = new PathDirection[m_realMapSize.z, m_realMapSize.x];
-            m_abstractCoordPairs = new List<CoordPair>();
-            m_detailPlane = new DetailNode[m_realMapSize.z, m_realMapSize.x];
-            for (int coord_z = 0; coord_z < m_realMapSize.z; coord_z++)
-            {
-                for (int coord_x = 0; coord_x < m_realMapSize.x; coord_x++)
-                {
-                    m_detailPlane[coord_z, coord_x] = new DetailNode(m_singleRoomSize);
-                }
-            }
-
-            m_maxTryCount = (int)((m_realMapSize.x * m_realMapSize.z) * mapGenInputData.m_maxTryCountRatio);
-
-            var brushSIze = mapGenInputData.m_brushSize;
-            m_brushMinSize = brushSIze.Item1;
-            m_brushMaxSize = brushSIze.Item2;
-
-            m_mainWayFillPercent = mapGenInputData.m_mainWayFillPercent;
-            m_subWayFillPercent = mapGenInputData.m_subWayFillPercent;
-
-            m_layerIndex = mapGenInputData.m_layerIndex;
-
-            m_manualResetEvent = mapGenInputData.m_manualResetEvent;
-        }
-
-        private void Calculate()
-        {
-            Console.WriteLine("Start Calculate Abstract");
-            CalculateAbstractPlane();
-            Console.WriteLine("End Calculate Abstract");
-
-            Console.WriteLine("Start Calculate Detail");
-            CalculateDetailPlane();
-            Console.WriteLine("End Calculate Detail");
         }
 
         #region Calculate Abstract Plane
@@ -976,23 +961,22 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
     {
         public sealed class MapGenInputData
         {
-            public required Vector3Int m_mapSize { get; set; }
-            public required Vector3Int m_singleChunkSize { get; set; }
-            public required Vector2Int m_singleRoomSize { get; set; }
+            public required Vector3Int MapSize { get; set; }
+            public required Vector3Int SingleChunkSize { get; set; }
+            public required Vector2Int SingleRoomSize { get; set; }
 
-            public required float m_maxTryCountRatio { get; set; }
-            public required Tuple<int, int> m_brushSize { get; set; }
-            public required float m_mainWayFillPercent { get; set; }
-            public required float m_subWayFillPercent { get; set; }
+            public required float MaxTryCountRatio { get; set; }
+            public required Tuple<int, int> BrushSize { get; set; }
+            public required float MainWayFillPercent { get; set; }
+            public required float SubWayFillPercent { get; set; }
 
-            public required float m_penetratingWayCountRate { get; set; }
-            public required float m_penetratingWayFillPercent { get; set; }
+            public required float PenetratingWayCountRate { get; set; }
+            public required float PenetratingWayFillPercent { get; set; }
         }
-
         public sealed class BasicMapGenOutput
         {
             private List<MapActiveType[,]> m_mapActiveCube;
-            public List<PathDirection[,]> m_abstractPathDirectionCube;
+            private List<PathDirection[,]> m_abstractPathDirectionCube;
 
 
             public BasicMapGenOutput()
@@ -1052,7 +1036,7 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
             Console.WriteLine("Start Generate Map");
 
             #region Calculate Layer Map
-            int layerCount = mapGenInputData.m_mapSize.y * mapGenInputData.m_singleChunkSize.y;
+            int layerCount = mapGenInputData.MapSize.y * mapGenInputData.SingleChunkSize.y;
 
             List<ManualResetEvent> manualResetEvents = new List<ManualResetEvent>();
             int nextStartIndex = 0;
@@ -1064,26 +1048,26 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
                     ManualResetEvent manualResetEvent = new ManualResetEvent(false);
                     manualResetEvents.Add(manualResetEvent);
 
-                    BasicMapLayerGenerator.MapGenInputData inputData = new BasicMapLayerGenerator.MapGenInputData()
+                    BasicMapLayerGenerator.BasicMapLayerGeneratorInput inputData = new BasicMapLayerGenerator.BasicMapLayerGeneratorInput()
                     {
-                        m_mapSize = mapGenInputData.m_mapSize,
-                        m_singleChunkSize = mapGenInputData.m_singleChunkSize,
-                        m_singleRoomSize = mapGenInputData.m_singleRoomSize,
+                        MapSize = mapGenInputData.MapSize,
+                        SingleChunkSize = mapGenInputData.SingleChunkSize,
+                        SingleRoomSize = mapGenInputData.SingleRoomSize,
 
-                        m_maxTryCountRatio = mapGenInputData.m_maxTryCountRatio,
-                        m_brushSize = mapGenInputData.m_brushSize,
-                        m_mainWayFillPercent = mapGenInputData.m_mainWayFillPercent,
-                        m_subWayFillPercent = mapGenInputData.m_subWayFillPercent,
+                        MaxTryCountRatio = mapGenInputData.MaxTryCountRatio,
+                        BrushSize = mapGenInputData.BrushSize,
+                        MainWayFillPercent = mapGenInputData.MainWayFillPercent,
+                        SubWayFillPercent = mapGenInputData.SubWayFillPercent,
 
-                        m_layerIndex = index,
+                        LayerIndex = index,
 
-                        m_manualResetEvent = manualResetEvent
+                        ManualResetEvent = manualResetEvent
                     };
 
                     BasicMapLayerGenerator basicMapLayerGenerator = new BasicMapLayerGenerator(inputData);
                     m_basicMapLayerGenerators.Add(basicMapLayerGenerator);
 
-                    ThreadPool.QueueUserWorkItem(LayerCalculate, basicMapLayerGenerator);
+                    ThreadPool.QueueUserWorkItem(CalculateLayer, basicMapLayerGenerator);
 
                     if (manualResetEvents.Count == 64)
                     {
@@ -1123,13 +1107,28 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
                                      layerCount,
                                      new Vector2Int()
                                      {
-                                         x = mapGenInputData.m_mapSize.x * mapGenInputData.m_singleChunkSize.x,
-                                         y = mapGenInputData.m_mapSize.z * mapGenInputData.m_singleChunkSize.z
+                                         x = mapGenInputData.MapSize.x * mapGenInputData.SingleChunkSize.x,
+                                         y = mapGenInputData.MapSize.z * mapGenInputData.SingleChunkSize.z
                                      },
-                                     mapGenInputData.m_singleRoomSize,
-                                     mapGenInputData.m_singleRoomSize.x * mapGenInputData.m_singleRoomSize.y,
-                                     mapGenInputData.m_penetratingWayCountRate,
-                                     mapGenInputData.m_penetratingWayFillPercent);
+                                     mapGenInputData.SingleRoomSize,
+                                     mapGenInputData.SingleRoomSize.x * mapGenInputData.SingleRoomSize.y,
+                                     mapGenInputData.PenetratingWayCountRate,
+                                     mapGenInputData.PenetratingWayFillPercent);
+
+            Console.WriteLine("Penetrating Way Generation Complete");
+            #endregion
+
+            #region Calculate Edgy
+            CalculateEdgy(ref mapActiveTypePlanes,
+                          layerCount,
+                          new Vector2Int()
+                          {
+                              x = mapGenInputData.MapSize.x * mapGenInputData.SingleChunkSize.x * mapGenInputData.SingleRoomSize.x,
+                              y = mapGenInputData.MapSize.z * mapGenInputData.SingleChunkSize.z * mapGenInputData.SingleRoomSize.y
+                          });
+
+            Console.WriteLine("Edgy Calculation Complete");
+            #endregion
 
             BasicMapGenOutput basicMapGenOutput = new BasicMapGenOutput();
             for (int layerIndex = 0; layerIndex < layerCount; layerIndex++)
@@ -1137,28 +1136,13 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
                 basicMapGenOutput.MapActiveCube.Add(mapActiveTypePlanes[layerIndex]);
                 basicMapGenOutput.AbstractPathDirectionCube.Add(m_basicMapLayerGenerators[layerIndex].BasicMapOutput.AbstractPathDirectionCube);
             }
-            #endregion
-
-            Console.WriteLine("Penetrating Way Generation Complete");
-
-            #region Calculate Edgy
-            CalculateEdgy(ref mapActiveTypePlanes,
-                          layerCount,
-                          new Vector2Int()
-                          {
-                              x = mapGenInputData.m_mapSize.x * mapGenInputData.m_singleChunkSize.x * mapGenInputData.m_singleRoomSize.x,
-                              y = mapGenInputData.m_mapSize.z * mapGenInputData.m_singleChunkSize.z * mapGenInputData.m_singleRoomSize.y
-                          });
-            #endregion
-
-            Console.WriteLine("Edgy Calculation Complete");
 
             return basicMapGenOutput;
         }
 
-        private static void LayerCalculate(object input)
+        private static void CalculateLayer(object generatorObject)
         {
-            BasicMapLayerGenerator basicMapLayerGenerator = input as BasicMapLayerGenerator;
+            BasicMapLayerGenerator basicMapLayerGenerator = generatorObject as BasicMapLayerGenerator;
 
             basicMapLayerGenerator.GenerateMap();
         }
@@ -1174,10 +1158,11 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
             for (int coord_y = 0; coord_y < layerCount - 1; coord_y++)
             {
                 List<ManualResetEvent> manualResetEvents = new List<ManualResetEvent>();
-
-                for (int coord_z = 0; coord_z < singleRoomSize.y; coord_z++)
+                int nextStartIndex = 0;
+                while(true)
                 {
-                    for (int coord_x = 0; coord_x < singleRoomSize.x; coord_x++)
+                    bool bisEnd = false;
+                    for(int index = nextStartIndex; index < singleRoomVolume; index++)
                     {
                         ManualResetEvent manualResetEvent = new ManualResetEvent(false);
                         manualResetEvents.Add(manualResetEvent);
@@ -1187,7 +1172,7 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
                             MapActiveTypePlanes = mapActiveTypePlanes,
                             RealMapSize = realMapSize,
                             SingleRoomSize = singleRoomSize,
-                            CurBlockPos = new Vector2Int(coord_x, coord_z),
+                            CurBlockPos = new Vector2Int(index % singleRoomSize.x, index / singleRoomSize.x),
                             CurLayerIndex = coord_y,
                             PenetratingWayCount = penetratingWayCount,
                             MaxPenetratingWayVolume = maxPenetratingWayVolume,
@@ -1195,15 +1180,62 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
                         };
 
                         ThreadPool.QueueUserWorkItem(CalculatePenetrationgWayTask, inputData);
+
+                        if(manualResetEvents.Count == 64)
+                        {
+                            nextStartIndex = index + 1;
+                            break;
+                        }
+                        if (index == singleRoomVolume - 1)
+                        {
+                            bisEnd = true;
+                        }
+                    }
+
+                    if (manualResetEvents.Count == 0)
+                    {
+                        break;
+                    }
+
+                    WaitHandle.WaitAll(manualResetEvents.ToArray());
+                    manualResetEvents.Clear();
+
+                    if (bisEnd)
+                    {
+                        break;
                     }
                 }
 
-                if (manualResetEvents.Count == 0)
-                {
-                    break;
-                }
 
-                WaitHandle.WaitAll(manualResetEvents.ToArray());
+                //for (int coord_z = 0; coord_z < singleRoomSize.y; coord_z++)
+                //{
+                //    for (int coord_x = 0; coord_x < singleRoomSize.x; coord_x++)
+                //    {
+                //        ManualResetEvent manualResetEvent = new ManualResetEvent(false);
+                //        manualResetEvents.Add(manualResetEvent);
+
+                //        CalculatePenetrationgWayTaskInputData inputData = new CalculatePenetrationgWayTaskInputData()
+                //        {
+                //            MapActiveTypePlanes = mapActiveTypePlanes,
+                //            RealMapSize = realMapSize,
+                //            SingleRoomSize = singleRoomSize,
+                //            CurBlockPos = new Vector2Int(coord_x, coord_z),
+                //            CurLayerIndex = coord_y,
+                //            PenetratingWayCount = penetratingWayCount,
+                //            MaxPenetratingWayVolume = maxPenetratingWayVolume,
+                //            ManualResetEvent = manualResetEvent
+                //        };
+
+                //        ThreadPool.QueueUserWorkItem(CalculatePenetrationgWayTask, inputData);
+                //    }
+                //}
+
+                //if (manualResetEvents.Count == 0)
+                //{
+                //    break;
+                //}
+
+                //WaitHandle.WaitAll(manualResetEvents.ToArray());
             }
         }
 
@@ -1418,28 +1450,29 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
             {
                 for (int coord_x = 0; coord_x < inputData.RealMapSize.x; coord_x++)
                 {
-                    if (inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z, coord_x].HasFlag(MapActiveType.BIsNodeActive))
-                    {
-                        if (coord_z - 1 >= 0 && !inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z - 1, coord_x].HasFlag(MapActiveType.BIsNodeActive))
-                        {
-                            inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z, coord_x] |= MapActiveType.BIsNodeIsTopEdge;
-                        }
-                        if (coord_z + 1 < inputData.RealMapSize.y && !inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z + 1, coord_x].HasFlag(MapActiveType.BIsNodeActive))
-                        {
-                            inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z, coord_x] |= MapActiveType.BIsNodeIsBottomEdge;
-                        }
-                        if (coord_x - 1 >= 0 && !inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z, coord_x - 1].HasFlag(MapActiveType.BIsNodeActive))
-                        {
-                            inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z, coord_x] |= MapActiveType.BIsNodeIsLeftEdge;
-                        }
-                        if (coord_x + 1 < inputData.RealMapSize.x && !inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z, coord_x + 1].HasFlag(MapActiveType.BIsNodeActive))
-                        {
-                            inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z, coord_x] |= MapActiveType.BIsNodeIsRightEdge;
-                        }
-                    }
+                    //if (inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z, coord_x].HasFlag(MapActiveType.BIsNodeActive))
+                    //{
+                    //    if (coord_z - 1 >= 0 && !inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z - 1, coord_x].HasFlag(MapActiveType.BIsNodeActive))
+                    //    {
+                    //        inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z, coord_x] |= MapActiveType.BIsNodeIsTopEdge;
+                    //    }
+                    //    if (coord_z + 1 < inputData.RealMapSize.y && !inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z + 1, coord_x].HasFlag(MapActiveType.BIsNodeActive))
+                    //    {
+                    //        inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z, coord_x] |= MapActiveType.BIsNodeIsBottomEdge;
+                    //    }
+                    //    if (coord_x - 1 >= 0 && !inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z, coord_x - 1].HasFlag(MapActiveType.BIsNodeActive))
+                    //    {
+                    //        inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z, coord_x] |= MapActiveType.BIsNodeIsLeftEdge;
+                    //    }
+                    //    if (coord_x + 1 < inputData.RealMapSize.x && !inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z, coord_x + 1].HasFlag(MapActiveType.BIsNodeActive))
+                    //    {
+                    //        inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z, coord_x] |= MapActiveType.BIsNodeIsRightEdge;
+                    //    }
+                    //}
 
                     if (inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z, coord_x].HasFlag(MapActiveType.BIsNodeIsGateToBack) &&
-                        coord_z - 1 >= 0 && !inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z - 1, coord_x].HasFlag(MapActiveType.BIsNodeActive))
+                        coord_z - 1 >= 0 &&
+                        !inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z - 1, coord_x].HasFlag(MapActiveType.BIsNodeIsGateToBack))
                     {
                         inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z, coord_x] |= MapActiveType.BIsNodeIsGateBottomEdge;
                     }

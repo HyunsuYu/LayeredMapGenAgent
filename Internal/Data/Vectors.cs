@@ -62,7 +62,16 @@ namespace LayeredMapGenAgent.Internal.Data
             return a.x != b.x || a.y != b.y || a.z != b.z;
         }
     }
-    internal struct Vector4
+
+    public struct Vector2
+    {
+        public float x, y;
+    }
+    public struct Vector3
+    {
+        public float x, y, z;
+    }
+    public struct Vector4
     {
         public float x, y, z, w;
 

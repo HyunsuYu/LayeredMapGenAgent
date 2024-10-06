@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LayeredMapGenAgent.Internal.Data
 {
-    internal class BasicMapInputDataSpec
+    internal sealed class BasicMapInputDataSpec
     {
         public float MaxTryCountRatio;
 
