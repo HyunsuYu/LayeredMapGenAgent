@@ -74,11 +74,32 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
             }
         }
 
-        public sealed class BasicMapLayerGeneratorOutput
+        public sealed class BasicMapLayerGeneratorOutput : IDisposable
         {
             public MapActiveType[,] MapActiveCube;
 
             public PathDirection[,] AbstractPathDirectionCube;
+
+
+            ~BasicMapLayerGeneratorOutput()
+            {
+                Dispose(false);
+            }
+
+            public void Dispose()
+            {
+                Dispose(true);
+            }
+
+            private void Dispose(in bool bisDispose)
+            {
+                if(bisDispose)
+                {
+                    MapActiveCube = null;
+
+                    AbstractPathDirectionCube = null;
+                }
+            }
         }
 
         public sealed class BasicMapLayerGeneratorInput
@@ -143,6 +164,7 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
             }
 
             m_maxTryCount = (int)((m_realMapSize.x * m_realMapSize.z) * mapGenInputData.MaxTryCountRatio);
+            m_maxTryCount = m_maxTryCount == 0 ? 1 : m_maxTryCount;
 
             var brushSIze = mapGenInputData.BrushSize;
             m_brushMinSize = brushSIze.Item1;
@@ -952,6 +974,8 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
                 random = null;
 
                 m_manualResetEvent = null;
+
+                m_basicLayerMapGeneratorOutput.Dispose();
                 m_basicLayerMapGeneratorOutput = null;
             }
         }
@@ -1119,15 +1143,15 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
             #endregion
 
             #region Calculate Edgy
-            CalculateEdgy(ref mapActiveTypePlanes,
-                          layerCount,
-                          new Vector2Int()
-                          {
-                              x = mapGenInputData.MapSize.x * mapGenInputData.SingleChunkSize.x * mapGenInputData.SingleRoomSize.x,
-                              y = mapGenInputData.MapSize.z * mapGenInputData.SingleChunkSize.z * mapGenInputData.SingleRoomSize.y
-                          });
+            //CalculateEdgy(ref mapActiveTypePlanes,
+            //              layerCount,
+            //              new Vector2Int()
+            //              {
+            //                  x = mapGenInputData.MapSize.x * mapGenInputData.SingleChunkSize.x * mapGenInputData.SingleRoomSize.x,
+            //                  y = mapGenInputData.MapSize.z * mapGenInputData.SingleChunkSize.z * mapGenInputData.SingleRoomSize.y
+            //              });
 
-            Console.WriteLine("Edgy Calculation Complete");
+            //Console.WriteLine("Edgy Calculation Complete");
             #endregion
 
             BasicMapGenOutput basicMapGenOutput = new BasicMapGenOutput();
@@ -1152,6 +1176,10 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
         {
             long singleLayerMapVolume = realMapSize.x * realMapSize.y;
             int penetratingWayCount = (int)(singleLayerMapVolume * penetratingWayCountRate);
+            if(penetratingWayCount == 0)
+            {
+                penetratingWayCount = 1;
+            }
 
             int maxPenetratingWayVolume = (int)(singleRoomVolume * penetratingWayFillPercent);
 

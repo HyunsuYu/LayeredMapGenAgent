@@ -24,6 +24,21 @@ namespace LayeredMapGenAgent.Internal.Data
             this.y = y;
         }
 
+        public static Vector2Int zero
+        {
+            get
+            {
+                return new Vector2Int(0, 0);
+            }
+        }
+        public static Vector2Int one
+        {
+            get
+            {
+                return new Vector2Int(1, 1);
+            }
+        }
+
         public static bool operator ==(Vector2Int a, Vector2Int b)
         {
             return a.x == b.x && a.y == b.y;
@@ -53,6 +68,22 @@ namespace LayeredMapGenAgent.Internal.Data
             this.z = z;
         }
 
+        public static float Distance(in Vector3Int pos_0, in Vector3Int pos_1)
+        {
+            return Vector3.Distance(new Vector3()
+            {
+                x = pos_0.x,
+                y = pos_0.y,
+                z = pos_0.z
+            },
+            new Vector3()
+            {
+                x = pos_1.x,
+                y = pos_1.y,
+                z = pos_1.z
+            });
+        }
+
         public static bool operator ==(Vector3Int a, Vector3Int b)
         {
             return a.x == b.x && a.y == b.y && a.z == b.z;
@@ -70,6 +101,24 @@ namespace LayeredMapGenAgent.Internal.Data
     public struct Vector3
     {
         public float x, y, z;
+
+
+        public float magnitude
+        {
+            get
+            {
+                return MathF.Sqrt(MathF.Pow(x, 2.0f) +
+                                  MathF.Pow(y, 2.0f) +
+                                  MathF.Pow(z, 2.0f));
+            }
+        }
+
+        public static float Distance(in Vector3 pos_0, in Vector3 pos_1)
+        {
+            return MathF.Sqrt(MathF.Pow(pos_1.x - pos_0.x, 2.0f) +
+                              MathF.Pow(pos_1.y - pos_0.y, 2.0f) +
+                              MathF.Pow(pos_1.z - pos_0.z, 2.0f));
+        }
     }
     public struct Vector4
     {
