@@ -10,7 +10,7 @@ namespace LayeredMapGenAgent.Internal.Data
 {
     public sealed class RegionSelectionInputDataSpec
     {
-        public sealed class SingleRegionData : IDisposable
+        public sealed class SingleRegionData
         {
             public string RegionName;
             public Guid RegionID;
@@ -19,28 +19,6 @@ namespace LayeredMapGenAgent.Internal.Data
 
             public Vector3 IdealSpawnPos;
             public Vector3 WeightVector;
-
-
-            ~SingleRegionData()
-            {
-                Dispose(false);
-            }
-            
-            public void Dispose()
-            {
-                Dispose(true);
-            }
-
-            private void Dispose(in bool bisDispose)
-            {
-                if(bisDispose)
-                {
-                    RegionName = string.Empty;
-                    RegionName = null;
-
-                    RegionID = Guid.Empty;
-                }
-            }
         }
 
 
@@ -49,6 +27,7 @@ namespace LayeredMapGenAgent.Internal.Data
         public List<SingleRegionData> SingleRegionDatas;
 
 
+        [Obsolete]
         public static Dictionary<int, string> GetSingleRegionDataRainbowTable(in List<SingleRegionData> singleRegionDatas)
         {
             Dictionary<int, string> singleRegionDataRainbowTable = new Dictionary<int, string>();

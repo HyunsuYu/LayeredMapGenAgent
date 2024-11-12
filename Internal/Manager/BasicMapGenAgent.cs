@@ -1174,6 +1174,7 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
         #region Calculate Penetrating Way
         private static void CalculatePenetrationgWay(ref List<MapActiveType[,]> mapActiveTypePlanes, in int layerCount, in Vector2Int realMapSize, in Vector2Int singleRoomSize, in int singleRoomVolume, in float penetratingWayCountRate, in float penetratingWayFillPercent)
         {
+            // TODO : realMapSize 수준에서 결정하지 말고, SingleRoomSize 수준에서 결정하도록 변경 -> penetratingWayCountRate를 결정할 때 보다 직관적으로 결정 가능하도록
             long singleLayerMapVolume = realMapSize.x * realMapSize.y;
             int penetratingWayCount = (int)(singleLayerMapVolume * penetratingWayCountRate);
             if(penetratingWayCount == 0)

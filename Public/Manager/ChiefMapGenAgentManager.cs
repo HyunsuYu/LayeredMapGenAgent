@@ -204,6 +204,64 @@ namespace LayeredMapGenAgent.Public.Manager
 
             #region Create Basic Map Png Image
             {
+                int layerCount = mapGenInputData.MapSize.y * mapGenInputData.SingleChunkSize.y;
+
+                List<ManualResetEvent> manualResetEvents = new List<ManualResetEvent>();
+                int nextStartIndex = 0;
+                while (true)
+                {
+                    bool bisEnd = false;
+                    for (int index = nextStartIndex; index < layerCount; index++)
+                    {
+                        ManualResetEvent manualResetEvent = new ManualResetEvent(false);
+                        manualResetEvents.Add(manualResetEvent);
+
+                        BasicMapLayerGenerator.BasicMapLayerGeneratorInput inputData = new BasicMapLayerGenerator.BasicMapLayerGeneratorInput()
+                        {
+                            MapSize = mapGenInputData.MapSize,
+                            SingleChunkSize = mapGenInputData.SingleChunkSize,
+                            SingleRoomSize = mapGenInputData.SingleRoomSize,
+
+                            MaxTryCountRatio = mapGenInputData.MaxTryCountRatio,
+                            BrushSize = mapGenInputData.BrushSize,
+                            MainWayFillPercent = mapGenInputData.MainWayFillPercent,
+                            SubWayFillPercent = mapGenInputData.SubWayFillPercent,
+
+                            LayerIndex = index,
+
+                            ManualResetEvent = manualResetEvent
+                        };
+
+                        BasicMapLayerGenerator basicMapLayerGenerator = new BasicMapLayerGenerator(inputData);
+                        m_basicMapLayerGenerators.Add(basicMapLayerGenerator);
+
+                        ThreadPool.QueueUserWorkItem(CalculateLayer, basicMapLayerGenerator);
+
+                        if (manualResetEvents.Count == 64)
+                        {
+                            nextStartIndex = index + 1;
+                            break;
+                        }
+                        if (index == layerCount - 1)
+                        {
+                            bisEnd = true;
+                        }
+                    }
+
+                    if (manualResetEvents.Count == 0)
+                    {
+                        break;
+                    }
+
+                    WaitHandle.WaitAll(manualResetEvents.ToArray());
+                    manualResetEvents.Clear();
+
+                    if (bisEnd)
+                    {
+                        break;
+                    }
+                }
+
                 Console.WriteLine("Start Create Basic Map Png Image");
                 //Dictionary<float, int> count = new Dictionary<float, int>();
                 List<SKBitmap> rawBitmaps = new List<SKBitmap>();
