@@ -400,8 +400,8 @@ namespace LayeredMapGenAgent.Internal.Manager
                 {
                     for (int coord_x = 0; coord_x < realMapSize.x; coord_x++)
                     {
-                        if(mapGenInputData.MapActiveCube[coord_y][coord_z, coord_x].HasFlag(MapActiveType.BIsNodeActive))
-                        {
+                        //if(mapGenInputData.MapActiveCube[coord_y][coord_z, coord_x].HasFlag(MapActiveType.BIsNodeActive))
+                        //{
                             int singleRegionIndex = -1;
                             float minDistance = float.MaxValue;
                             foreach (var item in mapGenInputData.RegionSelectionInputDataSpec.SingleRegionDatas)
@@ -423,7 +423,7 @@ namespace LayeredMapGenAgent.Internal.Manager
                             }
 
                             resultCube[coord_y][coord_z, coord_x] = (byte)(singleRegionIndex + 1);
-                        }
+                        //}
                     }
                 }
             }

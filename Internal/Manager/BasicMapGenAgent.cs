@@ -36,6 +36,8 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
         BIsNodeIsRightEdge      = 0b0010_0000,
 
         BIsNodeIsGateBottomEdge = 0b0100_0000,
+
+        BIsNodeMiddleLayerGenerationEnable = 0b1000_0000,
     }
     
 
@@ -207,6 +209,7 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
                         for (int detailCoord_x = 0; detailCoord_x < m_singleRoomSize.x; detailCoord_x++)
                         {
                             mapActiveCube[coord_y * m_singleRoomSize.y + detailCoord_y, coord_x * m_singleRoomSize.x + detailCoord_x] = m_detailPlane[coord_y, coord_x].BlockActiveTable[detailCoord_y, detailCoord_x];
+                            mapActiveCube[coord_y * m_singleRoomSize.y + detailCoord_y, coord_x * m_singleRoomSize.x + detailCoord_x] |= MapActiveType.BIsNodeMiddleLayerGenerationEnable;
                         }
                     }
                 }
@@ -250,8 +253,8 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
                     {
                         while (true)
                         {
-                            StartCoord.x = random.Next(0, m_realMapSize.x);
-                            StartCoord.y = 0;
+                            StartCoord.x = m_realMapSize.x / 2;
+                            StartCoord.y = m_realMapSize.z - 1;
 
                             if ((m_abstractPlane[StartCoord.y, StartCoord.x] ^ PathDirection.None) == PathDirection.None)
                             {
@@ -265,7 +268,7 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
                         while (true)
                         {
                             EndCoord.x = random.Next(0, m_realMapSize.x);
-                            EndCoord.y = m_realMapSize.z - 1;
+                            EndCoord.y = 0;
 
                             if ((m_abstractPlane[EndCoord.y, EndCoord.x] ^ PathDirection.None) == PathDirection.None)
                             {
