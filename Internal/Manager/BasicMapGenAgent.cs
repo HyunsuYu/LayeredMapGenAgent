@@ -1146,15 +1146,15 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
             #endregion
 
             #region Calculate Edgy
-            //CalculateEdgy(ref mapActiveTypePlanes,
-            //              layerCount,
-            //              new Vector2Int()
-            //              {
-            //                  x = mapGenInputData.MapSize.x * mapGenInputData.SingleChunkSize.x * mapGenInputData.SingleRoomSize.x,
-            //                  y = mapGenInputData.MapSize.z * mapGenInputData.SingleChunkSize.z * mapGenInputData.SingleRoomSize.y
-            //              });
+            CalculateEdgy(ref mapActiveTypePlanes,
+                          layerCount,
+                          new Vector2Int()
+                          {
+                              x = mapGenInputData.MapSize.x * mapGenInputData.SingleChunkSize.x * mapGenInputData.SingleRoomSize.x,
+                              y = mapGenInputData.MapSize.z * mapGenInputData.SingleChunkSize.z * mapGenInputData.SingleRoomSize.y
+                          });
 
-            //Console.WriteLine("Edgy Calculation Complete");
+            Console.WriteLine("Edgy Calculation Complete");
             #endregion
 
             BasicMapGenOutput basicMapGenOutput = new BasicMapGenOutput();
@@ -1504,6 +1504,7 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
 
                     if (inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z, coord_x].HasFlag(MapActiveType.BIsNodeIsGateToBack) &&
                         coord_z - 1 >= 0 &&
+                        inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z - 1, coord_x].HasFlag(MapActiveType.BIsNodeActive) &&
                         !inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z - 1, coord_x].HasFlag(MapActiveType.BIsNodeIsGateToBack))
                     {
                         inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z, coord_x] |= MapActiveType.BIsNodeIsGateBottomEdge;
