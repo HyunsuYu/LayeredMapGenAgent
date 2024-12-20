@@ -1146,15 +1146,15 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
             #endregion
 
             #region Calculate Edgy
-            CalculateEdgy(ref mapActiveTypePlanes,
-                          layerCount,
-                          new Vector2Int()
-                          {
-                              x = mapGenInputData.MapSize.x * mapGenInputData.SingleChunkSize.x * mapGenInputData.SingleRoomSize.x,
-                              y = mapGenInputData.MapSize.z * mapGenInputData.SingleChunkSize.z * mapGenInputData.SingleRoomSize.y
-                          });
+            //CalculateEdgy(ref mapActiveTypePlanes,
+            //              layerCount,
+            //              new Vector2Int()
+            //              {
+            //                  x = mapGenInputData.MapSize.x * mapGenInputData.SingleChunkSize.x * mapGenInputData.SingleRoomSize.x,
+            //                  y = mapGenInputData.MapSize.z * mapGenInputData.SingleChunkSize.z * mapGenInputData.SingleRoomSize.y
+            //              });
 
-            Console.WriteLine("Edgy Calculation Complete");
+            //Console.WriteLine("Edgy Calculation Complete");
             #endregion
 
             BasicMapGenOutput basicMapGenOutput = new BasicMapGenOutput();
@@ -1482,26 +1482,6 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
             {
                 for (int coord_x = 0; coord_x < inputData.RealMapSize.x; coord_x++)
                 {
-                    //if (inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z, coord_x].HasFlag(MapActiveType.BIsNodeActive))
-                    //{
-                    //    if (coord_z - 1 >= 0 && !inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z - 1, coord_x].HasFlag(MapActiveType.BIsNodeActive))
-                    //    {
-                    //        inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z, coord_x] |= MapActiveType.BIsNodeIsTopEdge;
-                    //    }
-                    //    if (coord_z + 1 < inputData.RealMapSize.y && !inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z + 1, coord_x].HasFlag(MapActiveType.BIsNodeActive))
-                    //    {
-                    //        inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z, coord_x] |= MapActiveType.BIsNodeIsBottomEdge;
-                    //    }
-                    //    if (coord_x - 1 >= 0 && !inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z, coord_x - 1].HasFlag(MapActiveType.BIsNodeActive))
-                    //    {
-                    //        inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z, coord_x] |= MapActiveType.BIsNodeIsLeftEdge;
-                    //    }
-                    //    if (coord_x + 1 < inputData.RealMapSize.x && !inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z, coord_x + 1].HasFlag(MapActiveType.BIsNodeActive))
-                    //    {
-                    //        inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z, coord_x] |= MapActiveType.BIsNodeIsRightEdge;
-                    //    }
-                    //}
-
                     if (inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z, coord_x].HasFlag(MapActiveType.BIsNodeIsGateToBack) &&
                         coord_z - 1 >= 0 &&
                         inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z - 1, coord_x].HasFlag(MapActiveType.BIsNodeActive) &&
