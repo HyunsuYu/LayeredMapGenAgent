@@ -1,0 +1,142 @@
+{
+  "api/LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionData.html": {
+    "href": "api/LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionData.html",
+    "title": "Class RegionSelectionInputDataSpec.SingleRegionData | MapGenAgent",
+    "keywords": "Class RegionSelectionInputDataSpec.SingleRegionData Namespace LayeredMapGenAgent.Internal.Data Assembly LayeredMapGenAgent.dll public sealed class RegionSelectionInputDataSpec.SingleRegionData Inheritance object RegionSelectionInputDataSpec.SingleRegionData Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.ReferenceEquals(object, object) object.ToString() Fields IdealSpawnPos public Vector3 IdealSpawnPos Field Value Vector3 RegionBlendColor public Vector3 RegionBlendColor Field Value Vector3 RegionID public Guid RegionID Field Value Guid RegionName public string RegionName Field Value string WeightVector public Vector3 WeightVector Field Value Vector3"
+  },
+  "api/LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.html": {
+    "href": "api/LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.html",
+    "title": "Class RegionSelectionInputDataSpec | MapGenAgent",
+    "keywords": "Class RegionSelectionInputDataSpec Namespace LayeredMapGenAgent.Internal.Data Assembly LayeredMapGenAgent.dll public sealed class RegionSelectionInputDataSpec Inheritance object RegionSelectionInputDataSpec Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.ReferenceEquals(object, object) object.ToString() Fields BaseColor public Vector3 BaseColor Field Value Vector3 SingleRegionDatas public List<RegionSelectionInputDataSpec.SingleRegionData> SingleRegionDatas Field Value List<RegionSelectionInputDataSpec.SingleRegionData> Methods GetSingleRegionDataRainbowTable(in List<SingleRegionData>) [Obsolete] public static Dictionary<int, string> GetSingleRegionDataRainbowTable(in List<RegionSelectionInputDataSpec.SingleRegionData> singleRegionDatas) Parameters singleRegionDatas List<RegionSelectionInputDataSpec.SingleRegionData> Returns Dictionary<int, string>"
+  },
+  "api/LayeredMapGenAgent.Internal.Data.Vector2.html": {
+    "href": "api/LayeredMapGenAgent.Internal.Data.Vector2.html",
+    "title": "Struct Vector2 | MapGenAgent",
+    "keywords": "Struct Vector2 Namespace LayeredMapGenAgent.Internal.Data Assembly LayeredMapGenAgent.dll public struct Vector2 Inherited Members ValueType.Equals(object) ValueType.GetHashCode() ValueType.ToString() object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Fields x public float x Field Value float y public float y Field Value float"
+  },
+  "api/LayeredMapGenAgent.Internal.Data.Vector2Int.html": {
+    "href": "api/LayeredMapGenAgent.Internal.Data.Vector2Int.html",
+    "title": "Struct Vector2Int | MapGenAgent",
+    "keywords": "Struct Vector2Int Namespace LayeredMapGenAgent.Internal.Data Assembly LayeredMapGenAgent.dll public struct Vector2Int Inherited Members ValueType.Equals(object) ValueType.GetHashCode() ValueType.ToString() object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Constructors Vector2Int() public Vector2Int() Vector2Int(int, int) public Vector2Int(int x, int y) Parameters x int y int Properties one public static Vector2Int one { get; } Property Value Vector2Int x public int x { readonly get; set; } Property Value int y public int y { readonly get; set; } Property Value int zero public static Vector2Int zero { get; } Property Value Vector2Int Operators operator ==(Vector2Int, Vector2Int) public static bool operator ==(Vector2Int a, Vector2Int b) Parameters a Vector2Int b Vector2Int Returns bool operator !=(Vector2Int, Vector2Int) public static bool operator !=(Vector2Int a, Vector2Int b) Parameters a Vector2Int b Vector2Int Returns bool"
+  },
+  "api/LayeredMapGenAgent.Internal.Data.Vector3.html": {
+    "href": "api/LayeredMapGenAgent.Internal.Data.Vector3.html",
+    "title": "Struct Vector3 | MapGenAgent",
+    "keywords": "Struct Vector3 Namespace LayeredMapGenAgent.Internal.Data Assembly LayeredMapGenAgent.dll public struct Vector3 Inherited Members ValueType.Equals(object) ValueType.GetHashCode() ValueType.ToString() object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Fields x public float x Field Value float y public float y Field Value float z public float z Field Value float Properties magnitude public float magnitude { get; } Property Value float Methods Distance(in Vector3, in Vector3) public static float Distance(in Vector3 pos_0, in Vector3 pos_1) Parameters pos_0 Vector3 pos_1 Vector3 Returns float"
+  },
+  "api/LayeredMapGenAgent.Internal.Data.Vector3Int.html": {
+    "href": "api/LayeredMapGenAgent.Internal.Data.Vector3Int.html",
+    "title": "Struct Vector3Int | MapGenAgent",
+    "keywords": "Struct Vector3Int Namespace LayeredMapGenAgent.Internal.Data Assembly LayeredMapGenAgent.dll public struct Vector3Int Inherited Members ValueType.Equals(object) ValueType.GetHashCode() ValueType.ToString() object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Constructors Vector3Int() public Vector3Int() Vector3Int(int, int, int) public Vector3Int(int x, int y, int z) Parameters x int y int z int Properties x public int x { readonly get; set; } Property Value int y public int y { readonly get; set; } Property Value int z public int z { readonly get; set; } Property Value int Methods Distance(in Vector3Int, in Vector3Int) public static float Distance(in Vector3Int pos_0, in Vector3Int pos_1) Parameters pos_0 Vector3Int pos_1 Vector3Int Returns float Operators operator ==(Vector3Int, Vector3Int) public static bool operator ==(Vector3Int a, Vector3Int b) Parameters a Vector3Int b Vector3Int Returns bool operator !=(Vector3Int, Vector3Int) public static bool operator !=(Vector3Int a, Vector3Int b) Parameters a Vector3Int b Vector3Int Returns bool"
+  },
+  "api/LayeredMapGenAgent.Internal.Data.Vector4.html": {
+    "href": "api/LayeredMapGenAgent.Internal.Data.Vector4.html",
+    "title": "Struct Vector4 | MapGenAgent",
+    "keywords": "Struct Vector4 Namespace LayeredMapGenAgent.Internal.Data Assembly LayeredMapGenAgent.dll public struct Vector4 Inherited Members ValueType.Equals(object) ValueType.GetHashCode() ValueType.ToString() object.Equals(object, object) object.GetType() object.ReferenceEquals(object, object) Constructors Vector4() public Vector4() Vector4(float, float, float, float) public Vector4(float x, float y, float z, float w) Parameters x float y float z float w float Fields w public float w Field Value float x public float x Field Value float y public float y Field Value float z public float z Field Value float Operators operator ==(Vector4, Vector4) public static bool operator ==(Vector4 a, Vector4 b) Parameters a Vector4 b Vector4 Returns bool operator !=(Vector4, Vector4) public static bool operator !=(Vector4 a, Vector4 b) Parameters a Vector4 b Vector4 Returns bool"
+  },
+  "api/LayeredMapGenAgent.Internal.Data.html": {
+    "href": "api/LayeredMapGenAgent.Internal.Data.html",
+    "title": "Namespace LayeredMapGenAgent.Internal.Data | MapGenAgent",
+    "keywords": "Namespace LayeredMapGenAgent.Internal.Data Classes RegionSelectionInputDataSpec RegionSelectionInputDataSpec.SingleRegionData Structs Vector2 Vector2Int Vector3 Vector3Int Vector4"
+  },
+  "api/LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.html": {
+    "href": "api/LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.html",
+    "title": "Enum MapActiveType | MapGenAgent",
+    "keywords": "Enum MapActiveType Namespace LayeredMapGenAgent.Internal.Manager.BasicMap Assembly LayeredMapGenAgent.dll public enum MapActiveType : byte Fields BIsNodeActive = 1 BIsNodeIsBottomEdge = 8 BIsNodeIsGateBottomEdge = 64 BIsNodeIsGateToBack = 2 BIsNodeIsLeftEdge = 16 BIsNodeIsRightEdge = 32 BIsNodeIsTopEdge = 4"
+  },
+  "api/LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.html": {
+    "href": "api/LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.html",
+    "title": "Enum PathDirection | MapGenAgent",
+    "keywords": "Enum PathDirection Namespace LayeredMapGenAgent.Internal.Manager.BasicMap Assembly LayeredMapGenAgent.dll public enum PathDirection Fields Back = 16 Bottom = 64 Front = 8 Left = 2 NoDirectionalNode = 128 None = 0 Origin = 1 Right = 4 Top = 32"
+  },
+  "api/LayeredMapGenAgent.Internal.Manager.BasicMap.html": {
+    "href": "api/LayeredMapGenAgent.Internal.Manager.BasicMap.html",
+    "title": "Namespace LayeredMapGenAgent.Internal.Manager.BasicMap | MapGenAgent",
+    "keywords": "Namespace LayeredMapGenAgent.Internal.Manager.BasicMap Enums MapActiveType PathDirection"
+  },
+  "api/LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData.html": {
+    "href": "api/LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData.html",
+    "title": "Class RegionSelector.MapGenInputData | MapGenAgent",
+    "keywords": "Class RegionSelector.MapGenInputData Namespace LayeredMapGenAgent.Internal.Manager Assembly LayeredMapGenAgent.dll public sealed class RegionSelector.MapGenInputData Inheritance object RegionSelector.MapGenInputData Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.ReferenceEquals(object, object) object.ToString() Fields MapActiveCube public required List<MapActiveType[,]> MapActiveCube Field Value List<MapActiveType[,]> MapSize public required Vector3Int MapSize Field Value Vector3Int RegionSelectionInputDataSpec public required RegionSelectionInputDataSpec RegionSelectionInputDataSpec Field Value RegionSelectionInputDataSpec SingleChunkSize public required Vector3Int SingleChunkSize Field Value Vector3Int SingleRoomSize public required Vector2Int SingleRoomSize Field Value Vector2Int"
+  },
+  "api/LayeredMapGenAgent.Internal.Manager.RegionSelector.RegionSelectionOutput.html": {
+    "href": "api/LayeredMapGenAgent.Internal.Manager.RegionSelector.RegionSelectionOutput.html",
+    "title": "Class RegionSelector.RegionSelectionOutput | MapGenAgent",
+    "keywords": "Class RegionSelector.RegionSelectionOutput Namespace LayeredMapGenAgent.Internal.Manager Assembly LayeredMapGenAgent.dll public sealed class RegionSelector.RegionSelectionOutput Inheritance object RegionSelector.RegionSelectionOutput Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.ReferenceEquals(object, object) object.ToString() Fields RegionCube public List<byte[,]> RegionCube Field Value List<byte[,]>"
+  },
+  "api/LayeredMapGenAgent.Internal.Manager.RegionSelector.html": {
+    "href": "api/LayeredMapGenAgent.Internal.Manager.RegionSelector.html",
+    "title": "Class RegionSelector | MapGenAgent",
+    "keywords": "Class RegionSelector Namespace LayeredMapGenAgent.Internal.Manager Assembly LayeredMapGenAgent.dll public static class RegionSelector Inheritance object RegionSelector Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods CalculateRegion(in MapGenInputData) public static RegionSelector.RegionSelectionOutput CalculateRegion(in RegionSelector.MapGenInputData mapGenInputData) Parameters mapGenInputData RegionSelector.MapGenInputData Returns RegionSelector.RegionSelectionOutput"
+  },
+  "api/LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionInput.html": {
+    "href": "api/LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionInput.html",
+    "title": "Class TileEdgyDetector.TileEdgyDetectionInput | MapGenAgent",
+    "keywords": "Class TileEdgyDetector.TileEdgyDetectionInput Namespace LayeredMapGenAgent.Internal.Manager Assembly LayeredMapGenAgent.dll public sealed class TileEdgyDetector.TileEdgyDetectionInput Inheritance object TileEdgyDetector.TileEdgyDetectionInput Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.ReferenceEquals(object, object) object.ToString() Properties MapActiveCube public required List<MapActiveType[,]> MapActiveCube { get; set; } Property Value List<MapActiveType[,]> MapSize public required Vector3Int MapSize { get; set; } Property Value Vector3Int SingleChunkSize public required Vector3Int SingleChunkSize { get; set; } Property Value Vector3Int SingleRoomSize public required Vector2Int SingleRoomSize { get; set; } Property Value Vector2Int"
+  },
+  "api/LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionOutput.html": {
+    "href": "api/LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionOutput.html",
+    "title": "Class TileEdgyDetector.TileEdgyDetectionOutput | MapGenAgent",
+    "keywords": "Class TileEdgyDetector.TileEdgyDetectionOutput Namespace LayeredMapGenAgent.Internal.Manager Assembly LayeredMapGenAgent.dll public sealed class TileEdgyDetector.TileEdgyDetectionOutput Inheritance object TileEdgyDetector.TileEdgyDetectionOutput Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.ReferenceEquals(object, object) object.ToString() Constructors TileEdgyDetectionOutput() public TileEdgyDetectionOutput() Properties TileEdgyTypeCube public List<TileEdgyType[,]> TileEdgyTypeCube { get; } Property Value List<TileEdgyType[,]>"
+  },
+  "api/LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.html": {
+    "href": "api/LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.html",
+    "title": "Class TileEdgyDetector | MapGenAgent",
+    "keywords": "Class TileEdgyDetector Namespace LayeredMapGenAgent.Internal.Manager Assembly LayeredMapGenAgent.dll public static class TileEdgyDetector Inheritance object TileEdgyDetector Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods DetectTileEdgy(in TileEdgyDetectionInput) public static TileEdgyDetector.TileEdgyDetectionOutput DetectTileEdgy(in TileEdgyDetector.TileEdgyDetectionInput tileEdgyDetectionInput) Parameters tileEdgyDetectionInput TileEdgyDetector.TileEdgyDetectionInput Returns TileEdgyDetector.TileEdgyDetectionOutput Dispose() public static void Dispose()"
+  },
+  "api/LayeredMapGenAgent.Internal.Manager.TileEdgyType.html": {
+    "href": "api/LayeredMapGenAgent.Internal.Manager.TileEdgyType.html",
+    "title": "Enum TileEdgyType | MapGenAgent",
+    "keywords": "Enum TileEdgyType Namespace LayeredMapGenAgent.Internal.Manager Assembly LayeredMapGenAgent.dll public enum TileEdgyType : short Fields Back = 2 Back_B = 10 Back_BL = 26 Back_BLR = 58 Back_BR = 42 Back_L = 18 Back_LR = 50 Back_R = 34 Back_T = 6 Back_TB = 14 Back_TBL = 30 Back_TBLR = 62 Back_TBR = 46 Back_TL = 22 Back_TLR = 54 Back_TR = 38 Front = 256 Front_B = 264 Front_BL = 280 Front_BLR = 312 Front_BR = 296 Front_L = 272 Front_LR = 304 Front_R = 288 Front_T = 260 Front_TB = 268 Front_TBL = 284 Front_TBLR = 318 Front_TBR = 300 Front_TL = 276 Front_TLR = 308 Front_TR = 292 Nor = 1 Nor_B = 9 Nor_BL = 25 Nor_BLR = 57 Nor_BR = 41 Nor_L = 17 Nor_LR = 49 Nor_R = 33 Nor_T = 5 Nor_TB = 13 Nor_TBL = 29 Nor_TBLR = 61 Nor_TBR = 45 Nor_TL = 21 Nor_TLR = 53 Nor_TR = 37 StairToGoBackLayer = 64 StairToGoFrontLayer = 512"
+  },
+  "api/LayeredMapGenAgent.Internal.Manager.html": {
+    "href": "api/LayeredMapGenAgent.Internal.Manager.html",
+    "title": "Namespace LayeredMapGenAgent.Internal.Manager | MapGenAgent",
+    "keywords": "Namespace LayeredMapGenAgent.Internal.Manager Classes RegionSelector RegionSelector.MapGenInputData RegionSelector.RegionSelectionOutput TileEdgyDetector TileEdgyDetector.TileEdgyDetectionInput TileEdgyDetector.TileEdgyDetectionOutput Enums TileEdgyType"
+  },
+  "api/LayeredMapGenAgent.Public.Data.RawBitmap.html": {
+    "href": "api/LayeredMapGenAgent.Public.Data.RawBitmap.html",
+    "title": "Class RawBitmap | MapGenAgent",
+    "keywords": "Class RawBitmap Namespace LayeredMapGenAgent.Public.Data Assembly LayeredMapGenAgent.dll public sealed class RawBitmap Inheritance object RawBitmap Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.ReferenceEquals(object, object) object.ToString() Constructors RawBitmap(int, int) public RawBitmap(int width, int height) Parameters width int height int Fields Height public readonly int Height Field Value int Width public readonly int Width Field Value int Methods GetBitmapBytes() public byte[] GetBitmapBytes() Returns byte[] Save(string) public void Save(string filename) Parameters filename string SetPixel(int, int, RawColor) public void SetPixel(int x, int y, RawColor color) Parameters x int y int color RawColor"
+  },
+  "api/LayeredMapGenAgent.Public.Data.RawColor.html": {
+    "href": "api/LayeredMapGenAgent.Public.Data.RawColor.html",
+    "title": "Class RawColor | MapGenAgent",
+    "keywords": "Class RawColor Namespace LayeredMapGenAgent.Public.Data Assembly LayeredMapGenAgent.dll public sealed class RawColor Inheritance object RawColor Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.ReferenceEquals(object, object) object.ToString() Constructors RawColor() public RawColor() RawColor(byte, byte, byte) public RawColor(byte r, byte g, byte b) Parameters r byte g byte b byte Fields B public readonly byte B Field Value byte G public readonly byte G Field Value byte R public readonly byte R Field Value byte Methods Gray(byte) public static RawColor Gray(byte value) Parameters value byte Returns RawColor Random(Random) public static RawColor Random(Random rand) Parameters rand Random Returns RawColor"
+  },
+  "api/LayeredMapGenAgent.Public.Data.html": {
+    "href": "api/LayeredMapGenAgent.Public.Data.html",
+    "title": "Namespace LayeredMapGenAgent.Public.Data | MapGenAgent",
+    "keywords": "Namespace LayeredMapGenAgent.Public.Data Classes RawBitmap RawColor"
+  },
+  "api/LayeredMapGenAgent.Public.Manager.ChiefMapGenAgentManager.html": {
+    "href": "api/LayeredMapGenAgent.Public.Manager.ChiefMapGenAgentManager.html",
+    "title": "Class ChiefMapGenAgentManager | MapGenAgent",
+    "keywords": "Class ChiefMapGenAgentManager Namespace LayeredMapGenAgent.Public.Manager Assembly LayeredMapGenAgent.dll public class ChiefMapGenAgentManager Inheritance object ChiefMapGenAgentManager Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods Main(string[]) public static void Main(string[] args) Parameters args string[]"
+  },
+  "api/LayeredMapGenAgent.Public.Manager.html": {
+    "href": "api/LayeredMapGenAgent.Public.Manager.html",
+    "title": "Namespace LayeredMapGenAgent.Public.Manager | MapGenAgent",
+    "keywords": "Namespace LayeredMapGenAgent.Public.Manager Classes ChiefMapGenAgentManager"
+  },
+  "docs/getting-started.html": {
+    "href": "docs/getting-started.html",
+    "title": "Forgotten Game Dev Project Org | MapGenAgent",
+    "keywords": "Forgotten Game Dev Project Org Abstract This Organization's primary goal is to manage the code base related to the game project Forgotten. It also provides convenience features such as related documentation and other materials Usage [!IMPORTANT] This project is for Forgotten project development in Unity. Informs that no other game engine supports it Common Dependency UnityEngine.dll Newtonsoft.Json.dll Each repository may have additional unique dependencies Features Common Utils Resource Management Map Generation Tool In-Game Management Map Streaming Management PC/NPC Movement Module Tree Fogotten ├── Common Util │ └── <Repo> CommonUtilLib ├── Resource Management │ ├── <Repo> ResourcePathManagementLib │ └── <Repo> ResourceDataManagementLib ├── Map Generation │ ├── <Repo> ChiefMapGenerationLib │ └── <Repo> MapGenerationAgent ├── Tool │ └── <Repo> MapGenerationInputTool └── In-Game Management ├── Map Streaming Management │ └── <Repo> MapStreamingManagementLib └── PC/NPC Movement └── <Repo> PcNpcMovementLib Hands-On Manual"
+  },
+  "docs/introduction.html": {
+    "href": "docs/introduction.html",
+    "title": "Introduction | MapGenAgent",
+    "keywords": "Introduction"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "Test | MapGenAgent",
+    "keywords": "Test sample"
+  },
+  "test/clear.html": {
+    "href": "test/clear.html",
+    "title": "Clear | MapGenAgent",
+    "keywords": "Clear"
+  }
+}

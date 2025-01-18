@@ -37,7 +37,7 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
 
         BIsNodeIsGateBottomEdge = 0b0100_0000,
 
-        BIsNodeMiddleLayerGenerationEnable = 0b1000_0000,
+        //BIsNodeMiddleLayerGenerationEnable = 0b1000_0000,
     }
     
 
@@ -209,7 +209,7 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
                         for (int detailCoord_x = 0; detailCoord_x < m_singleRoomSize.x; detailCoord_x++)
                         {
                             mapActiveCube[coord_y * m_singleRoomSize.y + detailCoord_y, coord_x * m_singleRoomSize.x + detailCoord_x] = m_detailPlane[coord_y, coord_x].BlockActiveTable[detailCoord_y, detailCoord_x];
-                            mapActiveCube[coord_y * m_singleRoomSize.y + detailCoord_y, coord_x * m_singleRoomSize.x + detailCoord_x] |= MapActiveType.BIsNodeMiddleLayerGenerationEnable;
+                            //mapActiveCube[coord_y * m_singleRoomSize.y + detailCoord_y, coord_x * m_singleRoomSize.x + detailCoord_x] |= MapActiveType.BIsNodeMiddleLayerGenerationEnable;
                         }
                     }
                 }
@@ -984,7 +984,7 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
         }
     }
 
-    public static class BasicMapGenerator
+    internal static class BasicMapGenerator
     {
         public sealed class MapGenInputData
         {
@@ -1487,7 +1487,7 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
                         inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z - 1, coord_x].HasFlag(MapActiveType.BIsNodeActive) &&
                         !inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z - 1, coord_x].HasFlag(MapActiveType.BIsNodeIsGateToBack))
                     {
-                        inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z, coord_x] |= MapActiveType.BIsNodeIsGateBottomEdge;
+                        //inputData.MapActiveTypePlanes[inputData.CurLayerIndex][coord_z, coord_x] |= MapActiveType.BIsNodeIsGateBottomEdge;
                     }
                 }
             }

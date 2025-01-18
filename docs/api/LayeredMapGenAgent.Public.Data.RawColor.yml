@@ -1,0 +1,546 @@
+### YamlMime:ManagedReference
+items:
+- uid: LayeredMapGenAgent.Public.Data.RawColor
+  commentId: T:LayeredMapGenAgent.Public.Data.RawColor
+  id: RawColor
+  parent: LayeredMapGenAgent.Public.Data
+  children:
+  - LayeredMapGenAgent.Public.Data.RawColor.#ctor
+  - LayeredMapGenAgent.Public.Data.RawColor.#ctor(System.Byte,System.Byte,System.Byte)
+  - LayeredMapGenAgent.Public.Data.RawColor.B
+  - LayeredMapGenAgent.Public.Data.RawColor.G
+  - LayeredMapGenAgent.Public.Data.RawColor.Gray(System.Byte)
+  - LayeredMapGenAgent.Public.Data.RawColor.R
+  - LayeredMapGenAgent.Public.Data.RawColor.Random(System.Random)
+  langs:
+  - csharp
+  - vb
+  name: RawColor
+  nameWithType: RawColor
+  fullName: LayeredMapGenAgent.Public.Data.RawColor
+  type: Class
+  source:
+    remote:
+      path: Public/Data/RawBitmap.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: RawColor
+    path: ../Public/Data/RawBitmap.cs
+    startLine: 9
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Public.Data
+  syntax:
+    content: public sealed class RawColor
+    content.vb: Public NotInheritable Class RawColor
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: LayeredMapGenAgent.Public.Data.RawColor.R
+  commentId: F:LayeredMapGenAgent.Public.Data.RawColor.R
+  id: R
+  parent: LayeredMapGenAgent.Public.Data.RawColor
+  langs:
+  - csharp
+  - vb
+  name: R
+  nameWithType: RawColor.R
+  fullName: LayeredMapGenAgent.Public.Data.RawColor.R
+  type: Field
+  source:
+    remote:
+      path: Public/Data/RawBitmap.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: R
+    path: ../Public/Data/RawBitmap.cs
+    startLine: 11
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Public.Data
+  syntax:
+    content: public readonly byte R
+    return:
+      type: System.Byte
+    content.vb: Public ReadOnly R As Byte
+- uid: LayeredMapGenAgent.Public.Data.RawColor.G
+  commentId: F:LayeredMapGenAgent.Public.Data.RawColor.G
+  id: G
+  parent: LayeredMapGenAgent.Public.Data.RawColor
+  langs:
+  - csharp
+  - vb
+  name: G
+  nameWithType: RawColor.G
+  fullName: LayeredMapGenAgent.Public.Data.RawColor.G
+  type: Field
+  source:
+    remote:
+      path: Public/Data/RawBitmap.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: G
+    path: ../Public/Data/RawBitmap.cs
+    startLine: 11
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Public.Data
+  syntax:
+    content: public readonly byte G
+    return:
+      type: System.Byte
+    content.vb: Public ReadOnly G As Byte
+- uid: LayeredMapGenAgent.Public.Data.RawColor.B
+  commentId: F:LayeredMapGenAgent.Public.Data.RawColor.B
+  id: B
+  parent: LayeredMapGenAgent.Public.Data.RawColor
+  langs:
+  - csharp
+  - vb
+  name: B
+  nameWithType: RawColor.B
+  fullName: LayeredMapGenAgent.Public.Data.RawColor.B
+  type: Field
+  source:
+    remote:
+      path: Public/Data/RawBitmap.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: B
+    path: ../Public/Data/RawBitmap.cs
+    startLine: 11
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Public.Data
+  syntax:
+    content: public readonly byte B
+    return:
+      type: System.Byte
+    content.vb: Public ReadOnly B As Byte
+- uid: LayeredMapGenAgent.Public.Data.RawColor.#ctor
+  commentId: M:LayeredMapGenAgent.Public.Data.RawColor.#ctor
+  id: '#ctor'
+  parent: LayeredMapGenAgent.Public.Data.RawColor
+  langs:
+  - csharp
+  - vb
+  name: RawColor()
+  nameWithType: RawColor.RawColor()
+  fullName: LayeredMapGenAgent.Public.Data.RawColor.RawColor()
+  type: Constructor
+  source:
+    remote:
+      path: Public/Data/RawBitmap.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: .ctor
+    path: ../Public/Data/RawBitmap.cs
+    startLine: 13
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Public.Data
+  syntax:
+    content: public RawColor()
+    content.vb: Public Sub New()
+  overload: LayeredMapGenAgent.Public.Data.RawColor.#ctor*
+  nameWithType.vb: RawColor.New()
+  fullName.vb: LayeredMapGenAgent.Public.Data.RawColor.New()
+  name.vb: New()
+- uid: LayeredMapGenAgent.Public.Data.RawColor.#ctor(System.Byte,System.Byte,System.Byte)
+  commentId: M:LayeredMapGenAgent.Public.Data.RawColor.#ctor(System.Byte,System.Byte,System.Byte)
+  id: '#ctor(System.Byte,System.Byte,System.Byte)'
+  parent: LayeredMapGenAgent.Public.Data.RawColor
+  langs:
+  - csharp
+  - vb
+  name: RawColor(byte, byte, byte)
+  nameWithType: RawColor.RawColor(byte, byte, byte)
+  fullName: LayeredMapGenAgent.Public.Data.RawColor.RawColor(byte, byte, byte)
+  type: Constructor
+  source:
+    remote:
+      path: Public/Data/RawBitmap.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: .ctor
+    path: ../Public/Data/RawBitmap.cs
+    startLine: 17
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Public.Data
+  syntax:
+    content: public RawColor(byte r, byte g, byte b)
+    parameters:
+    - id: r
+      type: System.Byte
+    - id: g
+      type: System.Byte
+    - id: b
+      type: System.Byte
+    content.vb: Public Sub New(r As Byte, g As Byte, b As Byte)
+  overload: LayeredMapGenAgent.Public.Data.RawColor.#ctor*
+  nameWithType.vb: RawColor.New(Byte, Byte, Byte)
+  fullName.vb: LayeredMapGenAgent.Public.Data.RawColor.New(Byte, Byte, Byte)
+  name.vb: New(Byte, Byte, Byte)
+- uid: LayeredMapGenAgent.Public.Data.RawColor.Random(System.Random)
+  commentId: M:LayeredMapGenAgent.Public.Data.RawColor.Random(System.Random)
+  id: Random(System.Random)
+  parent: LayeredMapGenAgent.Public.Data.RawColor
+  langs:
+  - csharp
+  - vb
+  name: Random(Random)
+  nameWithType: RawColor.Random(Random)
+  fullName: LayeredMapGenAgent.Public.Data.RawColor.Random(System.Random)
+  type: Method
+  source:
+    remote:
+      path: Public/Data/RawBitmap.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Random
+    path: ../Public/Data/RawBitmap.cs
+    startLine: 22
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Public.Data
+  syntax:
+    content: public static RawColor Random(Random rand)
+    parameters:
+    - id: rand
+      type: System.Random
+    return:
+      type: LayeredMapGenAgent.Public.Data.RawColor
+    content.vb: Public Shared Function Random(rand As Random) As RawColor
+  overload: LayeredMapGenAgent.Public.Data.RawColor.Random*
+- uid: LayeredMapGenAgent.Public.Data.RawColor.Gray(System.Byte)
+  commentId: M:LayeredMapGenAgent.Public.Data.RawColor.Gray(System.Byte)
+  id: Gray(System.Byte)
+  parent: LayeredMapGenAgent.Public.Data.RawColor
+  langs:
+  - csharp
+  - vb
+  name: Gray(byte)
+  nameWithType: RawColor.Gray(byte)
+  fullName: LayeredMapGenAgent.Public.Data.RawColor.Gray(byte)
+  type: Method
+  source:
+    remote:
+      path: Public/Data/RawBitmap.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Gray
+    path: ../Public/Data/RawBitmap.cs
+    startLine: 30
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Public.Data
+  syntax:
+    content: public static RawColor Gray(byte value)
+    parameters:
+    - id: value
+      type: System.Byte
+    return:
+      type: LayeredMapGenAgent.Public.Data.RawColor
+    content.vb: Public Shared Function Gray(value As Byte) As RawColor
+  overload: LayeredMapGenAgent.Public.Data.RawColor.Gray*
+  nameWithType.vb: RawColor.Gray(Byte)
+  fullName.vb: LayeredMapGenAgent.Public.Data.RawColor.Gray(Byte)
+  name.vb: Gray(Byte)
+references:
+- uid: LayeredMapGenAgent.Public.Data
+  commentId: N:LayeredMapGenAgent.Public.Data
+  href: LayeredMapGenAgent.html
+  name: LayeredMapGenAgent.Public.Data
+  nameWithType: LayeredMapGenAgent.Public.Data
+  fullName: LayeredMapGenAgent.Public.Data
+  spec.csharp:
+  - uid: LayeredMapGenAgent
+    name: LayeredMapGenAgent
+    href: LayeredMapGenAgent.html
+  - name: .
+  - uid: LayeredMapGenAgent.Public
+    name: Public
+    href: LayeredMapGenAgent.Public.html
+  - name: .
+  - uid: LayeredMapGenAgent.Public.Data
+    name: Data
+    href: LayeredMapGenAgent.Public.Data.html
+  spec.vb:
+  - uid: LayeredMapGenAgent
+    name: LayeredMapGenAgent
+    href: LayeredMapGenAgent.html
+  - name: .
+  - uid: LayeredMapGenAgent.Public
+    name: Public
+    href: LayeredMapGenAgent.Public.html
+  - name: .
+  - uid: LayeredMapGenAgent.Public.Data
+    name: Data
+    href: LayeredMapGenAgent.Public.Data.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: LayeredMapGenAgent.Public.Data.RawColor.#ctor*
+  commentId: Overload:LayeredMapGenAgent.Public.Data.RawColor.#ctor
+  href: LayeredMapGenAgent.Public.Data.RawColor.html#LayeredMapGenAgent_Public_Data_RawColor__ctor
+  name: RawColor
+  nameWithType: RawColor.RawColor
+  fullName: LayeredMapGenAgent.Public.Data.RawColor.RawColor
+  nameWithType.vb: RawColor.New
+  fullName.vb: LayeredMapGenAgent.Public.Data.RawColor.New
+  name.vb: New
+- uid: LayeredMapGenAgent.Public.Data.RawColor.Random*
+  commentId: Overload:LayeredMapGenAgent.Public.Data.RawColor.Random
+  href: LayeredMapGenAgent.Public.Data.RawColor.html#LayeredMapGenAgent_Public_Data_RawColor_Random_System_Random_
+  name: Random
+  nameWithType: RawColor.Random
+  fullName: LayeredMapGenAgent.Public.Data.RawColor.Random
+- uid: System.Random
+  commentId: T:System.Random
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.random
+  name: Random
+  nameWithType: Random
+  fullName: System.Random
+- uid: LayeredMapGenAgent.Public.Data.RawColor
+  commentId: T:LayeredMapGenAgent.Public.Data.RawColor
+  parent: LayeredMapGenAgent.Public.Data
+  href: LayeredMapGenAgent.Public.Data.RawColor.html
+  name: RawColor
+  nameWithType: RawColor
+  fullName: LayeredMapGenAgent.Public.Data.RawColor
+- uid: LayeredMapGenAgent.Public.Data.RawColor.Gray*
+  commentId: Overload:LayeredMapGenAgent.Public.Data.RawColor.Gray
+  href: LayeredMapGenAgent.Public.Data.RawColor.html#LayeredMapGenAgent_Public_Data_RawColor_Gray_System_Byte_
+  name: Gray
+  nameWithType: RawColor.Gray
+  fullName: LayeredMapGenAgent.Public.Data.RawColor.Gray

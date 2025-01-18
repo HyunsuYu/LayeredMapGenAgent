@@ -1,0 +1,56 @@
+### YamlMime:TableOfContent
+items:
+- uid: LayeredMapGenAgent.Internal.Data
+  name: LayeredMapGenAgent.Internal.Data
+  items:
+  - uid: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec
+    name: RegionSelectionInputDataSpec
+  - uid: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionData
+    name: RegionSelectionInputDataSpec.SingleRegionData
+  - uid: LayeredMapGenAgent.Internal.Data.Vector2
+    name: Vector2
+  - uid: LayeredMapGenAgent.Internal.Data.Vector2Int
+    name: Vector2Int
+  - uid: LayeredMapGenAgent.Internal.Data.Vector3
+    name: Vector3
+  - uid: LayeredMapGenAgent.Internal.Data.Vector3Int
+    name: Vector3Int
+  - uid: LayeredMapGenAgent.Internal.Data.Vector4
+    name: Vector4
+- uid: LayeredMapGenAgent.Internal.Manager
+  name: LayeredMapGenAgent.Internal.Manager
+  items:
+  - uid: LayeredMapGenAgent.Internal.Manager.RegionSelector
+    name: RegionSelector
+  - uid: LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData
+    name: RegionSelector.MapGenInputData
+  - uid: LayeredMapGenAgent.Internal.Manager.RegionSelector.RegionSelectionOutput
+    name: RegionSelector.RegionSelectionOutput
+  - uid: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector
+    name: TileEdgyDetector
+  - uid: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionInput
+    name: TileEdgyDetector.TileEdgyDetectionInput
+  - uid: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionOutput
+    name: TileEdgyDetector.TileEdgyDetectionOutput
+  - uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+    name: TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.BasicMap
+  name: LayeredMapGenAgent.Internal.Manager.BasicMap
+  items:
+  - uid: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType
+    name: MapActiveType
+  - uid: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection
+    name: PathDirection
+- uid: LayeredMapGenAgent.Public.Data
+  name: LayeredMapGenAgent.Public.Data
+  items:
+  - uid: LayeredMapGenAgent.Public.Data.RawBitmap
+    name: RawBitmap
+  - uid: LayeredMapGenAgent.Public.Data.RawColor
+    name: RawColor
+- uid: LayeredMapGenAgent.Public.Manager
+  name: LayeredMapGenAgent.Public.Manager
+  items:
+  - uid: LayeredMapGenAgent.Public.Manager.ChiefMapGenAgentManager
+    name: ChiefMapGenAgentManager
+memberLayout: SamePage

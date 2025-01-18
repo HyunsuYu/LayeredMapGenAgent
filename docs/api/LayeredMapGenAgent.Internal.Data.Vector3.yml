@@ -1,0 +1,464 @@
+### YamlMime:ManagedReference
+items:
+- uid: LayeredMapGenAgent.Internal.Data.Vector3
+  commentId: T:LayeredMapGenAgent.Internal.Data.Vector3
+  id: Vector3
+  parent: LayeredMapGenAgent.Internal.Data
+  children:
+  - LayeredMapGenAgent.Internal.Data.Vector3.Distance(LayeredMapGenAgent.Internal.Data.Vector3@,LayeredMapGenAgent.Internal.Data.Vector3@)
+  - LayeredMapGenAgent.Internal.Data.Vector3.magnitude
+  - LayeredMapGenAgent.Internal.Data.Vector3.x
+  - LayeredMapGenAgent.Internal.Data.Vector3.y
+  - LayeredMapGenAgent.Internal.Data.Vector3.z
+  langs:
+  - csharp
+  - vb
+  name: Vector3
+  nameWithType: Vector3
+  fullName: LayeredMapGenAgent.Internal.Data.Vector3
+  type: Struct
+  source:
+    remote:
+      path: Internal/Data/Vectors.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Vector3
+    path: ../Internal/Data/Vectors.cs
+    startLine: 100
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Data
+  syntax:
+    content: public struct Vector3
+    content.vb: Public Structure Vector3
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: LayeredMapGenAgent.Internal.Data.Vector3.x
+  commentId: F:LayeredMapGenAgent.Internal.Data.Vector3.x
+  id: x
+  parent: LayeredMapGenAgent.Internal.Data.Vector3
+  langs:
+  - csharp
+  - vb
+  name: x
+  nameWithType: Vector3.x
+  fullName: LayeredMapGenAgent.Internal.Data.Vector3.x
+  type: Field
+  source:
+    remote:
+      path: Internal/Data/Vectors.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: x
+    path: ../Internal/Data/Vectors.cs
+    startLine: 102
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Data
+  syntax:
+    content: public float x
+    return:
+      type: System.Single
+    content.vb: Public x As Single
+- uid: LayeredMapGenAgent.Internal.Data.Vector3.y
+  commentId: F:LayeredMapGenAgent.Internal.Data.Vector3.y
+  id: y
+  parent: LayeredMapGenAgent.Internal.Data.Vector3
+  langs:
+  - csharp
+  - vb
+  name: y
+  nameWithType: Vector3.y
+  fullName: LayeredMapGenAgent.Internal.Data.Vector3.y
+  type: Field
+  source:
+    remote:
+      path: Internal/Data/Vectors.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: y
+    path: ../Internal/Data/Vectors.cs
+    startLine: 102
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Data
+  syntax:
+    content: public float y
+    return:
+      type: System.Single
+    content.vb: Public y As Single
+- uid: LayeredMapGenAgent.Internal.Data.Vector3.z
+  commentId: F:LayeredMapGenAgent.Internal.Data.Vector3.z
+  id: z
+  parent: LayeredMapGenAgent.Internal.Data.Vector3
+  langs:
+  - csharp
+  - vb
+  name: z
+  nameWithType: Vector3.z
+  fullName: LayeredMapGenAgent.Internal.Data.Vector3.z
+  type: Field
+  source:
+    remote:
+      path: Internal/Data/Vectors.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: z
+    path: ../Internal/Data/Vectors.cs
+    startLine: 102
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Data
+  syntax:
+    content: public float z
+    return:
+      type: System.Single
+    content.vb: Public z As Single
+- uid: LayeredMapGenAgent.Internal.Data.Vector3.magnitude
+  commentId: P:LayeredMapGenAgent.Internal.Data.Vector3.magnitude
+  id: magnitude
+  parent: LayeredMapGenAgent.Internal.Data.Vector3
+  langs:
+  - csharp
+  - vb
+  name: magnitude
+  nameWithType: Vector3.magnitude
+  fullName: LayeredMapGenAgent.Internal.Data.Vector3.magnitude
+  type: Property
+  source:
+    remote:
+      path: Internal/Data/Vectors.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: magnitude
+    path: ../Internal/Data/Vectors.cs
+    startLine: 105
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Data
+  syntax:
+    content: public float magnitude { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property magnitude As Single
+  overload: LayeredMapGenAgent.Internal.Data.Vector3.magnitude*
+- uid: LayeredMapGenAgent.Internal.Data.Vector3.Distance(LayeredMapGenAgent.Internal.Data.Vector3@,LayeredMapGenAgent.Internal.Data.Vector3@)
+  commentId: M:LayeredMapGenAgent.Internal.Data.Vector3.Distance(LayeredMapGenAgent.Internal.Data.Vector3@,LayeredMapGenAgent.Internal.Data.Vector3@)
+  id: Distance(LayeredMapGenAgent.Internal.Data.Vector3@,LayeredMapGenAgent.Internal.Data.Vector3@)
+  parent: LayeredMapGenAgent.Internal.Data.Vector3
+  langs:
+  - csharp
+  - vb
+  name: Distance(in Vector3, in Vector3)
+  nameWithType: Vector3.Distance(in Vector3, in Vector3)
+  fullName: LayeredMapGenAgent.Internal.Data.Vector3.Distance(in LayeredMapGenAgent.Internal.Data.Vector3, in LayeredMapGenAgent.Internal.Data.Vector3)
+  type: Method
+  source:
+    remote:
+      path: Internal/Data/Vectors.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Distance
+    path: ../Internal/Data/Vectors.cs
+    startLine: 115
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Data
+  syntax:
+    content: public static float Distance(in Vector3 pos_0, in Vector3 pos_1)
+    parameters:
+    - id: pos_0
+      type: LayeredMapGenAgent.Internal.Data.Vector3
+    - id: pos_1
+      type: LayeredMapGenAgent.Internal.Data.Vector3
+    return:
+      type: System.Single
+    content.vb: Public Shared Function Distance(pos_0 As Vector3, pos_1 As Vector3) As Single
+  overload: LayeredMapGenAgent.Internal.Data.Vector3.Distance*
+  nameWithType.vb: Vector3.Distance(Vector3, Vector3)
+  fullName.vb: LayeredMapGenAgent.Internal.Data.Vector3.Distance(LayeredMapGenAgent.Internal.Data.Vector3, LayeredMapGenAgent.Internal.Data.Vector3)
+  name.vb: Distance(Vector3, Vector3)
+references:
+- uid: LayeredMapGenAgent.Internal.Data
+  commentId: N:LayeredMapGenAgent.Internal.Data
+  href: LayeredMapGenAgent.html
+  name: LayeredMapGenAgent.Internal.Data
+  nameWithType: LayeredMapGenAgent.Internal.Data
+  fullName: LayeredMapGenAgent.Internal.Data
+  spec.csharp:
+  - uid: LayeredMapGenAgent
+    name: LayeredMapGenAgent
+    href: LayeredMapGenAgent.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal
+    name: Internal
+    href: LayeredMapGenAgent.Internal.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Data
+    name: Data
+    href: LayeredMapGenAgent.Internal.Data.html
+  spec.vb:
+  - uid: LayeredMapGenAgent
+    name: LayeredMapGenAgent
+    href: LayeredMapGenAgent.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal
+    name: Internal
+    href: LayeredMapGenAgent.Internal.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Data
+    name: Data
+    href: LayeredMapGenAgent.Internal.Data.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: LayeredMapGenAgent.Internal.Data.Vector3.magnitude*
+  commentId: Overload:LayeredMapGenAgent.Internal.Data.Vector3.magnitude
+  href: LayeredMapGenAgent.Internal.Data.Vector3.html#LayeredMapGenAgent_Internal_Data_Vector3_magnitude
+  name: magnitude
+  nameWithType: Vector3.magnitude
+  fullName: LayeredMapGenAgent.Internal.Data.Vector3.magnitude
+- uid: LayeredMapGenAgent.Internal.Data.Vector3.Distance*
+  commentId: Overload:LayeredMapGenAgent.Internal.Data.Vector3.Distance
+  href: LayeredMapGenAgent.Internal.Data.Vector3.html#LayeredMapGenAgent_Internal_Data_Vector3_Distance_LayeredMapGenAgent_Internal_Data_Vector3__LayeredMapGenAgent_Internal_Data_Vector3__
+  name: Distance
+  nameWithType: Vector3.Distance
+  fullName: LayeredMapGenAgent.Internal.Data.Vector3.Distance
+- uid: LayeredMapGenAgent.Internal.Data.Vector3
+  commentId: T:LayeredMapGenAgent.Internal.Data.Vector3
+  parent: LayeredMapGenAgent.Internal.Data
+  href: LayeredMapGenAgent.Internal.Data.Vector3.html
+  name: Vector3
+  nameWithType: Vector3
+  fullName: LayeredMapGenAgent.Internal.Data.Vector3

@@ -1,0 +1,317 @@
+### YamlMime:ManagedReference
+items:
+- uid: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection
+  commentId: T:LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection
+  id: PathDirection
+  parent: LayeredMapGenAgent.Internal.Manager.BasicMap
+  children:
+  - LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.Back
+  - LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.Bottom
+  - LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.Front
+  - LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.Left
+  - LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.NoDirectionalNode
+  - LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.None
+  - LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.Origin
+  - LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.Right
+  - LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.Top
+  langs:
+  - csharp
+  - vb
+  name: PathDirection
+  nameWithType: PathDirection
+  fullName: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection
+  type: Enum
+  source:
+    remote:
+      path: Internal/Manager/BasicMapGenAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: PathDirection
+    path: ../Internal/Manager/BasicMapGenAgent.cs
+    startLine: 12
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager.BasicMap
+  syntax:
+    content: public enum PathDirection
+    content.vb: Public Enum PathDirection
+- uid: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.None
+  commentId: F:LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.None
+  id: None
+  parent: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: PathDirection.None
+  fullName: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.None
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/BasicMapGenAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: None
+    path: ../Internal/Manager/BasicMapGenAgent.cs
+    startLine: 14
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager.BasicMap
+  syntax:
+    content: None = 0
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection
+- uid: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.Origin
+  commentId: F:LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.Origin
+  id: Origin
+  parent: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection
+  langs:
+  - csharp
+  - vb
+  name: Origin
+  nameWithType: PathDirection.Origin
+  fullName: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.Origin
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/BasicMapGenAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Origin
+    path: ../Internal/Manager/BasicMapGenAgent.cs
+    startLine: 15
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager.BasicMap
+  syntax:
+    content: Origin = 1
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection
+- uid: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.Left
+  commentId: F:LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.Left
+  id: Left
+  parent: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection
+  langs:
+  - csharp
+  - vb
+  name: Left
+  nameWithType: PathDirection.Left
+  fullName: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.Left
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/BasicMapGenAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Left
+    path: ../Internal/Manager/BasicMapGenAgent.cs
+    startLine: 16
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager.BasicMap
+  syntax:
+    content: Left = 2
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection
+- uid: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.Right
+  commentId: F:LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.Right
+  id: Right
+  parent: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection
+  langs:
+  - csharp
+  - vb
+  name: Right
+  nameWithType: PathDirection.Right
+  fullName: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.Right
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/BasicMapGenAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Right
+    path: ../Internal/Manager/BasicMapGenAgent.cs
+    startLine: 17
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager.BasicMap
+  syntax:
+    content: Right = 4
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection
+- uid: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.Front
+  commentId: F:LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.Front
+  id: Front
+  parent: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection
+  langs:
+  - csharp
+  - vb
+  name: Front
+  nameWithType: PathDirection.Front
+  fullName: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.Front
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/BasicMapGenAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Front
+    path: ../Internal/Manager/BasicMapGenAgent.cs
+    startLine: 18
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager.BasicMap
+  syntax:
+    content: Front = 8
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection
+- uid: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.Back
+  commentId: F:LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.Back
+  id: Back
+  parent: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection
+  langs:
+  - csharp
+  - vb
+  name: Back
+  nameWithType: PathDirection.Back
+  fullName: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.Back
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/BasicMapGenAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Back
+    path: ../Internal/Manager/BasicMapGenAgent.cs
+    startLine: 19
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager.BasicMap
+  syntax:
+    content: Back = 16
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection
+- uid: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.Top
+  commentId: F:LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.Top
+  id: Top
+  parent: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection
+  langs:
+  - csharp
+  - vb
+  name: Top
+  nameWithType: PathDirection.Top
+  fullName: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.Top
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/BasicMapGenAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Top
+    path: ../Internal/Manager/BasicMapGenAgent.cs
+    startLine: 20
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager.BasicMap
+  syntax:
+    content: Top = 32
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection
+- uid: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.Bottom
+  commentId: F:LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.Bottom
+  id: Bottom
+  parent: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection
+  langs:
+  - csharp
+  - vb
+  name: Bottom
+  nameWithType: PathDirection.Bottom
+  fullName: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.Bottom
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/BasicMapGenAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Bottom
+    path: ../Internal/Manager/BasicMapGenAgent.cs
+    startLine: 21
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager.BasicMap
+  syntax:
+    content: Bottom = 64
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection
+- uid: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.NoDirectionalNode
+  commentId: F:LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.NoDirectionalNode
+  id: NoDirectionalNode
+  parent: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection
+  langs:
+  - csharp
+  - vb
+  name: NoDirectionalNode
+  nameWithType: PathDirection.NoDirectionalNode
+  fullName: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.NoDirectionalNode
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/BasicMapGenAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: NoDirectionalNode
+    path: ../Internal/Manager/BasicMapGenAgent.cs
+    startLine: 24
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager.BasicMap
+  syntax:
+    content: NoDirectionalNode = 128
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection
+references:
+- uid: LayeredMapGenAgent.Internal.Manager.BasicMap
+  commentId: N:LayeredMapGenAgent.Internal.Manager.BasicMap
+  href: LayeredMapGenAgent.html
+  name: LayeredMapGenAgent.Internal.Manager.BasicMap
+  nameWithType: LayeredMapGenAgent.Internal.Manager.BasicMap
+  fullName: LayeredMapGenAgent.Internal.Manager.BasicMap
+  spec.csharp:
+  - uid: LayeredMapGenAgent
+    name: LayeredMapGenAgent
+    href: LayeredMapGenAgent.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal
+    name: Internal
+    href: LayeredMapGenAgent.Internal.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Manager
+    name: Manager
+    href: LayeredMapGenAgent.Internal.Manager.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Manager.BasicMap
+    name: BasicMap
+    href: LayeredMapGenAgent.Internal.Manager.BasicMap.html
+  spec.vb:
+  - uid: LayeredMapGenAgent
+    name: LayeredMapGenAgent
+    href: LayeredMapGenAgent.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal
+    name: Internal
+    href: LayeredMapGenAgent.Internal.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Manager
+    name: Manager
+    href: LayeredMapGenAgent.Internal.Manager.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Manager.BasicMap
+    name: BasicMap
+    href: LayeredMapGenAgent.Internal.Manager.BasicMap.html
+- uid: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection
+  commentId: T:LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection
+  parent: LayeredMapGenAgent.Internal.Manager.BasicMap
+  href: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.html
+  name: PathDirection
+  nameWithType: PathDirection
+  fullName: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection

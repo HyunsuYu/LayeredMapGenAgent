@@ -1,0 +1,164 @@
+### YamlMime:ManagedReference
+items:
+- uid: LayeredMapGenAgent.Internal.Manager
+  commentId: N:LayeredMapGenAgent.Internal.Manager
+  id: LayeredMapGenAgent.Internal.Manager
+  children:
+  - LayeredMapGenAgent.Internal.Manager.RegionSelector
+  - LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData
+  - LayeredMapGenAgent.Internal.Manager.RegionSelector.RegionSelectionOutput
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyDetector
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionInput
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionOutput
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: LayeredMapGenAgent.Internal.Manager
+  nameWithType: LayeredMapGenAgent.Internal.Manager
+  fullName: LayeredMapGenAgent.Internal.Manager
+  type: Namespace
+  assemblies:
+  - LayeredMapGenAgent
+references:
+- uid: LayeredMapGenAgent.Internal.Manager.RegionSelector
+  commentId: T:LayeredMapGenAgent.Internal.Manager.RegionSelector
+  href: LayeredMapGenAgent.Internal.Manager.RegionSelector.html
+  name: RegionSelector
+  nameWithType: RegionSelector
+  fullName: LayeredMapGenAgent.Internal.Manager.RegionSelector
+- uid: LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData
+  commentId: T:LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData
+  parent: LayeredMapGenAgent.Internal.Manager
+  href: LayeredMapGenAgent.Internal.Manager.RegionSelector.html
+  name: RegionSelector.MapGenInputData
+  nameWithType: RegionSelector.MapGenInputData
+  fullName: LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData
+  spec.csharp:
+  - uid: LayeredMapGenAgent.Internal.Manager.RegionSelector
+    name: RegionSelector
+    href: LayeredMapGenAgent.Internal.Manager.RegionSelector.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData
+    name: MapGenInputData
+    href: LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData.html
+  spec.vb:
+  - uid: LayeredMapGenAgent.Internal.Manager.RegionSelector
+    name: RegionSelector
+    href: LayeredMapGenAgent.Internal.Manager.RegionSelector.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData
+    name: MapGenInputData
+    href: LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData.html
+- uid: LayeredMapGenAgent.Internal.Manager.RegionSelector.RegionSelectionOutput
+  commentId: T:LayeredMapGenAgent.Internal.Manager.RegionSelector.RegionSelectionOutput
+  parent: LayeredMapGenAgent.Internal.Manager
+  href: LayeredMapGenAgent.Internal.Manager.RegionSelector.html
+  name: RegionSelector.RegionSelectionOutput
+  nameWithType: RegionSelector.RegionSelectionOutput
+  fullName: LayeredMapGenAgent.Internal.Manager.RegionSelector.RegionSelectionOutput
+  spec.csharp:
+  - uid: LayeredMapGenAgent.Internal.Manager.RegionSelector
+    name: RegionSelector
+    href: LayeredMapGenAgent.Internal.Manager.RegionSelector.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Manager.RegionSelector.RegionSelectionOutput
+    name: RegionSelectionOutput
+    href: LayeredMapGenAgent.Internal.Manager.RegionSelector.RegionSelectionOutput.html
+  spec.vb:
+  - uid: LayeredMapGenAgent.Internal.Manager.RegionSelector
+    name: RegionSelector
+    href: LayeredMapGenAgent.Internal.Manager.RegionSelector.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Manager.RegionSelector.RegionSelectionOutput
+    name: RegionSelectionOutput
+    href: LayeredMapGenAgent.Internal.Manager.RegionSelector.RegionSelectionOutput.html
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  commentId: T:LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  parent: LayeredMapGenAgent.Internal.Manager
+  href: LayeredMapGenAgent.Internal.Manager.TileEdgyType.html
+  name: TileEdgyType
+  nameWithType: TileEdgyType
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector
+  commentId: T:LayeredMapGenAgent.Internal.Manager.TileEdgyDetector
+  href: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.html
+  name: TileEdgyDetector
+  nameWithType: TileEdgyDetector
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionInput
+  commentId: T:LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionInput
+  parent: LayeredMapGenAgent.Internal.Manager
+  href: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.html
+  name: TileEdgyDetector.TileEdgyDetectionInput
+  nameWithType: TileEdgyDetector.TileEdgyDetectionInput
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionInput
+  spec.csharp:
+  - uid: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector
+    name: TileEdgyDetector
+    href: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionInput
+    name: TileEdgyDetectionInput
+    href: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionInput.html
+  spec.vb:
+  - uid: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector
+    name: TileEdgyDetector
+    href: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionInput
+    name: TileEdgyDetectionInput
+    href: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionInput.html
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionOutput
+  commentId: T:LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionOutput
+  parent: LayeredMapGenAgent.Internal.Manager
+  href: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.html
+  name: TileEdgyDetector.TileEdgyDetectionOutput
+  nameWithType: TileEdgyDetector.TileEdgyDetectionOutput
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionOutput
+  spec.csharp:
+  - uid: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector
+    name: TileEdgyDetector
+    href: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionOutput
+    name: TileEdgyDetectionOutput
+    href: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionOutput.html
+  spec.vb:
+  - uid: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector
+    name: TileEdgyDetector
+    href: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionOutput
+    name: TileEdgyDetectionOutput
+    href: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionOutput.html
+- uid: LayeredMapGenAgent.Internal.Manager
+  commentId: N:LayeredMapGenAgent.Internal.Manager
+  href: LayeredMapGenAgent.html
+  name: LayeredMapGenAgent.Internal.Manager
+  nameWithType: LayeredMapGenAgent.Internal.Manager
+  fullName: LayeredMapGenAgent.Internal.Manager
+  spec.csharp:
+  - uid: LayeredMapGenAgent
+    name: LayeredMapGenAgent
+    href: LayeredMapGenAgent.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal
+    name: Internal
+    href: LayeredMapGenAgent.Internal.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Manager
+    name: Manager
+    href: LayeredMapGenAgent.Internal.Manager.html
+  spec.vb:
+  - uid: LayeredMapGenAgent
+    name: LayeredMapGenAgent
+    href: LayeredMapGenAgent.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal
+    name: Internal
+    href: LayeredMapGenAgent.Internal.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Manager
+    name: Manager
+    href: LayeredMapGenAgent.Internal.Manager.html

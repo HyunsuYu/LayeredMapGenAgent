@@ -1,0 +1,582 @@
+### YamlMime:ManagedReference
+items:
+- uid: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec
+  commentId: T:LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec
+  id: RegionSelectionInputDataSpec
+  parent: LayeredMapGenAgent.Internal.Data
+  children:
+  - LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.BaseColor
+  - LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.GetSingleRegionDataRainbowTable(System.Collections.Generic.List{LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionData}@)
+  - LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionDatas
+  langs:
+  - csharp
+  - vb
+  name: RegionSelectionInputDataSpec
+  nameWithType: RegionSelectionInputDataSpec
+  fullName: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec
+  type: Class
+  source:
+    remote:
+      path: Internal/Data/RegionSelectionInputDataSpec.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: RegionSelectionInputDataSpec
+    path: ../Internal/Data/RegionSelectionInputDataSpec.cs
+    startLine: 10
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Data
+  syntax:
+    content: public sealed class RegionSelectionInputDataSpec
+    content.vb: Public NotInheritable Class RegionSelectionInputDataSpec
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.BaseColor
+  commentId: F:LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.BaseColor
+  id: BaseColor
+  parent: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec
+  langs:
+  - csharp
+  - vb
+  name: BaseColor
+  nameWithType: RegionSelectionInputDataSpec.BaseColor
+  fullName: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.BaseColor
+  type: Field
+  source:
+    remote:
+      path: Internal/Data/RegionSelectionInputDataSpec.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: BaseColor
+    path: ../Internal/Data/RegionSelectionInputDataSpec.cs
+    startLine: 24
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Data
+  syntax:
+    content: public Vector3 BaseColor
+    return:
+      type: LayeredMapGenAgent.Internal.Data.Vector3
+    content.vb: Public BaseColor As Vector3
+- uid: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionDatas
+  commentId: F:LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionDatas
+  id: SingleRegionDatas
+  parent: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec
+  langs:
+  - csharp
+  - vb
+  name: SingleRegionDatas
+  nameWithType: RegionSelectionInputDataSpec.SingleRegionDatas
+  fullName: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionDatas
+  type: Field
+  source:
+    remote:
+      path: Internal/Data/RegionSelectionInputDataSpec.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: SingleRegionDatas
+    path: ../Internal/Data/RegionSelectionInputDataSpec.cs
+    startLine: 26
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Data
+  syntax:
+    content: public List<RegionSelectionInputDataSpec.SingleRegionData> SingleRegionDatas
+    return:
+      type: System.Collections.Generic.List{LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionData}
+    content.vb: Public SingleRegionDatas As List(Of RegionSelectionInputDataSpec.SingleRegionData)
+- uid: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.GetSingleRegionDataRainbowTable(System.Collections.Generic.List{LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionData}@)
+  commentId: M:LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.GetSingleRegionDataRainbowTable(System.Collections.Generic.List{LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionData}@)
+  id: GetSingleRegionDataRainbowTable(System.Collections.Generic.List{LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionData}@)
+  parent: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec
+  langs:
+  - csharp
+  - vb
+  name: GetSingleRegionDataRainbowTable(in List<SingleRegionData>)
+  nameWithType: RegionSelectionInputDataSpec.GetSingleRegionDataRainbowTable(in List<RegionSelectionInputDataSpec.SingleRegionData>)
+  fullName: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.GetSingleRegionDataRainbowTable(in System.Collections.Generic.List<LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionData>)
+  type: Method
+  source:
+    remote:
+      path: Internal/Data/RegionSelectionInputDataSpec.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: GetSingleRegionDataRainbowTable
+    path: ../Internal/Data/RegionSelectionInputDataSpec.cs
+    startLine: 29
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Data
+  syntax:
+    content: >-
+      [Obsolete]
+
+      public static Dictionary<int, string> GetSingleRegionDataRainbowTable(in List<RegionSelectionInputDataSpec.SingleRegionData> singleRegionDatas)
+    parameters:
+    - id: singleRegionDatas
+      type: System.Collections.Generic.List{LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionData}
+    return:
+      type: System.Collections.Generic.Dictionary{System.Int32,System.String}
+    content.vb: >-
+      <Obsolete>
+
+      Public Shared Function GetSingleRegionDataRainbowTable(singleRegionDatas As List(Of RegionSelectionInputDataSpec.SingleRegionData)) As Dictionary(Of Integer, String)
+  overload: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.GetSingleRegionDataRainbowTable*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor
+    arguments: []
+  nameWithType.vb: RegionSelectionInputDataSpec.GetSingleRegionDataRainbowTable(List(Of RegionSelectionInputDataSpec.SingleRegionData))
+  fullName.vb: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.GetSingleRegionDataRainbowTable(System.Collections.Generic.List(Of LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionData))
+  name.vb: GetSingleRegionDataRainbowTable(List(Of SingleRegionData))
+references:
+- uid: LayeredMapGenAgent.Internal.Data
+  commentId: N:LayeredMapGenAgent.Internal.Data
+  href: LayeredMapGenAgent.html
+  name: LayeredMapGenAgent.Internal.Data
+  nameWithType: LayeredMapGenAgent.Internal.Data
+  fullName: LayeredMapGenAgent.Internal.Data
+  spec.csharp:
+  - uid: LayeredMapGenAgent
+    name: LayeredMapGenAgent
+    href: LayeredMapGenAgent.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal
+    name: Internal
+    href: LayeredMapGenAgent.Internal.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Data
+    name: Data
+    href: LayeredMapGenAgent.Internal.Data.html
+  spec.vb:
+  - uid: LayeredMapGenAgent
+    name: LayeredMapGenAgent
+    href: LayeredMapGenAgent.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal
+    name: Internal
+    href: LayeredMapGenAgent.Internal.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Data
+    name: Data
+    href: LayeredMapGenAgent.Internal.Data.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LayeredMapGenAgent.Internal.Data.Vector3
+  commentId: T:LayeredMapGenAgent.Internal.Data.Vector3
+  parent: LayeredMapGenAgent.Internal.Data
+  href: LayeredMapGenAgent.Internal.Data.Vector3.html
+  name: Vector3
+  nameWithType: Vector3
+  fullName: LayeredMapGenAgent.Internal.Data.Vector3
+- uid: System.Collections.Generic.List{LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionData}
+  commentId: T:System.Collections.Generic.List{LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionData}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<RegionSelectionInputDataSpec.SingleRegionData>
+  nameWithType: List<RegionSelectionInputDataSpec.SingleRegionData>
+  fullName: System.Collections.Generic.List<LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionData>
+  nameWithType.vb: List(Of RegionSelectionInputDataSpec.SingleRegionData)
+  fullName.vb: System.Collections.Generic.List(Of LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionData)
+  name.vb: List(Of RegionSelectionInputDataSpec.SingleRegionData)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec
+    name: RegionSelectionInputDataSpec
+    href: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionData
+    name: SingleRegionData
+    href: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionData.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec
+    name: RegionSelectionInputDataSpec
+    href: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionData
+    name: SingleRegionData
+    href: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionData.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.GetSingleRegionDataRainbowTable*
+  commentId: Overload:LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.GetSingleRegionDataRainbowTable
+  href: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.html#LayeredMapGenAgent_Internal_Data_RegionSelectionInputDataSpec_GetSingleRegionDataRainbowTable_System_Collections_Generic_List_LayeredMapGenAgent_Internal_Data_RegionSelectionInputDataSpec_SingleRegionData___
+  name: GetSingleRegionDataRainbowTable
+  nameWithType: RegionSelectionInputDataSpec.GetSingleRegionDataRainbowTable
+  fullName: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.GetSingleRegionDataRainbowTable
+- uid: System.Collections.Generic.Dictionary{System.Int32,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.Int32,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<int, string>
+  nameWithType: Dictionary<int, string>
+  fullName: System.Collections.Generic.Dictionary<int, string>
+  nameWithType.vb: Dictionary(Of Integer, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of Integer, String)
+  name.vb: Dictionary(Of Integer, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )

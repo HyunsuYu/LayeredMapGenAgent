@@ -1,0 +1,70 @@
+### YamlMime:ManagedReference
+items:
+- uid: LayeredMapGenAgent.Internal.Manager.BasicMap
+  commentId: N:LayeredMapGenAgent.Internal.Manager.BasicMap
+  id: LayeredMapGenAgent.Internal.Manager.BasicMap
+  children:
+  - LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType
+  - LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection
+  langs:
+  - csharp
+  - vb
+  name: LayeredMapGenAgent.Internal.Manager.BasicMap
+  nameWithType: LayeredMapGenAgent.Internal.Manager.BasicMap
+  fullName: LayeredMapGenAgent.Internal.Manager.BasicMap
+  type: Namespace
+  assemblies:
+  - LayeredMapGenAgent
+references:
+- uid: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection
+  commentId: T:LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection
+  parent: LayeredMapGenAgent.Internal.Manager.BasicMap
+  href: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.html
+  name: PathDirection
+  nameWithType: PathDirection
+  fullName: LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection
+- uid: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType
+  commentId: T:LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType
+  parent: LayeredMapGenAgent.Internal.Manager.BasicMap
+  href: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.html
+  name: MapActiveType
+  nameWithType: MapActiveType
+  fullName: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType
+- uid: LayeredMapGenAgent.Internal.Manager.BasicMap
+  commentId: N:LayeredMapGenAgent.Internal.Manager.BasicMap
+  href: LayeredMapGenAgent.html
+  name: LayeredMapGenAgent.Internal.Manager.BasicMap
+  nameWithType: LayeredMapGenAgent.Internal.Manager.BasicMap
+  fullName: LayeredMapGenAgent.Internal.Manager.BasicMap
+  spec.csharp:
+  - uid: LayeredMapGenAgent
+    name: LayeredMapGenAgent
+    href: LayeredMapGenAgent.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal
+    name: Internal
+    href: LayeredMapGenAgent.Internal.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Manager
+    name: Manager
+    href: LayeredMapGenAgent.Internal.Manager.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Manager.BasicMap
+    name: BasicMap
+    href: LayeredMapGenAgent.Internal.Manager.BasicMap.html
+  spec.vb:
+  - uid: LayeredMapGenAgent
+    name: LayeredMapGenAgent
+    href: LayeredMapGenAgent.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal
+    name: Internal
+    href: LayeredMapGenAgent.Internal.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Manager
+    name: Manager
+    href: LayeredMapGenAgent.Internal.Manager.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Manager.BasicMap
+    name: BasicMap
+    href: LayeredMapGenAgent.Internal.Manager.BasicMap.html

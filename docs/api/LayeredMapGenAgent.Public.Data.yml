@@ -1,0 +1,61 @@
+### YamlMime:ManagedReference
+items:
+- uid: LayeredMapGenAgent.Public.Data
+  commentId: N:LayeredMapGenAgent.Public.Data
+  id: LayeredMapGenAgent.Public.Data
+  children:
+  - LayeredMapGenAgent.Public.Data.RawBitmap
+  - LayeredMapGenAgent.Public.Data.RawColor
+  langs:
+  - csharp
+  - vb
+  name: LayeredMapGenAgent.Public.Data
+  nameWithType: LayeredMapGenAgent.Public.Data
+  fullName: LayeredMapGenAgent.Public.Data
+  type: Namespace
+  assemblies:
+  - LayeredMapGenAgent
+references:
+- uid: LayeredMapGenAgent.Public.Data.RawColor
+  commentId: T:LayeredMapGenAgent.Public.Data.RawColor
+  parent: LayeredMapGenAgent.Public.Data
+  href: LayeredMapGenAgent.Public.Data.RawColor.html
+  name: RawColor
+  nameWithType: RawColor
+  fullName: LayeredMapGenAgent.Public.Data.RawColor
+- uid: LayeredMapGenAgent.Public.Data.RawBitmap
+  commentId: T:LayeredMapGenAgent.Public.Data.RawBitmap
+  href: LayeredMapGenAgent.Public.Data.RawBitmap.html
+  name: RawBitmap
+  nameWithType: RawBitmap
+  fullName: LayeredMapGenAgent.Public.Data.RawBitmap
+- uid: LayeredMapGenAgent.Public.Data
+  commentId: N:LayeredMapGenAgent.Public.Data
+  href: LayeredMapGenAgent.html
+  name: LayeredMapGenAgent.Public.Data
+  nameWithType: LayeredMapGenAgent.Public.Data
+  fullName: LayeredMapGenAgent.Public.Data
+  spec.csharp:
+  - uid: LayeredMapGenAgent
+    name: LayeredMapGenAgent
+    href: LayeredMapGenAgent.html
+  - name: .
+  - uid: LayeredMapGenAgent.Public
+    name: Public
+    href: LayeredMapGenAgent.Public.html
+  - name: .
+  - uid: LayeredMapGenAgent.Public.Data
+    name: Data
+    href: LayeredMapGenAgent.Public.Data.html
+  spec.vb:
+  - uid: LayeredMapGenAgent
+    name: LayeredMapGenAgent
+    href: LayeredMapGenAgent.html
+  - name: .
+  - uid: LayeredMapGenAgent.Public
+    name: Public
+    href: LayeredMapGenAgent.Public.html
+  - name: .
+  - uid: LayeredMapGenAgent.Public.Data
+    name: Data
+    href: LayeredMapGenAgent.Public.Data.html

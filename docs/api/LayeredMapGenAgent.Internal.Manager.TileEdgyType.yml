@@ -1,0 +1,1416 @@
+### YamlMime:ManagedReference
+items:
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  commentId: T:LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  id: TileEdgyType
+  parent: LayeredMapGenAgent.Internal.Manager
+  children:
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_B
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_BL
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_BLR
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_BR
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_L
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_LR
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_R
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_T
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_TB
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_TBL
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_TBLR
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_TBR
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_TL
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_TLR
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_TR
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_B
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_BL
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_BLR
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_BR
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_L
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_LR
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_R
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_T
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_TB
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_TBL
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_TBLR
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_TBR
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_TL
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_TLR
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_TR
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_B
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_BL
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_BLR
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_BR
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_L
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_LR
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_R
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_T
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_TB
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_TBL
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_TBLR
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_TBR
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_TL
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_TLR
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_TR
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.StairToGoBackLayer
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyType.StairToGoFrontLayer
+  langs:
+  - csharp
+  - vb
+  name: TileEdgyType
+  nameWithType: TileEdgyType
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  type: Enum
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: TileEdgyType
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 12
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: 'public enum TileEdgyType : short'
+    content.vb: Public Enum TileEdgyType As Short
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_TBLR
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_TBLR
+  id: Nor_TBLR
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Nor_TBLR
+  nameWithType: TileEdgyType.Nor_TBLR
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_TBLR
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Nor_TBLR
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 15
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Nor_TBLR = 61
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_BLR
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_BLR
+  id: Nor_BLR
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Nor_BLR
+  nameWithType: TileEdgyType.Nor_BLR
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_BLR
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Nor_BLR
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 17
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Nor_BLR = 57
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_TLR
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_TLR
+  id: Nor_TLR
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Nor_TLR
+  nameWithType: TileEdgyType.Nor_TLR
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_TLR
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Nor_TLR
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 18
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Nor_TLR = 53
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_TBR
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_TBR
+  id: Nor_TBR
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Nor_TBR
+  nameWithType: TileEdgyType.Nor_TBR
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_TBR
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Nor_TBR
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 19
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Nor_TBR = 45
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_TBL
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_TBL
+  id: Nor_TBL
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Nor_TBL
+  nameWithType: TileEdgyType.Nor_TBL
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_TBL
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Nor_TBL
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 20
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Nor_TBL = 29
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_LR
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_LR
+  id: Nor_LR
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Nor_LR
+  nameWithType: TileEdgyType.Nor_LR
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_LR
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Nor_LR
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 22
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Nor_LR = 49
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_TB
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_TB
+  id: Nor_TB
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Nor_TB
+  nameWithType: TileEdgyType.Nor_TB
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_TB
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Nor_TB
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 23
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Nor_TB = 13
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_BL
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_BL
+  id: Nor_BL
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Nor_BL
+  nameWithType: TileEdgyType.Nor_BL
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_BL
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Nor_BL
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 24
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Nor_BL = 25
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_BR
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_BR
+  id: Nor_BR
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Nor_BR
+  nameWithType: TileEdgyType.Nor_BR
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_BR
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Nor_BR
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 25
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Nor_BR = 41
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_TL
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_TL
+  id: Nor_TL
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Nor_TL
+  nameWithType: TileEdgyType.Nor_TL
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_TL
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Nor_TL
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 26
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Nor_TL = 21
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_TR
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_TR
+  id: Nor_TR
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Nor_TR
+  nameWithType: TileEdgyType.Nor_TR
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_TR
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Nor_TR
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 27
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Nor_TR = 37
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_T
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_T
+  id: Nor_T
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Nor_T
+  nameWithType: TileEdgyType.Nor_T
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_T
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Nor_T
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 29
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Nor_T = 5
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_B
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_B
+  id: Nor_B
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Nor_B
+  nameWithType: TileEdgyType.Nor_B
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_B
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Nor_B
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 30
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Nor_B = 9
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_L
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_L
+  id: Nor_L
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Nor_L
+  nameWithType: TileEdgyType.Nor_L
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_L
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Nor_L
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 31
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Nor_L = 17
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_R
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_R
+  id: Nor_R
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Nor_R
+  nameWithType: TileEdgyType.Nor_R
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor_R
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Nor_R
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 32
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Nor_R = 33
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor
+  id: Nor
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Nor
+  nameWithType: TileEdgyType.Nor
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Nor
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Nor
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 34
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Nor = 1
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_TBLR
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_TBLR
+  id: Back_TBLR
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Back_TBLR
+  nameWithType: TileEdgyType.Back_TBLR
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_TBLR
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Back_TBLR
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 37
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Back_TBLR = 62
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_BLR
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_BLR
+  id: Back_BLR
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Back_BLR
+  nameWithType: TileEdgyType.Back_BLR
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_BLR
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Back_BLR
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 39
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Back_BLR = 58
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_TLR
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_TLR
+  id: Back_TLR
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Back_TLR
+  nameWithType: TileEdgyType.Back_TLR
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_TLR
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Back_TLR
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 40
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Back_TLR = 54
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_TBR
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_TBR
+  id: Back_TBR
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Back_TBR
+  nameWithType: TileEdgyType.Back_TBR
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_TBR
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Back_TBR
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 41
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Back_TBR = 46
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_TBL
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_TBL
+  id: Back_TBL
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Back_TBL
+  nameWithType: TileEdgyType.Back_TBL
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_TBL
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Back_TBL
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 42
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Back_TBL = 30
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_LR
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_LR
+  id: Back_LR
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Back_LR
+  nameWithType: TileEdgyType.Back_LR
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_LR
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Back_LR
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 44
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Back_LR = 50
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_TB
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_TB
+  id: Back_TB
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Back_TB
+  nameWithType: TileEdgyType.Back_TB
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_TB
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Back_TB
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 45
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Back_TB = 14
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_BL
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_BL
+  id: Back_BL
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Back_BL
+  nameWithType: TileEdgyType.Back_BL
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_BL
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Back_BL
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 46
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Back_BL = 26
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_BR
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_BR
+  id: Back_BR
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Back_BR
+  nameWithType: TileEdgyType.Back_BR
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_BR
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Back_BR
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 47
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Back_BR = 42
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_TL
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_TL
+  id: Back_TL
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Back_TL
+  nameWithType: TileEdgyType.Back_TL
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_TL
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Back_TL
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 48
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Back_TL = 22
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_TR
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_TR
+  id: Back_TR
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Back_TR
+  nameWithType: TileEdgyType.Back_TR
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_TR
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Back_TR
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 49
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Back_TR = 38
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_T
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_T
+  id: Back_T
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Back_T
+  nameWithType: TileEdgyType.Back_T
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_T
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Back_T
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 51
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Back_T = 6
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_B
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_B
+  id: Back_B
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Back_B
+  nameWithType: TileEdgyType.Back_B
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_B
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Back_B
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 52
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Back_B = 10
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_L
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_L
+  id: Back_L
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Back_L
+  nameWithType: TileEdgyType.Back_L
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_L
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Back_L
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 53
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Back_L = 18
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_R
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_R
+  id: Back_R
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Back_R
+  nameWithType: TileEdgyType.Back_R
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back_R
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Back_R
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 54
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Back_R = 34
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back
+  id: Back
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Back
+  nameWithType: TileEdgyType.Back
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Back
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Back
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 56
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Back = 2
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.StairToGoBackLayer
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.StairToGoBackLayer
+  id: StairToGoBackLayer
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: StairToGoBackLayer
+  nameWithType: TileEdgyType.StairToGoBackLayer
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.StairToGoBackLayer
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: StairToGoBackLayer
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 59
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: StairToGoBackLayer = 64
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_TBLR
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_TBLR
+  id: Front_TBLR
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Front_TBLR
+  nameWithType: TileEdgyType.Front_TBLR
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_TBLR
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Front_TBLR
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 62
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Front_TBLR = 318
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_BLR
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_BLR
+  id: Front_BLR
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Front_BLR
+  nameWithType: TileEdgyType.Front_BLR
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_BLR
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Front_BLR
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 64
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Front_BLR = 312
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_TLR
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_TLR
+  id: Front_TLR
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Front_TLR
+  nameWithType: TileEdgyType.Front_TLR
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_TLR
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Front_TLR
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 65
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Front_TLR = 308
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_TBR
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_TBR
+  id: Front_TBR
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Front_TBR
+  nameWithType: TileEdgyType.Front_TBR
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_TBR
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Front_TBR
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 66
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Front_TBR = 300
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_TBL
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_TBL
+  id: Front_TBL
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Front_TBL
+  nameWithType: TileEdgyType.Front_TBL
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_TBL
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Front_TBL
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 67
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Front_TBL = 284
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_LR
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_LR
+  id: Front_LR
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Front_LR
+  nameWithType: TileEdgyType.Front_LR
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_LR
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Front_LR
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 69
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Front_LR = 304
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_TB
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_TB
+  id: Front_TB
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Front_TB
+  nameWithType: TileEdgyType.Front_TB
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_TB
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Front_TB
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 70
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Front_TB = 268
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_BL
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_BL
+  id: Front_BL
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Front_BL
+  nameWithType: TileEdgyType.Front_BL
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_BL
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Front_BL
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 71
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Front_BL = 280
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_BR
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_BR
+  id: Front_BR
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Front_BR
+  nameWithType: TileEdgyType.Front_BR
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_BR
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Front_BR
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 72
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Front_BR = 296
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_TL
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_TL
+  id: Front_TL
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Front_TL
+  nameWithType: TileEdgyType.Front_TL
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_TL
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Front_TL
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 73
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Front_TL = 276
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_TR
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_TR
+  id: Front_TR
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Front_TR
+  nameWithType: TileEdgyType.Front_TR
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_TR
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Front_TR
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 74
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Front_TR = 292
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_T
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_T
+  id: Front_T
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Front_T
+  nameWithType: TileEdgyType.Front_T
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_T
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Front_T
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 76
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Front_T = 260
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_B
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_B
+  id: Front_B
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Front_B
+  nameWithType: TileEdgyType.Front_B
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_B
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Front_B
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 77
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Front_B = 264
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_L
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_L
+  id: Front_L
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Front_L
+  nameWithType: TileEdgyType.Front_L
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_L
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Front_L
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 78
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Front_L = 272
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_R
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_R
+  id: Front_R
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Front_R
+  nameWithType: TileEdgyType.Front_R
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front_R
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Front_R
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 79
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Front_R = 288
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front
+  id: Front
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: Front
+  nameWithType: TileEdgyType.Front
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.Front
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Front
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 81
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: Front = 256
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType.StairToGoFrontLayer
+  commentId: F:LayeredMapGenAgent.Internal.Manager.TileEdgyType.StairToGoFrontLayer
+  id: StairToGoFrontLayer
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  langs:
+  - csharp
+  - vb
+  name: StairToGoFrontLayer
+  nameWithType: TileEdgyType.StairToGoFrontLayer
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType.StairToGoFrontLayer
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: StairToGoFrontLayer
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 84
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: StairToGoFrontLayer = 512
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+references:
+- uid: LayeredMapGenAgent.Internal.Manager
+  commentId: N:LayeredMapGenAgent.Internal.Manager
+  href: LayeredMapGenAgent.html
+  name: LayeredMapGenAgent.Internal.Manager
+  nameWithType: LayeredMapGenAgent.Internal.Manager
+  fullName: LayeredMapGenAgent.Internal.Manager
+  spec.csharp:
+  - uid: LayeredMapGenAgent
+    name: LayeredMapGenAgent
+    href: LayeredMapGenAgent.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal
+    name: Internal
+    href: LayeredMapGenAgent.Internal.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Manager
+    name: Manager
+    href: LayeredMapGenAgent.Internal.Manager.html
+  spec.vb:
+  - uid: LayeredMapGenAgent
+    name: LayeredMapGenAgent
+    href: LayeredMapGenAgent.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal
+    name: Internal
+    href: LayeredMapGenAgent.Internal.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Manager
+    name: Manager
+    href: LayeredMapGenAgent.Internal.Manager.html
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  commentId: T:LayeredMapGenAgent.Internal.Manager.TileEdgyType
+  parent: LayeredMapGenAgent.Internal.Manager
+  href: LayeredMapGenAgent.Internal.Manager.TileEdgyType.html
+  name: TileEdgyType
+  nameWithType: TileEdgyType
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyType

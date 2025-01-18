@@ -1,0 +1,116 @@
+### YamlMime:ManagedReference
+items:
+- uid: LayeredMapGenAgent.Internal.Data
+  commentId: N:LayeredMapGenAgent.Internal.Data
+  id: LayeredMapGenAgent.Internal.Data
+  children:
+  - LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec
+  - LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionData
+  - LayeredMapGenAgent.Internal.Data.Vector2
+  - LayeredMapGenAgent.Internal.Data.Vector2Int
+  - LayeredMapGenAgent.Internal.Data.Vector3
+  - LayeredMapGenAgent.Internal.Data.Vector3Int
+  - LayeredMapGenAgent.Internal.Data.Vector4
+  langs:
+  - csharp
+  - vb
+  name: LayeredMapGenAgent.Internal.Data
+  nameWithType: LayeredMapGenAgent.Internal.Data
+  fullName: LayeredMapGenAgent.Internal.Data
+  type: Namespace
+  assemblies:
+  - LayeredMapGenAgent
+references:
+- uid: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec
+  commentId: T:LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec
+  parent: LayeredMapGenAgent.Internal.Data
+  href: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.html
+  name: RegionSelectionInputDataSpec
+  nameWithType: RegionSelectionInputDataSpec
+  fullName: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec
+- uid: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionData
+  commentId: T:LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionData
+  href: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.html
+  name: RegionSelectionInputDataSpec.SingleRegionData
+  nameWithType: RegionSelectionInputDataSpec.SingleRegionData
+  fullName: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionData
+  spec.csharp:
+  - uid: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec
+    name: RegionSelectionInputDataSpec
+    href: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionData
+    name: SingleRegionData
+    href: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionData.html
+  spec.vb:
+  - uid: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec
+    name: RegionSelectionInputDataSpec
+    href: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionData
+    name: SingleRegionData
+    href: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionData.html
+- uid: LayeredMapGenAgent.Internal.Data.Vector2Int
+  commentId: T:LayeredMapGenAgent.Internal.Data.Vector2Int
+  parent: LayeredMapGenAgent.Internal.Data
+  href: LayeredMapGenAgent.Internal.Data.Vector2Int.html
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: LayeredMapGenAgent.Internal.Data.Vector2Int
+- uid: LayeredMapGenAgent.Internal.Data.Vector3Int
+  commentId: T:LayeredMapGenAgent.Internal.Data.Vector3Int
+  parent: LayeredMapGenAgent.Internal.Data
+  href: LayeredMapGenAgent.Internal.Data.Vector3Int.html
+  name: Vector3Int
+  nameWithType: Vector3Int
+  fullName: LayeredMapGenAgent.Internal.Data.Vector3Int
+- uid: LayeredMapGenAgent.Internal.Data.Vector2
+  commentId: T:LayeredMapGenAgent.Internal.Data.Vector2
+  href: LayeredMapGenAgent.Internal.Data.Vector2.html
+  name: Vector2
+  nameWithType: Vector2
+  fullName: LayeredMapGenAgent.Internal.Data.Vector2
+- uid: LayeredMapGenAgent.Internal.Data.Vector3
+  commentId: T:LayeredMapGenAgent.Internal.Data.Vector3
+  parent: LayeredMapGenAgent.Internal.Data
+  href: LayeredMapGenAgent.Internal.Data.Vector3.html
+  name: Vector3
+  nameWithType: Vector3
+  fullName: LayeredMapGenAgent.Internal.Data.Vector3
+- uid: LayeredMapGenAgent.Internal.Data.Vector4
+  commentId: T:LayeredMapGenAgent.Internal.Data.Vector4
+  parent: LayeredMapGenAgent.Internal.Data
+  href: LayeredMapGenAgent.Internal.Data.Vector4.html
+  name: Vector4
+  nameWithType: Vector4
+  fullName: LayeredMapGenAgent.Internal.Data.Vector4
+- uid: LayeredMapGenAgent.Internal.Data
+  commentId: N:LayeredMapGenAgent.Internal.Data
+  href: LayeredMapGenAgent.html
+  name: LayeredMapGenAgent.Internal.Data
+  nameWithType: LayeredMapGenAgent.Internal.Data
+  fullName: LayeredMapGenAgent.Internal.Data
+  spec.csharp:
+  - uid: LayeredMapGenAgent
+    name: LayeredMapGenAgent
+    href: LayeredMapGenAgent.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal
+    name: Internal
+    href: LayeredMapGenAgent.Internal.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Data
+    name: Data
+    href: LayeredMapGenAgent.Internal.Data.html
+  spec.vb:
+  - uid: LayeredMapGenAgent
+    name: LayeredMapGenAgent
+    href: LayeredMapGenAgent.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal
+    name: Internal
+    href: LayeredMapGenAgent.Internal.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Data
+    name: Data
+    href: LayeredMapGenAgent.Internal.Data.html

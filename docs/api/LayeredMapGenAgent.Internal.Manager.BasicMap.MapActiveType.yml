@@ -1,0 +1,263 @@
+### YamlMime:ManagedReference
+items:
+- uid: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType
+  commentId: T:LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType
+  id: MapActiveType
+  parent: LayeredMapGenAgent.Internal.Manager.BasicMap
+  children:
+  - LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.BIsNodeActive
+  - LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.BIsNodeIsBottomEdge
+  - LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.BIsNodeIsGateBottomEdge
+  - LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.BIsNodeIsGateToBack
+  - LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.BIsNodeIsLeftEdge
+  - LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.BIsNodeIsRightEdge
+  - LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.BIsNodeIsTopEdge
+  langs:
+  - csharp
+  - vb
+  name: MapActiveType
+  nameWithType: MapActiveType
+  fullName: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType
+  type: Enum
+  source:
+    remote:
+      path: Internal/Manager/BasicMapGenAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: MapActiveType
+    path: ../Internal/Manager/BasicMapGenAgent.cs
+    startLine: 26
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager.BasicMap
+  syntax:
+    content: 'public enum MapActiveType : byte'
+    content.vb: Public Enum MapActiveType As Byte
+- uid: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.BIsNodeActive
+  commentId: F:LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.BIsNodeActive
+  id: BIsNodeActive
+  parent: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType
+  langs:
+  - csharp
+  - vb
+  name: BIsNodeActive
+  nameWithType: MapActiveType.BIsNodeActive
+  fullName: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.BIsNodeActive
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/BasicMapGenAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: BIsNodeActive
+    path: ../Internal/Manager/BasicMapGenAgent.cs
+    startLine: 28
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager.BasicMap
+  syntax:
+    content: BIsNodeActive = 1
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType
+- uid: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.BIsNodeIsGateToBack
+  commentId: F:LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.BIsNodeIsGateToBack
+  id: BIsNodeIsGateToBack
+  parent: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType
+  langs:
+  - csharp
+  - vb
+  name: BIsNodeIsGateToBack
+  nameWithType: MapActiveType.BIsNodeIsGateToBack
+  fullName: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.BIsNodeIsGateToBack
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/BasicMapGenAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: BIsNodeIsGateToBack
+    path: ../Internal/Manager/BasicMapGenAgent.cs
+    startLine: 30
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager.BasicMap
+  syntax:
+    content: BIsNodeIsGateToBack = 2
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType
+- uid: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.BIsNodeIsTopEdge
+  commentId: F:LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.BIsNodeIsTopEdge
+  id: BIsNodeIsTopEdge
+  parent: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType
+  langs:
+  - csharp
+  - vb
+  name: BIsNodeIsTopEdge
+  nameWithType: MapActiveType.BIsNodeIsTopEdge
+  fullName: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.BIsNodeIsTopEdge
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/BasicMapGenAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: BIsNodeIsTopEdge
+    path: ../Internal/Manager/BasicMapGenAgent.cs
+    startLine: 32
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager.BasicMap
+  syntax:
+    content: BIsNodeIsTopEdge = 4
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType
+- uid: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.BIsNodeIsBottomEdge
+  commentId: F:LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.BIsNodeIsBottomEdge
+  id: BIsNodeIsBottomEdge
+  parent: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType
+  langs:
+  - csharp
+  - vb
+  name: BIsNodeIsBottomEdge
+  nameWithType: MapActiveType.BIsNodeIsBottomEdge
+  fullName: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.BIsNodeIsBottomEdge
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/BasicMapGenAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: BIsNodeIsBottomEdge
+    path: ../Internal/Manager/BasicMapGenAgent.cs
+    startLine: 33
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager.BasicMap
+  syntax:
+    content: BIsNodeIsBottomEdge = 8
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType
+- uid: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.BIsNodeIsLeftEdge
+  commentId: F:LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.BIsNodeIsLeftEdge
+  id: BIsNodeIsLeftEdge
+  parent: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType
+  langs:
+  - csharp
+  - vb
+  name: BIsNodeIsLeftEdge
+  nameWithType: MapActiveType.BIsNodeIsLeftEdge
+  fullName: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.BIsNodeIsLeftEdge
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/BasicMapGenAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: BIsNodeIsLeftEdge
+    path: ../Internal/Manager/BasicMapGenAgent.cs
+    startLine: 34
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager.BasicMap
+  syntax:
+    content: BIsNodeIsLeftEdge = 16
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType
+- uid: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.BIsNodeIsRightEdge
+  commentId: F:LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.BIsNodeIsRightEdge
+  id: BIsNodeIsRightEdge
+  parent: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType
+  langs:
+  - csharp
+  - vb
+  name: BIsNodeIsRightEdge
+  nameWithType: MapActiveType.BIsNodeIsRightEdge
+  fullName: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.BIsNodeIsRightEdge
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/BasicMapGenAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: BIsNodeIsRightEdge
+    path: ../Internal/Manager/BasicMapGenAgent.cs
+    startLine: 35
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager.BasicMap
+  syntax:
+    content: BIsNodeIsRightEdge = 32
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType
+- uid: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.BIsNodeIsGateBottomEdge
+  commentId: F:LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.BIsNodeIsGateBottomEdge
+  id: BIsNodeIsGateBottomEdge
+  parent: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType
+  langs:
+  - csharp
+  - vb
+  name: BIsNodeIsGateBottomEdge
+  nameWithType: MapActiveType.BIsNodeIsGateBottomEdge
+  fullName: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.BIsNodeIsGateBottomEdge
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/BasicMapGenAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: BIsNodeIsGateBottomEdge
+    path: ../Internal/Manager/BasicMapGenAgent.cs
+    startLine: 37
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager.BasicMap
+  syntax:
+    content: BIsNodeIsGateBottomEdge = 64
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType
+references:
+- uid: LayeredMapGenAgent.Internal.Manager.BasicMap
+  commentId: N:LayeredMapGenAgent.Internal.Manager.BasicMap
+  href: LayeredMapGenAgent.html
+  name: LayeredMapGenAgent.Internal.Manager.BasicMap
+  nameWithType: LayeredMapGenAgent.Internal.Manager.BasicMap
+  fullName: LayeredMapGenAgent.Internal.Manager.BasicMap
+  spec.csharp:
+  - uid: LayeredMapGenAgent
+    name: LayeredMapGenAgent
+    href: LayeredMapGenAgent.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal
+    name: Internal
+    href: LayeredMapGenAgent.Internal.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Manager
+    name: Manager
+    href: LayeredMapGenAgent.Internal.Manager.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Manager.BasicMap
+    name: BasicMap
+    href: LayeredMapGenAgent.Internal.Manager.BasicMap.html
+  spec.vb:
+  - uid: LayeredMapGenAgent
+    name: LayeredMapGenAgent
+    href: LayeredMapGenAgent.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal
+    name: Internal
+    href: LayeredMapGenAgent.Internal.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Manager
+    name: Manager
+    href: LayeredMapGenAgent.Internal.Manager.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Manager.BasicMap
+    name: BasicMap
+    href: LayeredMapGenAgent.Internal.Manager.BasicMap.html
+- uid: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType
+  commentId: T:LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType
+  parent: LayeredMapGenAgent.Internal.Manager.BasicMap
+  href: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.html
+  name: MapActiveType
+  nameWithType: MapActiveType
+  fullName: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType

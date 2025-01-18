@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: LayeredMapGenAgent.Public.Manager
+  commentId: N:LayeredMapGenAgent.Public.Manager
+  id: LayeredMapGenAgent.Public.Manager
+  children:
+  - LayeredMapGenAgent.Public.Manager.ChiefMapGenAgentManager
+  langs:
+  - csharp
+  - vb
+  name: LayeredMapGenAgent.Public.Manager
+  nameWithType: LayeredMapGenAgent.Public.Manager
+  fullName: LayeredMapGenAgent.Public.Manager
+  type: Namespace
+  assemblies:
+  - LayeredMapGenAgent
+references:
+- uid: LayeredMapGenAgent.Public.Manager.ChiefMapGenAgentManager
+  commentId: T:LayeredMapGenAgent.Public.Manager.ChiefMapGenAgentManager
+  href: LayeredMapGenAgent.Public.Manager.ChiefMapGenAgentManager.html
+  name: ChiefMapGenAgentManager
+  nameWithType: ChiefMapGenAgentManager
+  fullName: LayeredMapGenAgent.Public.Manager.ChiefMapGenAgentManager

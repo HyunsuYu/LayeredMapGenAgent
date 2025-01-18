@@ -1,0 +1,351 @@
+{
+  "source_base_path": "C:/Storage/Projects/UnTitled/OnDev/LayeredMapGenAgent/LayeredMapGenAgent/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LayeredMapGenAgent.Internal.Data.Vector2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LayeredMapGenAgent.Internal.Data.Vector2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LayeredMapGenAgent.Internal.Data.Vector2Int.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LayeredMapGenAgent.Internal.Data.Vector2Int.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LayeredMapGenAgent.Internal.Data.Vector3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LayeredMapGenAgent.Internal.Data.Vector3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LayeredMapGenAgent.Internal.Data.Vector3Int.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LayeredMapGenAgent.Internal.Data.Vector3Int.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LayeredMapGenAgent.Internal.Data.Vector4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LayeredMapGenAgent.Internal.Data.Vector4.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LayeredMapGenAgent.Internal.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LayeredMapGenAgent.Internal.Data.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LayeredMapGenAgent.Internal.Manager.BasicMap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LayeredMapGenAgent.Internal.Manager.BasicMap.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LayeredMapGenAgent.Internal.Manager.RegionSelector.RegionSelectionOutput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LayeredMapGenAgent.Internal.Manager.RegionSelector.RegionSelectionOutput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LayeredMapGenAgent.Internal.Manager.RegionSelector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LayeredMapGenAgent.Internal.Manager.RegionSelector.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionInput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionOutput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionOutput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LayeredMapGenAgent.Internal.Manager.TileEdgyType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LayeredMapGenAgent.Internal.Manager.TileEdgyType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LayeredMapGenAgent.Internal.Manager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LayeredMapGenAgent.Internal.Manager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LayeredMapGenAgent.Public.Data.RawBitmap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LayeredMapGenAgent.Public.Data.RawBitmap.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LayeredMapGenAgent.Public.Data.RawColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LayeredMapGenAgent.Public.Data.RawColor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LayeredMapGenAgent.Public.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LayeredMapGenAgent.Public.Data.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LayeredMapGenAgent.Public.Manager.ChiefMapGenAgentManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LayeredMapGenAgent.Public.Manager.ChiefMapGenAgentManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/LayeredMapGenAgent.Public.Manager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/LayeredMapGenAgent.Public.Manager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "test/clear.md",
+      "output": {
+        ".html": {
+          "relative_path": "test/clear.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "test/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "test/toc.html"
+        },
+        ".json": {
+          "relative_path": "test/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

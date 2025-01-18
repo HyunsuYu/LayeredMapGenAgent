@@ -1,0 +1,576 @@
+### YamlMime:ManagedReference
+items:
+- uid: LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData
+  commentId: T:LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData
+  id: RegionSelector.MapGenInputData
+  parent: LayeredMapGenAgent.Internal.Manager
+  children:
+  - LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData.MapActiveCube
+  - LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData.MapSize
+  - LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData.RegionSelectionInputDataSpec
+  - LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData.SingleChunkSize
+  - LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData.SingleRoomSize
+  langs:
+  - csharp
+  - vb
+  name: RegionSelector.MapGenInputData
+  nameWithType: RegionSelector.MapGenInputData
+  fullName: LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData
+  type: Class
+  source:
+    remote:
+      path: Internal/Manager/RegionSelectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: MapGenInputData
+    path: ../Internal/Manager/RegionSelectionAgent.cs
+    startLine: 369
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: public sealed class RegionSelector.MapGenInputData
+    content.vb: Public NotInheritable Class RegionSelector.MapGenInputData
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData.MapSize
+  commentId: F:LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData.MapSize
+  id: MapSize
+  parent: LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData
+  langs:
+  - csharp
+  - vb
+  name: MapSize
+  nameWithType: RegionSelector.MapGenInputData.MapSize
+  fullName: LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData.MapSize
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/RegionSelectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: MapSize
+    path: ../Internal/Manager/RegionSelectionAgent.cs
+    startLine: 371
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: public required Vector3Int MapSize
+    return:
+      type: LayeredMapGenAgent.Internal.Data.Vector3Int
+    content.vb: Public MapSize As Vector3Int
+- uid: LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData.SingleChunkSize
+  commentId: F:LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData.SingleChunkSize
+  id: SingleChunkSize
+  parent: LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData
+  langs:
+  - csharp
+  - vb
+  name: SingleChunkSize
+  nameWithType: RegionSelector.MapGenInputData.SingleChunkSize
+  fullName: LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData.SingleChunkSize
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/RegionSelectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: SingleChunkSize
+    path: ../Internal/Manager/RegionSelectionAgent.cs
+    startLine: 372
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: public required Vector3Int SingleChunkSize
+    return:
+      type: LayeredMapGenAgent.Internal.Data.Vector3Int
+    content.vb: Public SingleChunkSize As Vector3Int
+- uid: LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData.SingleRoomSize
+  commentId: F:LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData.SingleRoomSize
+  id: SingleRoomSize
+  parent: LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData
+  langs:
+  - csharp
+  - vb
+  name: SingleRoomSize
+  nameWithType: RegionSelector.MapGenInputData.SingleRoomSize
+  fullName: LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData.SingleRoomSize
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/RegionSelectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: SingleRoomSize
+    path: ../Internal/Manager/RegionSelectionAgent.cs
+    startLine: 373
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: public required Vector2Int SingleRoomSize
+    return:
+      type: LayeredMapGenAgent.Internal.Data.Vector2Int
+    content.vb: Public SingleRoomSize As Vector2Int
+- uid: LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData.RegionSelectionInputDataSpec
+  commentId: F:LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData.RegionSelectionInputDataSpec
+  id: RegionSelectionInputDataSpec
+  parent: LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData
+  langs:
+  - csharp
+  - vb
+  name: RegionSelectionInputDataSpec
+  nameWithType: RegionSelector.MapGenInputData.RegionSelectionInputDataSpec
+  fullName: LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData.RegionSelectionInputDataSpec
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/RegionSelectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: RegionSelectionInputDataSpec
+    path: ../Internal/Manager/RegionSelectionAgent.cs
+    startLine: 375
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: public required RegionSelectionInputDataSpec RegionSelectionInputDataSpec
+    return:
+      type: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec
+    content.vb: Public RegionSelectionInputDataSpec As RegionSelectionInputDataSpec
+- uid: LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData.MapActiveCube
+  commentId: F:LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData.MapActiveCube
+  id: MapActiveCube
+  parent: LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData
+  langs:
+  - csharp
+  - vb
+  name: MapActiveCube
+  nameWithType: RegionSelector.MapGenInputData.MapActiveCube
+  fullName: LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData.MapActiveCube
+  type: Field
+  source:
+    remote:
+      path: Internal/Manager/RegionSelectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: MapActiveCube
+    path: ../Internal/Manager/RegionSelectionAgent.cs
+    startLine: 377
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: public required List<MapActiveType[,]> MapActiveCube
+    return:
+      type: System.Collections.Generic.List{LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType[0:,0:]}
+    content.vb: Public MapActiveCube As List(Of MapActiveType(,))
+references:
+- uid: LayeredMapGenAgent.Internal.Manager
+  commentId: N:LayeredMapGenAgent.Internal.Manager
+  href: LayeredMapGenAgent.html
+  name: LayeredMapGenAgent.Internal.Manager
+  nameWithType: LayeredMapGenAgent.Internal.Manager
+  fullName: LayeredMapGenAgent.Internal.Manager
+  spec.csharp:
+  - uid: LayeredMapGenAgent
+    name: LayeredMapGenAgent
+    href: LayeredMapGenAgent.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal
+    name: Internal
+    href: LayeredMapGenAgent.Internal.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Manager
+    name: Manager
+    href: LayeredMapGenAgent.Internal.Manager.html
+  spec.vb:
+  - uid: LayeredMapGenAgent
+    name: LayeredMapGenAgent
+    href: LayeredMapGenAgent.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal
+    name: Internal
+    href: LayeredMapGenAgent.Internal.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Manager
+    name: Manager
+    href: LayeredMapGenAgent.Internal.Manager.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LayeredMapGenAgent.Internal.Data.Vector3Int
+  commentId: T:LayeredMapGenAgent.Internal.Data.Vector3Int
+  parent: LayeredMapGenAgent.Internal.Data
+  href: LayeredMapGenAgent.Internal.Data.Vector3Int.html
+  name: Vector3Int
+  nameWithType: Vector3Int
+  fullName: LayeredMapGenAgent.Internal.Data.Vector3Int
+- uid: LayeredMapGenAgent.Internal.Data
+  commentId: N:LayeredMapGenAgent.Internal.Data
+  href: LayeredMapGenAgent.html
+  name: LayeredMapGenAgent.Internal.Data
+  nameWithType: LayeredMapGenAgent.Internal.Data
+  fullName: LayeredMapGenAgent.Internal.Data
+  spec.csharp:
+  - uid: LayeredMapGenAgent
+    name: LayeredMapGenAgent
+    href: LayeredMapGenAgent.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal
+    name: Internal
+    href: LayeredMapGenAgent.Internal.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Data
+    name: Data
+    href: LayeredMapGenAgent.Internal.Data.html
+  spec.vb:
+  - uid: LayeredMapGenAgent
+    name: LayeredMapGenAgent
+    href: LayeredMapGenAgent.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal
+    name: Internal
+    href: LayeredMapGenAgent.Internal.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Data
+    name: Data
+    href: LayeredMapGenAgent.Internal.Data.html
+- uid: LayeredMapGenAgent.Internal.Data.Vector2Int
+  commentId: T:LayeredMapGenAgent.Internal.Data.Vector2Int
+  parent: LayeredMapGenAgent.Internal.Data
+  href: LayeredMapGenAgent.Internal.Data.Vector2Int.html
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: LayeredMapGenAgent.Internal.Data.Vector2Int
+- uid: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec
+  commentId: T:LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec
+  parent: LayeredMapGenAgent.Internal.Data
+  href: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.html
+  name: RegionSelectionInputDataSpec
+  nameWithType: RegionSelectionInputDataSpec
+  fullName: LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec
+- uid: System.Collections.Generic.List{LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType[0:,0:]}
+  commentId: T:System.Collections.Generic.List{LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType[0:,0:]}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<MapActiveType[,]>
+  nameWithType: List<MapActiveType[,]>
+  fullName: System.Collections.Generic.List<LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType[,]>
+  nameWithType.vb: List(Of MapActiveType(,))
+  fullName.vb: System.Collections.Generic.List(Of LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType(,))
+  name.vb: List(Of MapActiveType(,))
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType
+    name: MapActiveType
+    href: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.html
+  - name: '['
+  - name: ','
+  - name: ']'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType
+    name: MapActiveType
+    href: LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.html
+  - name: (
+  - name: ','
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

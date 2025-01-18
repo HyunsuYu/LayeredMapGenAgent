@@ -1,0 +1,634 @@
+### YamlMime:ManagedReference
+items:
+- uid: LayeredMapGenAgent.Internal.Data.Vector2Int
+  commentId: T:LayeredMapGenAgent.Internal.Data.Vector2Int
+  id: Vector2Int
+  parent: LayeredMapGenAgent.Internal.Data
+  children:
+  - LayeredMapGenAgent.Internal.Data.Vector2Int.#ctor
+  - LayeredMapGenAgent.Internal.Data.Vector2Int.#ctor(System.Int32,System.Int32)
+  - LayeredMapGenAgent.Internal.Data.Vector2Int.one
+  - LayeredMapGenAgent.Internal.Data.Vector2Int.op_Equality(LayeredMapGenAgent.Internal.Data.Vector2Int,LayeredMapGenAgent.Internal.Data.Vector2Int)
+  - LayeredMapGenAgent.Internal.Data.Vector2Int.op_Inequality(LayeredMapGenAgent.Internal.Data.Vector2Int,LayeredMapGenAgent.Internal.Data.Vector2Int)
+  - LayeredMapGenAgent.Internal.Data.Vector2Int.x
+  - LayeredMapGenAgent.Internal.Data.Vector2Int.y
+  - LayeredMapGenAgent.Internal.Data.Vector2Int.zero
+  langs:
+  - csharp
+  - vb
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: LayeredMapGenAgent.Internal.Data.Vector2Int
+  type: Struct
+  source:
+    remote:
+      path: Internal/Data/Vectors.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Vector2Int
+    path: ../Internal/Data/Vectors.cs
+    startLine: 9
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Data
+  syntax:
+    content: public struct Vector2Int
+    content.vb: Public Structure Vector2Int
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: LayeredMapGenAgent.Internal.Data.Vector2Int.x
+  commentId: P:LayeredMapGenAgent.Internal.Data.Vector2Int.x
+  id: x
+  parent: LayeredMapGenAgent.Internal.Data.Vector2Int
+  langs:
+  - csharp
+  - vb
+  name: x
+  nameWithType: Vector2Int.x
+  fullName: LayeredMapGenAgent.Internal.Data.Vector2Int.x
+  type: Property
+  source:
+    remote:
+      path: Internal/Data/Vectors.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: x
+    path: ../Internal/Data/Vectors.cs
+    startLine: 11
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Data
+  syntax:
+    content: public int x { readonly get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property x As Integer
+  overload: LayeredMapGenAgent.Internal.Data.Vector2Int.x*
+- uid: LayeredMapGenAgent.Internal.Data.Vector2Int.y
+  commentId: P:LayeredMapGenAgent.Internal.Data.Vector2Int.y
+  id: y
+  parent: LayeredMapGenAgent.Internal.Data.Vector2Int
+  langs:
+  - csharp
+  - vb
+  name: y
+  nameWithType: Vector2Int.y
+  fullName: LayeredMapGenAgent.Internal.Data.Vector2Int.y
+  type: Property
+  source:
+    remote:
+      path: Internal/Data/Vectors.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: y
+    path: ../Internal/Data/Vectors.cs
+    startLine: 12
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Data
+  syntax:
+    content: public int y { readonly get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property y As Integer
+  overload: LayeredMapGenAgent.Internal.Data.Vector2Int.y*
+- uid: LayeredMapGenAgent.Internal.Data.Vector2Int.#ctor
+  commentId: M:LayeredMapGenAgent.Internal.Data.Vector2Int.#ctor
+  id: '#ctor'
+  parent: LayeredMapGenAgent.Internal.Data.Vector2Int
+  langs:
+  - csharp
+  - vb
+  name: Vector2Int()
+  nameWithType: Vector2Int.Vector2Int()
+  fullName: LayeredMapGenAgent.Internal.Data.Vector2Int.Vector2Int()
+  type: Constructor
+  source:
+    remote:
+      path: Internal/Data/Vectors.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: .ctor
+    path: ../Internal/Data/Vectors.cs
+    startLine: 15
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Data
+  syntax:
+    content: public Vector2Int()
+    content.vb: Public Sub New()
+  overload: LayeredMapGenAgent.Internal.Data.Vector2Int.#ctor*
+  nameWithType.vb: Vector2Int.New()
+  fullName.vb: LayeredMapGenAgent.Internal.Data.Vector2Int.New()
+  name.vb: New()
+- uid: LayeredMapGenAgent.Internal.Data.Vector2Int.#ctor(System.Int32,System.Int32)
+  commentId: M:LayeredMapGenAgent.Internal.Data.Vector2Int.#ctor(System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32)'
+  parent: LayeredMapGenAgent.Internal.Data.Vector2Int
+  langs:
+  - csharp
+  - vb
+  name: Vector2Int(int, int)
+  nameWithType: Vector2Int.Vector2Int(int, int)
+  fullName: LayeredMapGenAgent.Internal.Data.Vector2Int.Vector2Int(int, int)
+  type: Constructor
+  source:
+    remote:
+      path: Internal/Data/Vectors.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: .ctor
+    path: ../Internal/Data/Vectors.cs
+    startLine: 20
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Data
+  syntax:
+    content: public Vector2Int(int x, int y)
+    parameters:
+    - id: x
+      type: System.Int32
+    - id: y
+      type: System.Int32
+    content.vb: Public Sub New(x As Integer, y As Integer)
+  overload: LayeredMapGenAgent.Internal.Data.Vector2Int.#ctor*
+  nameWithType.vb: Vector2Int.New(Integer, Integer)
+  fullName.vb: LayeredMapGenAgent.Internal.Data.Vector2Int.New(Integer, Integer)
+  name.vb: New(Integer, Integer)
+- uid: LayeredMapGenAgent.Internal.Data.Vector2Int.zero
+  commentId: P:LayeredMapGenAgent.Internal.Data.Vector2Int.zero
+  id: zero
+  parent: LayeredMapGenAgent.Internal.Data.Vector2Int
+  langs:
+  - csharp
+  - vb
+  name: zero
+  nameWithType: Vector2Int.zero
+  fullName: LayeredMapGenAgent.Internal.Data.Vector2Int.zero
+  type: Property
+  source:
+    remote:
+      path: Internal/Data/Vectors.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: zero
+    path: ../Internal/Data/Vectors.cs
+    startLine: 26
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Data
+  syntax:
+    content: public static Vector2Int zero { get; }
+    parameters: []
+    return:
+      type: LayeredMapGenAgent.Internal.Data.Vector2Int
+    content.vb: Public Shared ReadOnly Property zero As Vector2Int
+  overload: LayeredMapGenAgent.Internal.Data.Vector2Int.zero*
+- uid: LayeredMapGenAgent.Internal.Data.Vector2Int.one
+  commentId: P:LayeredMapGenAgent.Internal.Data.Vector2Int.one
+  id: one
+  parent: LayeredMapGenAgent.Internal.Data.Vector2Int
+  langs:
+  - csharp
+  - vb
+  name: one
+  nameWithType: Vector2Int.one
+  fullName: LayeredMapGenAgent.Internal.Data.Vector2Int.one
+  type: Property
+  source:
+    remote:
+      path: Internal/Data/Vectors.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: one
+    path: ../Internal/Data/Vectors.cs
+    startLine: 33
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Data
+  syntax:
+    content: public static Vector2Int one { get; }
+    parameters: []
+    return:
+      type: LayeredMapGenAgent.Internal.Data.Vector2Int
+    content.vb: Public Shared ReadOnly Property one As Vector2Int
+  overload: LayeredMapGenAgent.Internal.Data.Vector2Int.one*
+- uid: LayeredMapGenAgent.Internal.Data.Vector2Int.op_Equality(LayeredMapGenAgent.Internal.Data.Vector2Int,LayeredMapGenAgent.Internal.Data.Vector2Int)
+  commentId: M:LayeredMapGenAgent.Internal.Data.Vector2Int.op_Equality(LayeredMapGenAgent.Internal.Data.Vector2Int,LayeredMapGenAgent.Internal.Data.Vector2Int)
+  id: op_Equality(LayeredMapGenAgent.Internal.Data.Vector2Int,LayeredMapGenAgent.Internal.Data.Vector2Int)
+  parent: LayeredMapGenAgent.Internal.Data.Vector2Int
+  langs:
+  - csharp
+  - vb
+  name: operator ==(Vector2Int, Vector2Int)
+  nameWithType: Vector2Int.operator ==(Vector2Int, Vector2Int)
+  fullName: LayeredMapGenAgent.Internal.Data.Vector2Int.operator ==(LayeredMapGenAgent.Internal.Data.Vector2Int, LayeredMapGenAgent.Internal.Data.Vector2Int)
+  type: Operator
+  source:
+    remote:
+      path: Internal/Data/Vectors.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: op_Equality
+    path: ../Internal/Data/Vectors.cs
+    startLine: 41
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Data
+  syntax:
+    content: public static bool operator ==(Vector2Int a, Vector2Int b)
+    parameters:
+    - id: a
+      type: LayeredMapGenAgent.Internal.Data.Vector2Int
+    - id: b
+      type: LayeredMapGenAgent.Internal.Data.Vector2Int
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(a As Vector2Int, b As Vector2Int) As Boolean
+  overload: LayeredMapGenAgent.Internal.Data.Vector2Int.op_Equality*
+  nameWithType.vb: Vector2Int.=(Vector2Int, Vector2Int)
+  fullName.vb: LayeredMapGenAgent.Internal.Data.Vector2Int.=(LayeredMapGenAgent.Internal.Data.Vector2Int, LayeredMapGenAgent.Internal.Data.Vector2Int)
+  name.vb: =(Vector2Int, Vector2Int)
+- uid: LayeredMapGenAgent.Internal.Data.Vector2Int.op_Inequality(LayeredMapGenAgent.Internal.Data.Vector2Int,LayeredMapGenAgent.Internal.Data.Vector2Int)
+  commentId: M:LayeredMapGenAgent.Internal.Data.Vector2Int.op_Inequality(LayeredMapGenAgent.Internal.Data.Vector2Int,LayeredMapGenAgent.Internal.Data.Vector2Int)
+  id: op_Inequality(LayeredMapGenAgent.Internal.Data.Vector2Int,LayeredMapGenAgent.Internal.Data.Vector2Int)
+  parent: LayeredMapGenAgent.Internal.Data.Vector2Int
+  langs:
+  - csharp
+  - vb
+  name: operator !=(Vector2Int, Vector2Int)
+  nameWithType: Vector2Int.operator !=(Vector2Int, Vector2Int)
+  fullName: LayeredMapGenAgent.Internal.Data.Vector2Int.operator !=(LayeredMapGenAgent.Internal.Data.Vector2Int, LayeredMapGenAgent.Internal.Data.Vector2Int)
+  type: Operator
+  source:
+    remote:
+      path: Internal/Data/Vectors.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: op_Inequality
+    path: ../Internal/Data/Vectors.cs
+    startLine: 45
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Data
+  syntax:
+    content: public static bool operator !=(Vector2Int a, Vector2Int b)
+    parameters:
+    - id: a
+      type: LayeredMapGenAgent.Internal.Data.Vector2Int
+    - id: b
+      type: LayeredMapGenAgent.Internal.Data.Vector2Int
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(a As Vector2Int, b As Vector2Int) As Boolean
+  overload: LayeredMapGenAgent.Internal.Data.Vector2Int.op_Inequality*
+  nameWithType.vb: Vector2Int.<>(Vector2Int, Vector2Int)
+  fullName.vb: LayeredMapGenAgent.Internal.Data.Vector2Int.<>(LayeredMapGenAgent.Internal.Data.Vector2Int, LayeredMapGenAgent.Internal.Data.Vector2Int)
+  name.vb: <>(Vector2Int, Vector2Int)
+references:
+- uid: LayeredMapGenAgent.Internal.Data
+  commentId: N:LayeredMapGenAgent.Internal.Data
+  href: LayeredMapGenAgent.html
+  name: LayeredMapGenAgent.Internal.Data
+  nameWithType: LayeredMapGenAgent.Internal.Data
+  fullName: LayeredMapGenAgent.Internal.Data
+  spec.csharp:
+  - uid: LayeredMapGenAgent
+    name: LayeredMapGenAgent
+    href: LayeredMapGenAgent.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal
+    name: Internal
+    href: LayeredMapGenAgent.Internal.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Data
+    name: Data
+    href: LayeredMapGenAgent.Internal.Data.html
+  spec.vb:
+  - uid: LayeredMapGenAgent
+    name: LayeredMapGenAgent
+    href: LayeredMapGenAgent.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal
+    name: Internal
+    href: LayeredMapGenAgent.Internal.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Data
+    name: Data
+    href: LayeredMapGenAgent.Internal.Data.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LayeredMapGenAgent.Internal.Data.Vector2Int.x*
+  commentId: Overload:LayeredMapGenAgent.Internal.Data.Vector2Int.x
+  href: LayeredMapGenAgent.Internal.Data.Vector2Int.html#LayeredMapGenAgent_Internal_Data_Vector2Int_x
+  name: x
+  nameWithType: Vector2Int.x
+  fullName: LayeredMapGenAgent.Internal.Data.Vector2Int.x
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: LayeredMapGenAgent.Internal.Data.Vector2Int.y*
+  commentId: Overload:LayeredMapGenAgent.Internal.Data.Vector2Int.y
+  href: LayeredMapGenAgent.Internal.Data.Vector2Int.html#LayeredMapGenAgent_Internal_Data_Vector2Int_y
+  name: y
+  nameWithType: Vector2Int.y
+  fullName: LayeredMapGenAgent.Internal.Data.Vector2Int.y
+- uid: LayeredMapGenAgent.Internal.Data.Vector2Int.#ctor*
+  commentId: Overload:LayeredMapGenAgent.Internal.Data.Vector2Int.#ctor
+  href: LayeredMapGenAgent.Internal.Data.Vector2Int.html#LayeredMapGenAgent_Internal_Data_Vector2Int__ctor
+  name: Vector2Int
+  nameWithType: Vector2Int.Vector2Int
+  fullName: LayeredMapGenAgent.Internal.Data.Vector2Int.Vector2Int
+  nameWithType.vb: Vector2Int.New
+  fullName.vb: LayeredMapGenAgent.Internal.Data.Vector2Int.New
+  name.vb: New
+- uid: LayeredMapGenAgent.Internal.Data.Vector2Int.zero*
+  commentId: Overload:LayeredMapGenAgent.Internal.Data.Vector2Int.zero
+  href: LayeredMapGenAgent.Internal.Data.Vector2Int.html#LayeredMapGenAgent_Internal_Data_Vector2Int_zero
+  name: zero
+  nameWithType: Vector2Int.zero
+  fullName: LayeredMapGenAgent.Internal.Data.Vector2Int.zero
+- uid: LayeredMapGenAgent.Internal.Data.Vector2Int
+  commentId: T:LayeredMapGenAgent.Internal.Data.Vector2Int
+  parent: LayeredMapGenAgent.Internal.Data
+  href: LayeredMapGenAgent.Internal.Data.Vector2Int.html
+  name: Vector2Int
+  nameWithType: Vector2Int
+  fullName: LayeredMapGenAgent.Internal.Data.Vector2Int
+- uid: LayeredMapGenAgent.Internal.Data.Vector2Int.one*
+  commentId: Overload:LayeredMapGenAgent.Internal.Data.Vector2Int.one
+  href: LayeredMapGenAgent.Internal.Data.Vector2Int.html#LayeredMapGenAgent_Internal_Data_Vector2Int_one
+  name: one
+  nameWithType: Vector2Int.one
+  fullName: LayeredMapGenAgent.Internal.Data.Vector2Int.one
+- uid: LayeredMapGenAgent.Internal.Data.Vector2Int.op_Equality*
+  commentId: Overload:LayeredMapGenAgent.Internal.Data.Vector2Int.op_Equality
+  href: LayeredMapGenAgent.Internal.Data.Vector2Int.html#LayeredMapGenAgent_Internal_Data_Vector2Int_op_Equality_LayeredMapGenAgent_Internal_Data_Vector2Int_LayeredMapGenAgent_Internal_Data_Vector2Int_
+  name: operator ==
+  nameWithType: Vector2Int.operator ==
+  fullName: LayeredMapGenAgent.Internal.Data.Vector2Int.operator ==
+  nameWithType.vb: Vector2Int.=
+  fullName.vb: LayeredMapGenAgent.Internal.Data.Vector2Int.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: LayeredMapGenAgent.Internal.Data.Vector2Int.op_Equality*
+    name: ==
+    href: LayeredMapGenAgent.Internal.Data.Vector2Int.html#LayeredMapGenAgent_Internal_Data_Vector2Int_op_Equality_LayeredMapGenAgent_Internal_Data_Vector2Int_LayeredMapGenAgent_Internal_Data_Vector2Int_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: LayeredMapGenAgent.Internal.Data.Vector2Int.op_Inequality*
+  commentId: Overload:LayeredMapGenAgent.Internal.Data.Vector2Int.op_Inequality
+  href: LayeredMapGenAgent.Internal.Data.Vector2Int.html#LayeredMapGenAgent_Internal_Data_Vector2Int_op_Inequality_LayeredMapGenAgent_Internal_Data_Vector2Int_LayeredMapGenAgent_Internal_Data_Vector2Int_
+  name: operator !=
+  nameWithType: Vector2Int.operator !=
+  fullName: LayeredMapGenAgent.Internal.Data.Vector2Int.operator !=
+  nameWithType.vb: Vector2Int.<>
+  fullName.vb: LayeredMapGenAgent.Internal.Data.Vector2Int.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: LayeredMapGenAgent.Internal.Data.Vector2Int.op_Inequality*
+    name: '!='
+    href: LayeredMapGenAgent.Internal.Data.Vector2Int.html#LayeredMapGenAgent_Internal_Data_Vector2Int_op_Inequality_LayeredMapGenAgent_Internal_Data_Vector2Int_LayeredMapGenAgent_Internal_Data_Vector2Int_

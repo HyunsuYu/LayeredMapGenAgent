@@ -1,0 +1,426 @@
+### YamlMime:ManagedReference
+items:
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector
+  commentId: T:LayeredMapGenAgent.Internal.Manager.TileEdgyDetector
+  id: TileEdgyDetector
+  parent: LayeredMapGenAgent.Internal.Manager
+  children:
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.DetectTileEdgy(LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionInput@)
+  - LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.Dispose
+  langs:
+  - csharp
+  - vb
+  name: TileEdgyDetector
+  nameWithType: TileEdgyDetector
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector
+  type: Class
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: TileEdgyDetector
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 274
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: public static class TileEdgyDetector
+    content.vb: Public Module TileEdgyDetector
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.DetectTileEdgy(LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionInput@)
+  commentId: M:LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.DetectTileEdgy(LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionInput@)
+  id: DetectTileEdgy(LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionInput@)
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector
+  langs:
+  - csharp
+  - vb
+  name: DetectTileEdgy(in TileEdgyDetectionInput)
+  nameWithType: TileEdgyDetector.DetectTileEdgy(in TileEdgyDetector.TileEdgyDetectionInput)
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.DetectTileEdgy(in LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionInput)
+  type: Method
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: DetectTileEdgy
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 307
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: public static TileEdgyDetector.TileEdgyDetectionOutput DetectTileEdgy(in TileEdgyDetector.TileEdgyDetectionInput tileEdgyDetectionInput)
+    parameters:
+    - id: tileEdgyDetectionInput
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionInput
+    return:
+      type: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionOutput
+    content.vb: Public Shared Function DetectTileEdgy(tileEdgyDetectionInput As TileEdgyDetector.TileEdgyDetectionInput) As TileEdgyDetector.TileEdgyDetectionOutput
+  overload: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.DetectTileEdgy*
+  nameWithType.vb: TileEdgyDetector.DetectTileEdgy(TileEdgyDetector.TileEdgyDetectionInput)
+  fullName.vb: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.DetectTileEdgy(LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionInput)
+  name.vb: DetectTileEdgy(TileEdgyDetectionInput)
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.Dispose
+  commentId: M:LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.Dispose
+  id: Dispose
+  parent: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: TileEdgyDetector.Dispose()
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.Dispose()
+  type: Method
+  source:
+    remote:
+      path: Internal/Manager/TileEdgyDetectionAgent.cs
+      branch: master
+      repo: https://github.com/HyunsuYu/LayeredMapGenAgent.git
+    id: Dispose
+    path: ../Internal/Manager/TileEdgyDetectionAgent.cs
+    startLine: 383
+  assemblies:
+  - LayeredMapGenAgent
+  namespace: LayeredMapGenAgent.Internal.Manager
+  syntax:
+    content: public static void Dispose()
+    content.vb: Public Shared Sub Dispose()
+  overload: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.Dispose*
+references:
+- uid: LayeredMapGenAgent.Internal.Manager
+  commentId: N:LayeredMapGenAgent.Internal.Manager
+  href: LayeredMapGenAgent.html
+  name: LayeredMapGenAgent.Internal.Manager
+  nameWithType: LayeredMapGenAgent.Internal.Manager
+  fullName: LayeredMapGenAgent.Internal.Manager
+  spec.csharp:
+  - uid: LayeredMapGenAgent
+    name: LayeredMapGenAgent
+    href: LayeredMapGenAgent.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal
+    name: Internal
+    href: LayeredMapGenAgent.Internal.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Manager
+    name: Manager
+    href: LayeredMapGenAgent.Internal.Manager.html
+  spec.vb:
+  - uid: LayeredMapGenAgent
+    name: LayeredMapGenAgent
+    href: LayeredMapGenAgent.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal
+    name: Internal
+    href: LayeredMapGenAgent.Internal.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Manager
+    name: Manager
+    href: LayeredMapGenAgent.Internal.Manager.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.DetectTileEdgy*
+  commentId: Overload:LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.DetectTileEdgy
+  href: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.html#LayeredMapGenAgent_Internal_Manager_TileEdgyDetector_DetectTileEdgy_LayeredMapGenAgent_Internal_Manager_TileEdgyDetector_TileEdgyDetectionInput__
+  name: DetectTileEdgy
+  nameWithType: TileEdgyDetector.DetectTileEdgy
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.DetectTileEdgy
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionInput
+  commentId: T:LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionInput
+  parent: LayeredMapGenAgent.Internal.Manager
+  href: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.html
+  name: TileEdgyDetector.TileEdgyDetectionInput
+  nameWithType: TileEdgyDetector.TileEdgyDetectionInput
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionInput
+  spec.csharp:
+  - uid: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector
+    name: TileEdgyDetector
+    href: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionInput
+    name: TileEdgyDetectionInput
+    href: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionInput.html
+  spec.vb:
+  - uid: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector
+    name: TileEdgyDetector
+    href: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionInput
+    name: TileEdgyDetectionInput
+    href: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionInput.html
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionOutput
+  commentId: T:LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionOutput
+  parent: LayeredMapGenAgent.Internal.Manager
+  href: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.html
+  name: TileEdgyDetector.TileEdgyDetectionOutput
+  nameWithType: TileEdgyDetector.TileEdgyDetectionOutput
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionOutput
+  spec.csharp:
+  - uid: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector
+    name: TileEdgyDetector
+    href: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionOutput
+    name: TileEdgyDetectionOutput
+    href: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionOutput.html
+  spec.vb:
+  - uid: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector
+    name: TileEdgyDetector
+    href: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.html
+  - name: .
+  - uid: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionOutput
+    name: TileEdgyDetectionOutput
+    href: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionOutput.html
+- uid: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.Dispose*
+  commentId: Overload:LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.Dispose
+  href: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.html#LayeredMapGenAgent_Internal_Manager_TileEdgyDetector_Dispose
+  name: Dispose
+  nameWithType: TileEdgyDetector.Dispose
+  fullName: LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.Dispose

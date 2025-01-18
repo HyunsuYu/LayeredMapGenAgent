@@ -28,6 +28,7 @@ namespace LayeredMapGenAgent.Public.Manager
             public AbstractInputDataSpec AbstractInputData;
             public BasicMapInputDataSpec BasicMapInputData;
             public RegionSelectionInputDataSpec RegionSelectionInputData;
+            public MiddleLayersInputDataSpec MiddleLayersInputData;
 
             public string BasicMapGenOutputPath;
             public string TileEdgyOutputPath;
@@ -54,6 +55,16 @@ namespace LayeredMapGenAgent.Public.Manager
 
             public ManualResetEvent ManualResetEvent;
         }
+        internal sealed class SaveMiddleLayerPngImageInput
+        {
+            public int LayerIndex;
+            public byte[,] MiddleLayerPlane;
+            public Vector3Int FullMapSize;
+
+            public string BasicMapGenOutputPath;
+
+            public ManualResetEvent ManualResetEvent;
+        }
 
 
         public static void Main(string[] args)
@@ -68,7 +79,7 @@ namespace LayeredMapGenAgent.Public.Manager
                 Console.WriteLine();
 
                 chiefMapGenerationInput = JsonConvert.DeserializeObject<ChiefMapGenerationInput>(args[0]);
-                //chiefMapGenerationInput = JsonConvert.DeserializeObject<ChiefMapGenerationInput>("{\"AbstrKUactInputData\":{\"SingleChunkSize\":{\"x\":1,\"y\":1,\"z\":1,\"magnitude\":65.95453,\"sqrMagnitude\":4350},\"MapSize\":{\"x\":5,\"y\":3,\"z\":5,\"magnitude\":7.68114567,\"sqrMagnitude\":59},\"SingleRoomSize\":{\"x\":7,\"y\":7,\"magnitude\":19.79899,\"sqrMagnitude\":392},\"AreaNameTable\":{\"51b33455-081e-4878-8758-a67b0d1102e2\":\"clear\",\"688c40e5-9b15-47ee-82ed-75ae48879149\":\"test\"}},\"BasicMapInputData\":{\"MaxTryCountRatio\":0.001,\"BrushSize\":{\"Item1\":1,\"Item2\":3},\"MainWayFillPercent\":0.15,\"SubWayFillPercent\":0.25,\"PenetratingWayCountRate\":0.001,\"PenetratingWayFillPercent\":0.1},\"RegionSelectionInputData\":{\"BaseColor\":{\"x\":0.5,\"y\":0.5,\"z\":0.5},\"SingleRegionDatas\":[{\"RegionName\":\"clear\",\"RegionID\":\"51b33455-081e-4878-8758-a67b0d1102e2\",\"RegionBlendColor\":{\"x\":0.5,\"y\":0.5,\"z\":0.5},\"IdealSpawnPos\":{\"x\":0.3,\"y\":0.5,\"z\":0.0},\"WeightVector\":{\"x\":2.0,\"y\":1.0,\"z\":1.0}},{\"RegionName\":\"test\",\"RegionID\":\"688c40e5-9b15-47ee-82ed-75ae48879149\",\"RegionBlendColor\":{\"x\":0.5,\"y\":0.5,\"z\":0.5},\"IdealSpawnPos\":{\"x\":1.0,\"y\":1.0,\"z\":1.0},\"WeightVector\":{\"x\":1.0,\"y\":1.0,\"z\":1.0}}]},\"BasicMapGenOutputPath\":\"C:/Storage/Sandbox/Unity/UnTitled_LayeredMapGenTool/Assets/StreamingAssets/LayeredMapGeneration/OutputData/BasicPathOutputData_\",\"TileEdgyOutputPath\":\"C:/Storage/Sandbox/Unity/UnTitled_LayeredMapGenTool/Assets/StreamingAssets/LayeredMapGeneration/OutputData/TileEdgyOutputData_\",\"RegionSelectionOutputPath\":\"C:/Storage/Sandbox/Unity/UnTitled_LayeredMapGenTool/Assets/StreamingAssets/LayeredMapGeneration/OutputData/RegionSelectionOutputData_\"}");
+                //chiefMapGenerationInput = JsonConvert.DeserializeObject<ChiefMapGenerationInput>("{\"AbstractInputData\":{\"SingleChunkSize\":{\"x\":25,\"y\":1,\"z\":25,\"magnitude\":35.36948,\"sqrMagnitude\":1251},\"MapSize\":{\"x\":2,\"y\":3,\"z\":2,\"magnitude\":4.12310553,\"sqrMagnitude\":17},\"SingleRoomSize\":{\"x\":14,\"y\":14,\"magnitude\":19.79899,\"sqrMagnitude\":392},\"AreaNameTable\":{\"b2f72253-c765-46c6-a753-1393214c92f6\":\"temp\",\"36ea1db3-ab64-44c6-a430-56ccda7caeb1\":\"clear\"}},\"BasicMapInputData\":{\"MaxTryCountRatio\":0.001,\"BrushSize\":{\"Item1\":1,\"Item2\":3},\"MainWayFillPercent\":0.15,\"SubWayFillPercent\":0.25,\"PenetratingWayCountRate\":0.001,\"PenetratingWayFillPercent\":0.2},\"RegionSelectionInputData\":{\"BaseColor\":{\"x\":0.5,\"y\":0.5,\"z\":0.5},\"SingleRegionDatas\":[{\"RegionName\":\"NewAreaName_360484660\",\"RegionID\":\"f054e296-ab71-455e-b4a2-77b26e5c8921\",\"RegionBlendColor\":{\"x\":0.5,\"y\":0.5,\"z\":0.5},\"IdealSpawnPos\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"WeightVector\":{\"x\":1.0,\"y\":1.0,\"z\":1.0}},{\"RegionName\":\"NewAreaName_481659764\",\"RegionID\":\"27f719d0-9873-4673-93d7-1244269714b6\",\"RegionBlendColor\":{\"x\":0.5,\"y\":0.5,\"z\":0.5},\"IdealSpawnPos\":{\"x\":1.0,\"y\":1.0,\"z\":1.0},\"WeightVector\":{\"x\":1.0,\"y\":1.0,\"z\":1.0}}]},\"MiddleLayersInputData\":{\"CurLayerMiddleLayerDepth\":2,\"GateToBackMiddleLayerDepth\":1,\"ColorStepForCurLayer\":{\"x\":0.1,\"y\":0.1,\"z\":0.1,\"w\":0.0},\"ColorStepForGateToBack\":{\"x\":0.4,\"y\":0.4,\"z\":0.4,\"w\":0.0}},\"BasicMapGenOutputPath\":\"C:/Storage/Sandbox/Unity/UnTitled_LayeredMapGenTool/Assets/StreamingAssets/LayeredMapGeneration/OutputData/BasicPathOutputData_\",\"TileEdgyOutputPath\":\"C:/Storage/Sandbox/Unity/UnTitled_LayeredMapGenTool/Assets/StreamingAssets/LayeredMapGeneration/OutputData/TileEdgyOutputData_\",\"RegionSelectionOutputPath\":\"C:/Storage/Sandbox/Unity/UnTitled_LayeredMapGenTool/Assets/StreamingAssets/LayeredMapGeneration/OutputData/RegionSelectionOutputData_\"}");
             }
             catch (Exception e)
             {
@@ -125,6 +136,38 @@ namespace LayeredMapGenAgent.Public.Manager
                         break;
                     }
                 }
+
+                layerIndex = 0;
+                while (true)
+                {
+                    string fileName = chiefMapGenerationInput.TileEdgyOutputPath + layerIndex.ToString() + "_MiddleLayer.png";
+                    if (File.Exists(fileName))
+                    {
+                        File.Delete(fileName);
+                        File.Delete(fileName + ".meta");
+                        layerIndex++;
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+
+                layerIndex = 0;
+                while (true)
+                {
+                    string fileName = chiefMapGenerationInput.TileEdgyOutputPath + "_TileKind_" + layerIndex.ToString() + ".png";
+                    if (File.Exists(fileName))
+                    {
+                        File.Delete(fileName);
+                        File.Delete(fileName + ".meta");
+                        layerIndex++;
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
             }
             #endregion
 
@@ -166,6 +209,22 @@ namespace LayeredMapGenAgent.Public.Manager
             Console.WriteLine("Region Selection Time: " + stopwatch.ElapsedMilliseconds / 1000.0f + "s");
             #endregion
 
+            #region Middle Layers
+            MiddleLayersGenAgent.MapGenInputData middleLayersInputData = new MiddleLayersGenAgent.MapGenInputData()
+            {
+                MapSize = chiefMapGenerationInput.AbstractInputData.MapSize,
+                SingleChunkSize = chiefMapGenerationInput.AbstractInputData.SingleChunkSize,
+                SingleRoomSize = chiefMapGenerationInput.AbstractInputData.SingleRoomSize,
+
+                MiddleLayersInputDataSpec = chiefMapGenerationInput.MiddleLayersInputData,
+                MapActiveCube = basicMapGenOutput.MapActiveCube,
+            };
+
+            MiddleLayersGenAgent.MiddleLayersOutput middleLayersGenOutput = MiddleLayersGenAgent.CalculateMiddleLayers(middleLayersInputData);
+
+            Console.WriteLine("Middle Layers Generation Time: " + stopwatch.ElapsedMilliseconds / 1000.0f + "s");
+            #endregion
+
             #region Tile Edgy Detection
             //TileEdgyDetector.TileEdgyDetectionInput tileEdgyDetectionInput = new TileEdgyDetector.TileEdgyDetectionInput()
             //{
@@ -194,7 +253,7 @@ namespace LayeredMapGenAgent.Public.Manager
                 Directory.CreateDirectory(directoryPath);
             }
 
-            #region Create Basic Map Png Image
+            #region Create Basic Map & Middle Layers Png Image
             {
                 Console.WriteLine("Start Create Basic Map Png Image");
 
@@ -221,7 +280,7 @@ namespace LayeredMapGenAgent.Public.Manager
                             ManualResetEvent = manualResetEvent
                         };
 
-                        ThreadPool.QueueUserWorkItem(SaveBasicMapPngImage, input);
+                        ThreadPool.QueueUserWorkItem(SaveBasicMapANdMiddleLayersPngImage, input);
 
                         if (manualResetEvents.Count == 64)
                         {
@@ -415,6 +474,104 @@ namespace LayeredMapGenAgent.Public.Manager
             //}
             #endregion
 
+            #region Create Middle Region Png Image
+            {
+                Console.WriteLine("Start Create Basic Map Png Image");
+
+                int layerCount = chiefMapGenerationInput.AbstractInputData.MapSize.y * chiefMapGenerationInput.AbstractInputData.SingleChunkSize.y;
+
+                List<ManualResetEvent> manualResetEvents = new List<ManualResetEvent>();
+                int nextStartIndex = 0;
+                while (true)
+                {
+                    bool bisEnd = false;
+                    for (int index = nextStartIndex; index < layerCount; index++)
+                    {
+                        ManualResetEvent manualResetEvent = new ManualResetEvent(false);
+                        manualResetEvents.Add(manualResetEvent);
+
+                        SaveMiddleLayerPngImageInput input = new SaveMiddleLayerPngImageInput()
+                        {
+                            LayerIndex = index,
+                            MiddleLayerPlane = middleLayersGenOutput.MiddleLayersResultPlanes[index],
+                            FullMapSize = fullMapSize,
+
+                            BasicMapGenOutputPath = chiefMapGenerationInput.BasicMapGenOutputPath,
+
+                            ManualResetEvent = manualResetEvent
+                        };
+
+                        ThreadPool.QueueUserWorkItem(SaveMiddleLayerPngImage, input);
+
+                        if (manualResetEvents.Count == 64)
+                        {
+                            nextStartIndex = index + 1;
+                            break;
+                        }
+                        if (index == layerCount - 1)
+                        {
+                            bisEnd = true;
+                        }
+                    }
+
+                    if (manualResetEvents.Count == 0)
+                    {
+                        break;
+                    }
+
+                    WaitHandle.WaitAll(manualResetEvents.ToArray());
+                    manualResetEvents.Clear();
+
+                    if (bisEnd)
+                    {
+                        break;
+                    }
+                }
+
+                #region Old Code
+                ////Dictionary<float, int> count = new Dictionary<float, int>();
+                //List<SKBitmap> rawBitmaps = new List<SKBitmap>();
+                //for (int index = 0; index < basicMapGenOutput.MapActiveCube.Count; index++)
+                //{
+                //    SKBitmap rawBitmap = new SKBitmap(fullMapSize.x, fullMapSize.z);
+                //    for (int coord_z = 0; coord_z < fullMapSize.z; coord_z++)
+                //    {
+                //        for (int coord_x = 0; coord_x < fullMapSize.x; coord_x++)
+                //        {
+                //            //rawBitmap.SetPixel(coord_x, coord_z,
+                //            //                   new RawColor((byte)((basicMapGenOutput.MapActiveCube[index][coord_z, coord_x].HasFlag(MapActiveType.BIsNodeActive)) ? 255 : 0),
+                //            //                                (byte)((basicMapGenOutput.MapActiveCube[index][coord_z, coord_x].HasFlag(MapActiveType.BIsNodeIsGateToBack)) ? 255 : 0),
+                //            //                                (byte)255));
+
+                //            var values = DataMutiBitSaveFactors.GetTwoChannelMultiBit((int)basicMapGenOutput.MapActiveCube[index][coord_z, coord_x] / (float)byte.MaxValue);
+                //            rawBitmap.SetPixel(coord_x, coord_z, new SKColor((byte)(values.Item1 * 255.0f), (byte)(values.Item2 * 255.0f), 255));
+
+                //            //float countValue = DataMutiBitSaveFactors.GetTwoChannelRestoredValue(values);
+                //            //if (!count.ContainsKey(countValue))
+                //            //{
+                //            //    count.Add(countValue, 0);
+                //            //}
+                //            //count[countValue]++;
+                //        }
+                //    }
+                //    rawBitmaps.Add(rawBitmap);
+                //}
+                ////foreach (var item in count)
+                ////{
+                ////    Console.WriteLine("Value: " + item.Key + " Count: " + item.Value);
+                ////}
+
+                //for (int index = 0; index < rawBitmaps.Count; index++)
+                //{
+                //    using SKFileWStream fileStream = new SKFileWStream(chiefMapGenerationInput.BasicMapGenOutputPath + index.ToString() + ".png");
+                //    rawBitmaps[index].Encode(fileStream, SKEncodedImageFormat.Png, 100);
+                //}
+                #endregion
+
+                Console.WriteLine("End Create Basic Map Png Image");
+            }
+            #endregion
+
             //File.WriteAllText(chiefMapGenerationInput.BasicMapGenOutputPath, JsonConvert.SerializeObject(basicMapGenOutput));
 
             BasicMapGenerator.Dispose();
@@ -425,7 +582,7 @@ namespace LayeredMapGenAgent.Public.Manager
             Console.WriteLine("Basic Map Generation Time: " + stopwatch.ElapsedMilliseconds / 1000.0f + "s");
         }
 
-        private static void SaveBasicMapPngImage(object input)
+        private static void SaveBasicMapANdMiddleLayersPngImage(object input)
         {
             SaveBasicMapPngImageInput inputData = input as SaveBasicMapPngImageInput;
 
@@ -439,8 +596,9 @@ namespace LayeredMapGenAgent.Public.Manager
                     //                                (byte)((basicMapGenOutput.MapActiveCube[index][coord_z, coord_x].HasFlag(MapActiveType.BIsNodeIsGateToBack)) ? 255 : 0),
                     //                                (byte)255));
 
-                    var values = DataMutiBitSaveFactors.GetTwoChannelMultiBit((int)inputData.MapActivePlane[coord_z, coord_x] / (float)byte.MaxValue);
-                    rawBitmap.SetPixel(coord_x, coord_z, new SKColor((byte)(values.Item1 * 255.0f), (byte)(values.Item2 * 255.0f), 255));
+                    var basicMapValues = DataMutiBitSaveFactors.GetTwoChannelMultiBit((int)inputData.MapActivePlane[coord_z, coord_x] / (float)byte.MaxValue);
+
+                    rawBitmap.SetPixel(coord_x, coord_z, new SKColor((byte)(basicMapValues.Item1 * 255.0f), (byte)(basicMapValues.Item2 * 255.0f), 255));
 
                     //float countValue = DataMutiBitSaveFactors.GetTwoChannelRestoredValue(values);
                     //if (!count.ContainsKey(countValue))
@@ -479,6 +637,38 @@ namespace LayeredMapGenAgent.Public.Manager
             }
 
             using SKFileWStream fileStream = new SKFileWStream(inputData.BasicMapGenOutputPath + "_Region_" + inputData.LayerIndex.ToString() + ".png");
+            rawBitmap.Encode(fileStream, SKEncodedImageFormat.Png, 100);
+
+            inputData.ManualResetEvent.Set();
+        }
+        private static void SaveMiddleLayerPngImage(object input)
+        {
+            SaveMiddleLayerPngImageInput inputData = input as SaveMiddleLayerPngImageInput;
+
+            SKBitmap rawBitmap = new SKBitmap(inputData.FullMapSize.x, inputData.FullMapSize.z);
+            for (int coord_z = 0; coord_z < inputData.FullMapSize.z; coord_z++)
+            {
+                for (int coord_x = 0; coord_x < inputData.FullMapSize.x; coord_x++)
+                {
+                    //rawBitmap.SetPixel(coord_x, coord_z,
+                    //                   new RawColor((byte)((basicMapGenOutput.MapActiveCube[index][coord_z, coord_x].HasFlag(MapActiveType.BIsNodeActive)) ? 255 : 0),
+                    //                                (byte)((basicMapGenOutput.MapActiveCube[index][coord_z, coord_x].HasFlag(MapActiveType.BIsNodeIsGateToBack)) ? 255 : 0),
+                    //                                (byte)255));
+
+                    var basicMapValues = DataMutiBitSaveFactors.GetTwoChannelMultiBit((int)inputData.MiddleLayerPlane[coord_z, coord_x] / (float)byte.MaxValue);
+
+                    rawBitmap.SetPixel(coord_x, coord_z, new SKColor((byte)(basicMapValues.Item1 * 255.0f), (byte)(basicMapValues.Item2 * 255.0f), 255));
+
+                    //float countValue = DataMutiBitSaveFactors.GetTwoChannelRestoredValue(values);
+                    //if (!count.ContainsKey(countValue))
+                    //{
+                    //    count.Add(countValue, 0);
+                    //}
+                    //count[countValue]++;
+                }
+            }
+
+            using SKFileWStream fileStream = new SKFileWStream(inputData.BasicMapGenOutputPath + inputData.LayerIndex.ToString() + "_MiddleLayer.png");
             rawBitmap.Encode(fileStream, SKEncodedImageFormat.Png, 100);
 
             inputData.ManualResetEvent.Set();
