@@ -1,4 +1,5 @@
 {
+  "homepages": [],
   "source_base_path": "C:/Storage/Projects/UnTitled/OnDev/LayeredMapGenAgent/LayeredMapGenAgent/docs",
   "xrefmap": "xrefmap.yml",
   "files": [
@@ -8,16 +9,19 @@
         "resource": {
           "relative_path": "index.json"
         }
-      }
+      },
+      "is_incremental": false
     },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionData.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionData.html"
+          "relative_path": "api/LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.SingleRegionData.html",
+          "hash": "hU6gj33Sd0itMvTKzpvZrfgpNKjvPgpYqDQFwV6/5J4="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -25,9 +29,11 @@
       "source_relative_path": "api/LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.html"
+          "relative_path": "api/LayeredMapGenAgent.Internal.Data.RegionSelectionInputDataSpec.html",
+          "hash": "+wVCsEMafcUp2Rc1ODtp2Ju3stZ9rSuw+Pz2sTH1vUg="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -35,9 +41,11 @@
       "source_relative_path": "api/LayeredMapGenAgent.Internal.Data.Vector2.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LayeredMapGenAgent.Internal.Data.Vector2.html"
+          "relative_path": "api/LayeredMapGenAgent.Internal.Data.Vector2.html",
+          "hash": "/f5xyTDJR1X/kYBZ9MtoOoWRjxaocxv84R3ugPYuxRE="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -45,9 +53,11 @@
       "source_relative_path": "api/LayeredMapGenAgent.Internal.Data.Vector2Int.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LayeredMapGenAgent.Internal.Data.Vector2Int.html"
+          "relative_path": "api/LayeredMapGenAgent.Internal.Data.Vector2Int.html",
+          "hash": "j0Bu8pK2I36cSCqxzjcwdcPzuBw4BOBdQaF9E+/of/o="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -55,9 +65,11 @@
       "source_relative_path": "api/LayeredMapGenAgent.Internal.Data.Vector3.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LayeredMapGenAgent.Internal.Data.Vector3.html"
+          "relative_path": "api/LayeredMapGenAgent.Internal.Data.Vector3.html",
+          "hash": "KnpxwUP39PT5J1nFtJSapeb6sOm5ySYf2ZAez6bVTww="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -65,9 +77,11 @@
       "source_relative_path": "api/LayeredMapGenAgent.Internal.Data.Vector3Int.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LayeredMapGenAgent.Internal.Data.Vector3Int.html"
+          "relative_path": "api/LayeredMapGenAgent.Internal.Data.Vector3Int.html",
+          "hash": "vG+uMH3rzP7MColjVAniXNNCotgwk9Qw2J7n0Y13fTk="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -75,9 +89,11 @@
       "source_relative_path": "api/LayeredMapGenAgent.Internal.Data.Vector4.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LayeredMapGenAgent.Internal.Data.Vector4.html"
+          "relative_path": "api/LayeredMapGenAgent.Internal.Data.Vector4.html",
+          "hash": "ZMGZHdzP1mDS3y1ro9XTcVoLzTfR9TGuqZjh+9jk8gg="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -85,9 +101,11 @@
       "source_relative_path": "api/LayeredMapGenAgent.Internal.Data.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LayeredMapGenAgent.Internal.Data.html"
+          "relative_path": "api/LayeredMapGenAgent.Internal.Data.html",
+          "hash": "YMZ1gGO8xqQVB5l6EIQhhZ1RjBUqNn5xToRJPB2ZYkw="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -95,9 +113,11 @@
       "source_relative_path": "api/LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.html"
+          "relative_path": "api/LayeredMapGenAgent.Internal.Manager.BasicMap.MapActiveType.html",
+          "hash": "Xr+87Kboif49kud+4oGCapQpDjcXEQ4DAhZ71b2oSdI="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -105,9 +125,11 @@
       "source_relative_path": "api/LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.html"
+          "relative_path": "api/LayeredMapGenAgent.Internal.Manager.BasicMap.PathDirection.html",
+          "hash": "AMKTfAXn/xlg/Ch24s0pff1fDg4E01dj3dIflMJ56m0="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -115,9 +137,11 @@
       "source_relative_path": "api/LayeredMapGenAgent.Internal.Manager.BasicMap.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LayeredMapGenAgent.Internal.Manager.BasicMap.html"
+          "relative_path": "api/LayeredMapGenAgent.Internal.Manager.BasicMap.html",
+          "hash": "3nmCjYR7TigsZkpmKnaz4d6vTA1wuZUNK7b3PvqDTQ8="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -125,9 +149,11 @@
       "source_relative_path": "api/LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData.html"
+          "relative_path": "api/LayeredMapGenAgent.Internal.Manager.RegionSelector.MapGenInputData.html",
+          "hash": "RuQoZxlCy0fyJEHOOGaz/ubuMzspvFFTAvXS2NHPIIo="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -135,9 +161,11 @@
       "source_relative_path": "api/LayeredMapGenAgent.Internal.Manager.RegionSelector.RegionSelectionOutput.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LayeredMapGenAgent.Internal.Manager.RegionSelector.RegionSelectionOutput.html"
+          "relative_path": "api/LayeredMapGenAgent.Internal.Manager.RegionSelector.RegionSelectionOutput.html",
+          "hash": "ZEDd7u3LLhF7IC0pdblSIYsQh2b9dDvS0ji0zwQWsKM="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -145,9 +173,11 @@
       "source_relative_path": "api/LayeredMapGenAgent.Internal.Manager.RegionSelector.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LayeredMapGenAgent.Internal.Manager.RegionSelector.html"
+          "relative_path": "api/LayeredMapGenAgent.Internal.Manager.RegionSelector.html",
+          "hash": "jg/g8vku0eb/UpKxHlvXLd5zw5SApKTrYPn9zK1d5uU="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -155,9 +185,11 @@
       "source_relative_path": "api/LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionInput.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionInput.html"
+          "relative_path": "api/LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionInput.html",
+          "hash": "GhhFt5RC6SsT4JWu72Gt/szaubqGqON+JyCFeUp0m98="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -165,9 +197,11 @@
       "source_relative_path": "api/LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionOutput.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionOutput.html"
+          "relative_path": "api/LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.TileEdgyDetectionOutput.html",
+          "hash": "ax0xcU4oborrKaQyWr8A2wawavCwRTBDm7GPEmWOtPc="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -175,9 +209,11 @@
       "source_relative_path": "api/LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.html"
+          "relative_path": "api/LayeredMapGenAgent.Internal.Manager.TileEdgyDetector.html",
+          "hash": "bNRyY6gK+cpe6VU6DUIDqIRdVI09OksQL/5KhQ1b8ds="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -185,9 +221,11 @@
       "source_relative_path": "api/LayeredMapGenAgent.Internal.Manager.TileEdgyType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LayeredMapGenAgent.Internal.Manager.TileEdgyType.html"
+          "relative_path": "api/LayeredMapGenAgent.Internal.Manager.TileEdgyType.html",
+          "hash": "La53/PeoRjEwFJAIkDMsGGCU0ic9MWW7x8aJgUQPa/Q="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -195,9 +233,11 @@
       "source_relative_path": "api/LayeredMapGenAgent.Internal.Manager.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LayeredMapGenAgent.Internal.Manager.html"
+          "relative_path": "api/LayeredMapGenAgent.Internal.Manager.html",
+          "hash": "VQ2poYfBf3esaEJkgQrGdWTm/5uPkwq9+oFkb7yXvEs="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -205,9 +245,11 @@
       "source_relative_path": "api/LayeredMapGenAgent.Public.Data.RawBitmap.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LayeredMapGenAgent.Public.Data.RawBitmap.html"
+          "relative_path": "api/LayeredMapGenAgent.Public.Data.RawBitmap.html",
+          "hash": "fIbsXrzZvWDtFRC1ziHLKKT0FBvK046v/CV7YB0Sn+s="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -215,9 +257,11 @@
       "source_relative_path": "api/LayeredMapGenAgent.Public.Data.RawColor.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LayeredMapGenAgent.Public.Data.RawColor.html"
+          "relative_path": "api/LayeredMapGenAgent.Public.Data.RawColor.html",
+          "hash": "96Bz2DFH7T4URHrN8s2xS2C9SOSP3/qh2lgnJsQrg8o="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -225,9 +269,11 @@
       "source_relative_path": "api/LayeredMapGenAgent.Public.Data.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LayeredMapGenAgent.Public.Data.html"
+          "relative_path": "api/LayeredMapGenAgent.Public.Data.html",
+          "hash": "yoZ6cH5Wulo0kNE9tzTpAOEjYJk6IVhDjbbot6qRoUQ="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -235,9 +281,11 @@
       "source_relative_path": "api/LayeredMapGenAgent.Public.Manager.ChiefMapGenAgentManager.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LayeredMapGenAgent.Public.Manager.ChiefMapGenAgentManager.html"
+          "relative_path": "api/LayeredMapGenAgent.Public.Manager.ChiefMapGenAgentManager.html",
+          "hash": "W4m4IRgTWqKN0kRomIBAibYqjyxj+sJTNYu5HM5qhiI="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -245,9 +293,11 @@
       "source_relative_path": "api/LayeredMapGenAgent.Public.Manager.yml",
       "output": {
         ".html": {
-          "relative_path": "api/LayeredMapGenAgent.Public.Manager.html"
+          "relative_path": "api/LayeredMapGenAgent.Public.Manager.html",
+          "hash": "4CVvvFveq/QcZX3lhhkoF9FB/RRTX+d5jNUCneAyhgc="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -255,22 +305,26 @@
       "source_relative_path": "api/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "api/toc.html"
-        },
-        ".json": {
-          "relative_path": "api/toc.json"
+          "relative_path": "api/toc.html",
+          "hash": "WRPhwxajos3H3PasL5tpRy6TdYR10gzdSkrVdE2Qw0A="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
+      "log_codes": [
+        "invalid-note-section"
+      ],
       "type": "Conceptual",
       "source_relative_path": "docs/getting-started.md",
       "output": {
         ".html": {
-          "relative_path": "docs/getting-started.html"
+          "relative_path": "docs/getting-started.html",
+          "hash": "EMbByA0pzARodZP3eC8RzVjin2mMGw1Uia1WYlYO0Hk="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -278,9 +332,11 @@
       "source_relative_path": "docs/introduction.md",
       "output": {
         ".html": {
-          "relative_path": "docs/introduction.html"
+          "relative_path": "docs/introduction.html",
+          "hash": "1OyZX+joIEbwUBFE4ZuyK05jkUQAW7lRVIeKY7jLeDc="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -288,12 +344,11 @@
       "source_relative_path": "docs/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "docs/toc.html"
-        },
-        ".json": {
-          "relative_path": "docs/toc.json"
+          "relative_path": "docs/toc.html",
+          "hash": "dEg4vNJttsFNrPQ2PBDQzg4Rf1UMrrc7EXWNlSSB4W0="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -301,9 +356,11 @@
       "source_relative_path": "index.md",
       "output": {
         ".html": {
-          "relative_path": "index.html"
+          "relative_path": "index.html",
+          "hash": "PewWbDXMu/FKwC0cu46g9hDd4hp5LlJlPzrk19MJTRE="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -311,9 +368,11 @@
       "source_relative_path": "test/clear.md",
       "output": {
         ".html": {
-          "relative_path": "test/clear.html"
+          "relative_path": "test/clear.html",
+          "hash": "kd0CGH2aHGViftKo3Yi2hkNrhzwQRU3lm15LHkKRmIc="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -321,12 +380,11 @@
       "source_relative_path": "test/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "test/toc.html"
-        },
-        ".json": {
-          "relative_path": "test/toc.json"
+          "relative_path": "test/toc.html",
+          "hash": "TkCY7L6ky0eV9mfLEf3H29HbLoDs2rDXBxk4y0jmHLs="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -334,15 +392,58 @@
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
-          "relative_path": "toc.html"
-        },
-        ".json": {
-          "relative_path": "toc.json"
+          "relative_path": "toc.html",
+          "hash": "55VVoPWRHdccXQEicHTx3z2s7RaXC0z2CN7RyfkeXyo="
         }
       },
+      "is_incremental": false,
       "version": ""
     }
   ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 4,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 24,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
   "groups": [
     {
       "xrefmap": "xrefmap.yml"

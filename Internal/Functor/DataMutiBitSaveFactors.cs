@@ -32,8 +32,12 @@ namespace LayeredMapGenAgent.Internal.Functor
         public static float GetTwoChannelRestoredValue(in Tuple<float, float> values)
         {
             float reValue = values.Item1 + (values.Item2 / MathF.Pow(10, MultiBitSaveFactor));
-
             return reValue;
+        }
+
+        public static void Test()
+        {
+
         }
     }
 }

@@ -15,8 +15,6 @@ using LayeredMapGenAgent.Internal.Functor;
 
 using SkiaSharp;
 using LayeredMapGenAgent.Internal.Manager;
-using static LayeredMapGenAgent.Public.Manager.ChiefMapGenAgentManager;
-using System.Reflection;
 
 
 namespace LayeredMapGenAgent.Public.Manager
@@ -79,7 +77,7 @@ namespace LayeredMapGenAgent.Public.Manager
                 Console.WriteLine();
 
                 chiefMapGenerationInput = JsonConvert.DeserializeObject<ChiefMapGenerationInput>(args[0]);
-                //chiefMapGenerationInput = JsonConvert.DeserializeObject<ChiefMapGenerationInput>("{\"AbstractInputData\":{\"SingleChunkSize\":{\"x\":25,\"y\":1,\"z\":25,\"magnitude\":35.36948,\"sqrMagnitude\":1251},\"MapSize\":{\"x\":2,\"y\":3,\"z\":2,\"magnitude\":4.12310553,\"sqrMagnitude\":17},\"SingleRoomSize\":{\"x\":14,\"y\":14,\"magnitude\":19.79899,\"sqrMagnitude\":392},\"AreaNameTable\":{\"b2f72253-c765-46c6-a753-1393214c92f6\":\"temp\",\"36ea1db3-ab64-44c6-a430-56ccda7caeb1\":\"clear\"}},\"BasicMapInputData\":{\"MaxTryCountRatio\":0.001,\"BrushSize\":{\"Item1\":1,\"Item2\":3},\"MainWayFillPercent\":0.15,\"SubWayFillPercent\":0.25,\"PenetratingWayCountRate\":0.001,\"PenetratingWayFillPercent\":0.2},\"RegionSelectionInputData\":{\"BaseColor\":{\"x\":0.5,\"y\":0.5,\"z\":0.5},\"SingleRegionDatas\":[{\"RegionName\":\"NewAreaName_360484660\",\"RegionID\":\"f054e296-ab71-455e-b4a2-77b26e5c8921\",\"RegionBlendColor\":{\"x\":0.5,\"y\":0.5,\"z\":0.5},\"IdealSpawnPos\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"WeightVector\":{\"x\":1.0,\"y\":1.0,\"z\":1.0}},{\"RegionName\":\"NewAreaName_481659764\",\"RegionID\":\"27f719d0-9873-4673-93d7-1244269714b6\",\"RegionBlendColor\":{\"x\":0.5,\"y\":0.5,\"z\":0.5},\"IdealSpawnPos\":{\"x\":1.0,\"y\":1.0,\"z\":1.0},\"WeightVector\":{\"x\":1.0,\"y\":1.0,\"z\":1.0}}]},\"MiddleLayersInputData\":{\"CurLayerMiddleLayerDepth\":2,\"GateToBackMiddleLayerDepth\":1,\"ColorStepForCurLayer\":{\"x\":0.1,\"y\":0.1,\"z\":0.1,\"w\":0.0},\"ColorStepForGateToBack\":{\"x\":0.4,\"y\":0.4,\"z\":0.4,\"w\":0.0}},\"BasicMapGenOutputPath\":\"C:/Storage/Sandbox/Unity/UnTitled_LayeredMapGenTool/Assets/StreamingAssets/LayeredMapGeneration/OutputData/BasicPathOutputData_\",\"TileEdgyOutputPath\":\"C:/Storage/Sandbox/Unity/UnTitled_LayeredMapGenTool/Assets/StreamingAssets/LayeredMapGeneration/OutputData/TileEdgyOutputData_\",\"RegionSelectionOutputPath\":\"C:/Storage/Sandbox/Unity/UnTitled_LayeredMapGenTool/Assets/StreamingAssets/LayeredMapGeneration/OutputData/RegionSelectionOutputData_\"}");
+                //chiefMapGenerationInput = JsonConvert.DeserializeObject<ChiefMapGenerationInput>("{\"AbstractInputData\":{\"SingleChunkSize\":{\"x\":50,\"y\":1,\"z\":50,\"magnitude\":70.71775,\"sqrMagnitude\":5001},\"MapSize\":{\"x\":1,\"y\":3,\"z\":1,\"magnitude\":3.31662488,\"sqrMagnitude\":11},\"SingleRoomSize\":{\"x\":24,\"y\":24,\"magnitude\":33.941124,\"sqrMagnitude\":1152},\"AreaNameTable\":{\"b2f72253-c765-46c6-a753-1393214c92f6\":\"temp\",\"36ea1db3-ab64-44c6-a430-56ccda7caeb1\":\"clear\"}},\"BasicMapInputData\":{\"MaxTryCountRatio\":0.001,\"BrushSize\":{\"Item1\":1,\"Item2\":3},\"MainWayFillPercent\":0.15,\"SubWayFillPercent\":0.25,\"PenetratingWayCountRate\":0.001,\"PenetratingWayFillPercent\":0.2},\"RegionSelectionInputData\":{\"BaseColor\":{\"x\":0.5,\"y\":0.5,\"z\":0.5},\"SingleRegionDatas\":[{\"RegionName\":\"NewAreaName_360484660\",\"RegionID\":\"f054e296-ab71-455e-b4a2-77b26e5c8921\",\"RegionBlendColor\":{\"x\":0.5,\"y\":0.5,\"z\":0.5},\"IdealSpawnPos\":{\"x\":0.0,\"y\":0.0,\"z\":0.0},\"WeightVector\":{\"x\":1.0,\"y\":1.0,\"z\":1.0}},{\"RegionName\":\"NewAreaName_481659764\",\"RegionID\":\"27f719d0-9873-4673-93d7-1244269714b6\",\"RegionBlendColor\":{\"x\":0.5,\"y\":0.5,\"z\":0.5},\"IdealSpawnPos\":{\"x\":1.0,\"y\":1.0,\"z\":1.0},\"WeightVector\":{\"x\":1.0,\"y\":1.0,\"z\":1.0}}]},\"MiddleLayersInputData\":{\"CurLayerMiddleLayerDepth\":2,\"GateToBackMiddleLayerDepth\":1,\"ColorStepForCurLayer\":{\"x\":0.1,\"y\":0.1,\"z\":0.1,\"w\":0.0},\"ColorStepForGateToBack\":{\"x\":0.4,\"y\":0.4,\"z\":0.4,\"w\":0.0}},\"BasicMapGenOutputPath\":\"C:/Storage/Sandbox/Unity/UnTitled_LayeredMapGenTool/Assets/StreamingAssets/LayeredMapGeneration/OutputData/BasicPathOutputData_\",\"TileEdgyOutputPath\":\"C:/Storage/Sandbox/Unity/UnTitled_LayeredMapGenTool/Assets/StreamingAssets/LayeredMapGeneration/OutputData/TileEdgyOutputData_\",\"RegionSelectionOutputPath\":\"C:/Storage/Sandbox/Unity/UnTitled_LayeredMapGenTool/Assets/StreamingAssets/LayeredMapGeneration/OutputData/RegionSelectionOutputData_\"}");
             }
             catch (Exception e)
             {
@@ -140,7 +138,7 @@ namespace LayeredMapGenAgent.Public.Manager
                 layerIndex = 0;
                 while (true)
                 {
-                    string fileName = chiefMapGenerationInput.TileEdgyOutputPath + layerIndex.ToString() + "_MiddleLayer.png";
+                    string fileName = chiefMapGenerationInput.BasicMapGenOutputPath + layerIndex.ToString() + "_MiddleLayer.png";
                     if (File.Exists(fileName))
                     {
                         File.Delete(fileName);
@@ -156,7 +154,7 @@ namespace LayeredMapGenAgent.Public.Manager
                 layerIndex = 0;
                 while (true)
                 {
-                    string fileName = chiefMapGenerationInput.TileEdgyOutputPath + "_TileKind_" + layerIndex.ToString() + ".png";
+                    string fileName = chiefMapGenerationInput.BasicMapGenOutputPath + "_TileKind_" + layerIndex.ToString() + ".png";
                     if (File.Exists(fileName))
                     {
                         File.Delete(fileName);

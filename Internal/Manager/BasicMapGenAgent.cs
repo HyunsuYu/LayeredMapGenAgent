@@ -130,6 +130,8 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
         private PathDirection[,] m_abstractPlane;
         private DetailNode[,] m_detailPlane;
 
+        private int[,] m_abstractRegionPlane;
+
         private List<CoordPair> m_abstractCoordPairs;
 
         private Vector3Int m_realMapSize;
@@ -164,6 +166,8 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
                     m_detailPlane[coord_z, coord_x] = new DetailNode(m_singleRoomSize);
                 }
             }
+
+            m_abstractRegionPlane = new int[m_realMapSize.z, m_realMapSize.x];
 
             m_maxTryCount = (int)((m_realMapSize.x * m_realMapSize.z) * mapGenInputData.MaxTryCountRatio);
             m_maxTryCount = m_maxTryCount == 0 ? 1 : m_maxTryCount;
@@ -249,6 +253,14 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
 
                 if (bisFirstItr)
                 {
+                    for (int coord_z = 0; coord_z < m_realMapSize.z; coord_z++)
+                    {
+                        for (int coord_x = 0; coord_x < m_realMapSize.x; coord_x++)
+                        {
+                            m_abstractRegionPlane[coord_z, coord_x] = 1;
+                        }
+                    }
+
                     if (!startFlag)
                     {
                         while (true)
@@ -282,6 +294,43 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
                 }
                 else
                 {
+                    for (int coord_z = 0; coord_z < m_realMapSize.z; coord_z++)
+                    {
+                        for (int coord_x = 0; coord_x < m_realMapSize.x; coord_x++)
+                        {
+                            m_abstractRegionPlane[coord_z, coord_x] = -1;
+                        }
+                    }
+
+                    int curFalgNum = 1;
+                    for (int coord_z = 0; coord_z < m_realMapSize.z; coord_z++)
+                    {
+                        for (int coord_x = 0; coord_x < m_realMapSize.x; coord_x++)
+                        {
+                            if (coord_z - 1 >= 0 && m_abstractRegionPlane[coord_z - 1, coord_x] != -1)
+                            {
+                                m_abstractRegionPlane[coord_z, coord_x] = m_abstractRegionPlane[coord_z - 1, coord_x];
+                            }
+                            else if (coord_z + 1 < m_realMapSize.z && m_abstractRegionPlane[coord_z + 1, coord_x] != -1)
+                            {
+                                m_abstractRegionPlane[coord_z, coord_x] = m_abstractRegionPlane[coord_z + 1, coord_x];
+                            }
+                            else if (coord_x - 1 >= 0 && m_abstractRegionPlane[coord_z, coord_x - 1] != -1)
+                            {
+                                m_abstractRegionPlane[coord_z, coord_x] = m_abstractRegionPlane[coord_z, coord_x - 1];
+                            }
+                            else if (coord_x + 1 < m_realMapSize.x && m_abstractRegionPlane[coord_z, coord_x + 1] != -1)
+                            {
+                                m_abstractRegionPlane[coord_z, coord_x] = m_abstractRegionPlane[coord_z, coord_x + 1];
+                            }
+                            else
+                            {
+                                m_abstractRegionPlane[coord_z, coord_x] = curFalgNum;
+                                curFalgNum++;
+                            }
+                        }
+                    }
+
                     if (!startFlag)
                     {
                         while (true)
@@ -312,6 +361,14 @@ namespace LayeredMapGenAgent.Internal.Manager.BasicMap
                     }
 
                     if (StartCoord == EndCoord)
+                    {
+                        startFlag = false;
+                        endFlag = false;
+
+                        tryCount++;
+                        continue;
+                    }
+                    else if (m_abstractRegionPlane[StartCoord.y, StartCoord.x] != m_abstractRegionPlane[EndCoord.y, EndCoord.x])
                     {
                         startFlag = false;
                         endFlag = false;

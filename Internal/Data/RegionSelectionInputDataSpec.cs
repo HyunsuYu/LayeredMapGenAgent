@@ -27,16 +27,16 @@ namespace LayeredMapGenAgent.Internal.Data
         public List<SingleRegionData> SingleRegionDatas;
 
 
-        [Obsolete]
-        public static Dictionary<int, string> GetSingleRegionDataRainbowTable(in List<SingleRegionData> singleRegionDatas)
-        {
-            Dictionary<int, string> singleRegionDataRainbowTable = new Dictionary<int, string>();
-            foreach(var item in singleRegionDatas)
-            {
-                singleRegionDataRainbowTable.Add(item.RegionName.GetHashCode(), item.RegionName);
-            }
+        //[Obsolete]
+        //public static Dictionary<int, string> GetSingleRegionDataRainbowTable(in List<SingleRegionData> singleRegionDatas)
+        //{
+        //    Dictionary<int, string> singleRegionDataRainbowTable = new Dictionary<int, string>();
+        //    foreach(var item in singleRegionDatas)
+        //    {
+        //        singleRegionDataRainbowTable.Add(item.RegionName.GetHashCode(), item.RegionName);
+        //    }
 
-            return singleRegionDataRainbowTable;
-        }
+        //    return singleRegionDataRainbowTable;
+        //}
     }
 }
